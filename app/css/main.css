@@ -51,3 +51,15 @@ ul li {
 .header .text-pink.bold {
   font-weight: bold;
 }
+
+/* line 31, sass/_header.scss */
+.nav-items {
+  margin: 3rem 0 2rem;
+}
+/* line 33, sass/_header.scss */
+.nav-items li {
+  color: #818181;
+  display: inline-block;
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+}
