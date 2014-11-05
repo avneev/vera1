@@ -42,36 +42,44 @@ ul li {
 }
 /* line 18, sass/_header.scss */
 .header__left-column span {
-  font-size: 97%;
+  font-size: 77%;
 }
-/* line 23, sass/_header.scss */
+/* line 21, sass/_header.scss */
+.header__left-column .verticle-line {
+  font-size: 100%;
+  height: 30px;
+  padding: 2px 3px 0;
+  vertical-align: top;
+}
+/* line 29, sass/_header.scss */
 .header__icon-list {
   margin: -5px 0 0;
   float: right;
 }
-/* line 26, sass/_header.scss */
+/* line 32, sass/_header.scss */
 .header__icon-list li {
   display: inline;
   padding: 0 4px;
 }
-/* line 32, sass/_header.scss */
+/* line 38, sass/_header.scss */
 .header__right-text {
   float: right;
 }
-/* line 35, sass/_header.scss */
+/* line 41, sass/_header.scss */
 .header .text-pink {
   color: #DD1264;
+  font-size: inherit;
 }
-/* line 37, sass/_header.scss */
+/* line 44, sass/_header.scss */
 .header .text-pink.bold {
   font-weight: bold;
 }
 
-/* line 43, sass/_header.scss */
+/* line 50, sass/_header.scss */
 .nav-items {
   margin: 3rem 0 2rem;
 }
-/* line 45, sass/_header.scss */
+/* line 52, sass/_header.scss */
 .nav-items li {
   color: #818181;
   display: inline-block;
