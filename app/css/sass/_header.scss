@@ -1,7 +1,7 @@
 .header {
 	background-color:$color-gray;
 	font-size: 95%;
-	padding: 10px 0 2px;
+	padding: 0.5rem 0 0.2rem;
 	&__left-column, &__right-column {
 		text-transform: uppercase;
 		font-size: 85%;
@@ -20,18 +20,18 @@
 		}
 		.verticle-line {
 			 font-size: 100%;
-		    height: 30px;
-		    padding: 2px 3px 0;
+		    height: 2rem;
+		    padding: .01rem .2rem 0;
 		    vertical-align: top;
 		}
 	}
 	&__icon {
 		&-list{
-			margin: -5px 0 0;
+			margin: -.2rem 0 0;
 			float: right;
 			li {
 				display: inline;
-				padding: 0 4px;
+				padding: 0 3px;
 			}
 		}
 	}
@@ -55,4 +55,18 @@
 		margin-right: 1.5rem;
 		text-transform: uppercase;
 	}
+}
+  .some-element{
+        width:100%;
+        margin:auto;
+        padding: 1em 0;
+        font-size:1.5em;
+        text-align: center;
+        background-color: #ddd;
+      }
+      .stuck {
+  position: fixed;
+  top: 0;
+   left: 50%;
+  transform: translateX(-50%);
 }

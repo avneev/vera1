@@ -7,14 +7,15 @@ body {
   font-family: "BrandonGrotesque";
   font-size: 0.8rem;
   color: #3B3B3B;
+  height: 80rem;
 }
 
-/* line 11, sass/_core.scss */
+/* line 12, sass/_core.scss */
 .row {
   max-width: 80rem;
 }
 
-/* line 14, sass/_core.scss */
+/* line 15, sass/_core.scss */
 ul li {
   list-style-type: none;
 }
@@ -23,7 +24,7 @@ ul li {
 .header {
   background-color: #F7F7F9;
   font-size: 95%;
-  padding: 10px 0 2px;
+  padding: 0.5rem 0 0.2rem;
 }
 /* line 5, sass/_header.scss */
 .header__left-column, .header__right-column {
@@ -47,19 +48,19 @@ ul li {
 /* line 21, sass/_header.scss */
 .header__left-column .verticle-line {
   font-size: 100%;
-  height: 30px;
-  padding: 2px 3px 0;
+  height: 2rem;
+  padding: .01rem .2rem 0;
   vertical-align: top;
 }
 /* line 29, sass/_header.scss */
 .header__icon-list {
-  margin: -5px 0 0;
+  margin: -.2rem 0 0;
   float: right;
 }
 /* line 32, sass/_header.scss */
 .header__icon-list li {
   display: inline;
-  padding: 0 4px;
+  padding: 0 3px;
 }
 /* line 38, sass/_header.scss */
 .header__right-text {
@@ -85,4 +86,22 @@ ul li {
   display: inline-block;
   margin-right: 1.5rem;
   text-transform: uppercase;
+}
+
+/* line 59, sass/_header.scss */
+.some-element {
+  width: 100%;
+  margin: auto;
+  padding: 1em 0;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #ddd;
+}
+
+/* line 67, sass/_header.scss */
+.stuck {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
