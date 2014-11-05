@@ -1,27 +1,43 @@
 .header {
 	background-color:$color-gray;
+	font-size: 95%;
+	padding: 10px 0 2px;
 	&__left-column, &__right-column {
 		text-transform: uppercase;
+		font-size: 85%;
 	}
-	&__icon {
-		&:before {
-			content:"";
-			display: inline-block;
-			background:url(../images/logo.png) 20px 20px no-repeat;
-			width: 20px;
+	&__right-column {
+		span {
+			color:$color-light-gray;
+		}
+	}
+	&__left-column{
+		padding-top: 0.25rem;  
+		font-size: 104%;
+		color:$color-gray-dark;
+		span {
+			font-size: 77%;
+		}
+		.verticle-line {
 			height: 20px;
 		}
-		&--1 {
-			&:before {
-			background-position: 10px 10px;
+	}
+	&__icon {
+		&-list{
+			margin: -5px 0 0;
+			float: right;
+			li {
+				display: inline;
+				padding: 0 4px;
 			}
 		}
-		&-list{
-			margin-left: 0;
-		}
+	}
+	&__right-text{
+		float: right;
 	}
 	.text-pink {
 		color: $color-pink;
+		font-size: inherit;
 		&.bold {
 			font-weight: $base-font-weight-bold ;
 		}
@@ -32,9 +48,9 @@
 	margin: 4rem 0 1.35rem;
 	li {
 		color: $base-font-color;
-	    display: inline-block;
-	    margin-right: 2rem;
-	    text-transform: $text-uppercase;
+		display: inline-block;
+		margin-right: 2rem;
+		text-transform: $text-uppercase;
 	}
 }
 .left-nav {
