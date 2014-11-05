@@ -29,11 +29,20 @@
 }
 
 .nav-items {
-	margin: 3rem 0 2rem;
+	margin: 4rem 0 1.35rem;
 	li {
-		color: #818181;
+		color: $base-font-color;
 	    display: inline-block;
-	    margin-right: 1.5rem;
-	    text-transform: uppercase;
+	    margin-right: 2rem;
+	    text-transform: $text-uppercase;
 	}
+}
+.left-nav {
+	width: 30%;
+	margin-left: 3rem;
+}
+.right-nav {
+	width: 30%;
+	position: relative; 
+	right: 3.25rem;
 }

@@ -14,3 +14,11 @@ body {
 ul li {
 	list-style-type:none;
 }
+
+.no-padding {
+	padding: 0;
+}
+
+.silver-border {
+	border-bottom: 1px solid $silver;
+}

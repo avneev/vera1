@@ -1,3 +1,4 @@
+/*Color Set*/
 @font-face {
   font-family: "BrandonGrotesque";
   src: url(../fonts/brandon_re.ttf);
@@ -6,7 +7,7 @@
 body {
   font-family: "BrandonGrotesque";
   font-size: 0.8rem;
-  color: #3B3B3B;
+  color: #818181;
 }
 
 /* line 11, sass/_core.scss */
@@ -17,6 +18,16 @@ body {
 /* line 14, sass/_core.scss */
 ul li {
   list-style-type: none;
+}
+
+/* line 18, sass/_core.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 22, sass/_core.scss */
+.silver-border {
+  border-bottom: 1px solid #CCCCCC;
 }
 
 /* line 1, sass/_header.scss */
@@ -54,12 +65,25 @@ ul li {
 
 /* line 31, sass/_header.scss */
 .nav-items {
-  margin: 3rem 0 2rem;
+  margin: 4rem 0 1.35rem;
 }
 /* line 33, sass/_header.scss */
 .nav-items li {
   color: #818181;
   display: inline-block;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   text-transform: uppercase;
+}
+
+/* line 40, sass/_header.scss */
+.left-nav {
+  width: 30%;
+  margin-left: 3rem;
+}
+
+/* line 44, sass/_header.scss */
+.right-nav {
+  width: 30%;
+  position: relative;
+  right: 3.25rem;
 }
