@@ -1,6 +1,6 @@
 This is an angular app for Vera Bradley HTML prototype.
 
-Prerequisites : node, npm, bower, compass installed
+Prerequisites : node, npm, bower.
 
 To start please take clone of vera repo (https://github.com/avneev/vera.git).
 
