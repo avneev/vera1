@@ -33,64 +33,41 @@ ul li {
 /* line 1, sass/_header.scss */
 .header {
   background-color: #F7F7F9;
-  font-size: 95%;
-  padding: 10px 0 2px;
 }
-/* line 5, sass/_header.scss */
+/* line 3, sass/_header.scss */
 .header__left-column, .header__right-column {
   text-transform: uppercase;
-  font-size: 85%;
 }
-/* line 10, sass/_header.scss */
-.header__right-column span {
-  color: #A5A5A5;
+/* line 7, sass/_header.scss */
+.header__icon:before {
+  content: "";
+  display: inline-block;
+  background: url(../images/logo.png) 20px 20px no-repeat;
+  width: 20px;
+  height: 20px;
 }
-/* line 14, sass/_header.scss */
-.header__left-column {
-  padding-top: 0.25rem;
-  font-size: 104%;
-  color: #666666;
+/* line 15, sass/_header.scss */
+.header__icon--1:before {
+  background-position: 10px 10px;
 }
-/* line 18, sass/_header.scss */
-.header__left-column span {
-  font-size: 77%;
-}
-/* line 21, sass/_header.scss */
-.header__left-column .verticle-line {
-  font-size: 100%;
-  height: 30px;
-  padding: 2px 3px 0;
-  vertical-align: top;
-}
-/* line 29, sass/_header.scss */
+/* line 19, sass/_header.scss */
 .header__icon-list {
-  margin: -5px 0 0;
-  float: right;
+  margin-left: 0;
 }
-/* line 32, sass/_header.scss */
-.header__icon-list li {
-  display: inline;
-  padding: 0 4px;
-}
-/* line 38, sass/_header.scss */
-.header__right-text {
-  float: right;
-}
-/* line 41, sass/_header.scss */
+/* line 23, sass/_header.scss */
 .header .text-pink {
   color: #DD1264;
-  font-size: inherit;
 }
-/* line 44, sass/_header.scss */
+/* line 25, sass/_header.scss */
 .header .text-pink.bold {
   font-weight: bold;
 }
 
-/* line 50, sass/_header.scss */
+/* line 31, sass/_header.scss */
 .nav-items {
   margin: 4rem 0 1.35rem;
 }
-/* line 52, sass/_header.scss */
+/* line 33, sass/_header.scss */
 .nav-items li {
   color: #3B3B3B;
   display: inline-block;
@@ -98,13 +75,13 @@ ul li {
   text-transform: uppercase;
 }
 
-/* line 59, sass/_header.scss */
+/* line 40, sass/_header.scss */
 .left-nav {
   width: 30%;
   margin-left: 3rem;
 }
 
-/* line 63, sass/_header.scss */
+/* line 44, sass/_header.scss */
 .right-nav {
   width: 30%;
   position: relative;
