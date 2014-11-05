@@ -1,3 +1,16 @@
+
+@font-face {
+    font-family: "BrandonGrotesque";
+    src: url(../fonts/brandon_re.ttf);
+}
+body {
+	font-family:$base-font-family;
+	font-size:$base-font-size;
+	color:$base-font-color;
+}
 .row {
 	 max-width:80rem;
+}
+ul li {
+	list-style-type:none;
 }

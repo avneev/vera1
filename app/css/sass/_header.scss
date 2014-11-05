@@ -1,0 +1,29 @@
+.header {
+	background-color:$color-gray;
+	&__left-column, &__right-column {
+		text-transform: uppercase;
+	}
+	&__icon {
+		&:before {
+			content:"";
+			display: inline-block;
+			background:url(../images/logo.png) 20px 20px no-repeat;
+			width: 20px;
+			height: 20px;
+		}
+		&--1 {
+			&:before {
+			background-position: 10px 10px;
+			}
+		}
+		&-list{
+			margin-left: 0;
+		}
+	}
+	.text-pink {
+		color: $color-pink;
+		&.bold {
+			font-weight: $base-font-weight-bold ;
+		}
+	}
+}

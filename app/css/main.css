@@ -1,4 +1,53 @@
-/* line 1, sass/_core.scss */
+@font-face {
+  font-family: "BrandonGrotesque";
+  src: url(../fonts/brandon_re.ttf);
+}
+/* line 6, sass/_core.scss */
+body {
+  font-family: "BrandonGrotesque";
+  font-size: 0.8rem;
+  color: #3B3B3B;
+}
+
+/* line 11, sass/_core.scss */
 .row {
   max-width: 80rem;
+}
+
+/* line 14, sass/_core.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 1, sass/_header.scss */
+.header {
+  background-color: #F7F7F9;
+}
+/* line 3, sass/_header.scss */
+.header__left-column, .header__right-column {
+  text-transform: uppercase;
+}
+/* line 7, sass/_header.scss */
+.header__icon:before {
+  content: "";
+  display: inline-block;
+  background: url(../images/logo.png) 20px 20px no-repeat;
+  width: 20px;
+  height: 20px;
+}
+/* line 15, sass/_header.scss */
+.header__icon--1:before {
+  background-position: 10px 10px;
+}
+/* line 19, sass/_header.scss */
+.header__icon-list {
+  margin-left: 0;
+}
+/* line 23, sass/_header.scss */
+.header .text-pink {
+  color: #DD1264;
+}
+/* line 25, sass/_header.scss */
+.header .text-pink.bold {
+  font-weight: bold;
 }
