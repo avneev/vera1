@@ -5,10 +5,10 @@ angular.module('myApp.product-listing', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/product-listing', {
     templateUrl: 'product-listing/view.html',
-    controller: 'View2Ctrl'
+    controller: 'ProductListingCtrl'
   });
 }])
 
-.controller('View2Ctrl', [function() {
+.controller('ProductListingCtrl', [function() {
 	console.log('product-listing')
 }]);

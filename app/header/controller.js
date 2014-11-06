@@ -1,15 +1,33 @@
 'use strict';
 
 angular.module('myApp.header', [])
-.controller('HeaderCtrl',  ['$scope', '$rootScope', function($scope, $rootScope) {
-	$rootScope.showOnHover = false;
+.controller('HeaderCtrl',  ['$scope', '$rootScope', 'xhrFactory', function($scope, $rootScope, xhrFactory) {
+	
+	xhrFactory.getList('nav-left.json').then(
+		function(response) {
+			$scope.navleft = response;
+		},
+		function(error) {
+			console.log(error);
+		}
+	)
+	xhrFactory.getList('nav-right.json').then(
+		function(response) {
+			$scope.navRight = response;
+		},
+		function(error) {
+			console.log(error);
+		}
+	)
 
-	$rootScope.showSubMenu = function (){
-		$rootScope.showOnHover = true;
+	$scope.showSubMenu = function (item){
+		item.subMenuVisible = true;
 	};
-	$rootScope.hideSubMenu = function (){
-		$rootScope.showOnHover = false; 
+	$scope.hideSubMenu = function (item){
+		item.subMenuVisible = false;
 	}
+	
+
 }]).directive("sticky", function($window) {
 	return {
 		link: function(scope, element, attrs) {

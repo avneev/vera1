@@ -51,129 +51,175 @@ p {
 }
 
 /* line 39, sass/_core.scss */
+.full-width {
+  max-width: 100%;
+}
+
+/* line 43, sass/_core.scss */
 .silver-border {
   border-bottom: 1px solid #CCCCCC;
 }
 
 /* line 1, sass/_header.scss */
-.header-wrapper {
-  background-color: #F7F7F9;
-}
-
-/* line 4, sass/_header.scss */
 .header {
+  background-color: #F7F7F9;
   font-size: 95%;
   padding: 0.5rem 0 0.2rem;
   width: 88%;
 }
-/* line 8, sass/_header.scss */
+/* line 6, sass/_header.scss */
 .header__left-column, .header__right-column {
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 13, sass/_header.scss */
+/* line 11, sass/_header.scss */
 .header__right-column span {
   color: #A5A5A5;
 }
-/* line 17, sass/_header.scss */
+/* line 15, sass/_header.scss */
 .header__left-column {
   padding-top: 0.25rem;
   font-size: 104%;
   color: #666666;
 }
-/* line 21, sass/_header.scss */
+/* line 19, sass/_header.scss */
 .header__left-column span {
   font-size: 77%;
 }
-/* line 24, sass/_header.scss */
+/* line 22, sass/_header.scss */
 .header__left-column .verticle-line {
   font-size: 100%;
   height: 2rem;
   padding: .01rem .2rem 0;
   vertical-align: top;
 }
-/* line 32, sass/_header.scss */
+/* line 30, sass/_header.scss */
 .header__icon-list {
   margin: -.2rem 0 0;
   float: right;
 }
-/* line 35, sass/_header.scss */
+/* line 33, sass/_header.scss */
 .header__icon-list li {
   display: inline;
   padding: 0 3px;
 }
-/* line 41, sass/_header.scss */
+/* line 39, sass/_header.scss */
 .header__right-text {
   float: right;
 }
-/* line 44, sass/_header.scss */
+/* line 42, sass/_header.scss */
 .header .text-pink {
   color: #DD1264;
   font-size: inherit;
 }
-/* line 47, sass/_header.scss */
+/* line 45, sass/_header.scss */
 .header .text-pink.bold {
   font-weight: bold;
 }
 
-/* line 52, sass/_header.scss */
-.sticky-nav {
+/* line 51, sass/_header.scss */
+.main-nav {
+  position: relative;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 10;
 }
-
-/* line 56, sass/_header.scss */
-.nav-items {
-  margin: 4rem 0 1.3rem;
+/* line 55, sass/_header.scss */
+.main-nav .nav-items {
+  margin: 4rem 0 0;
 }
-/* line 58, sass/_header.scss */
-.nav-items li {
-  color: #3B3B3B;
+/* line 57, sass/_header.scss */
+.main-nav .nav-items li {
   display: inline-block;
   margin-right: 2rem;
   text-transform: uppercase;
+  height: 2.95rem;
 }
-
-/* line 65, sass/_header.scss */
-.left-nav {
+/* line 62, sass/_header.scss */
+.main-nav .nav-items li a {
+  color: #3B3B3B;
+}
+/* line 67, sass/_header.scss */
+.main-nav .left-nav {
   width: 30%;
   margin-left: 3rem;
+  position: static;
 }
-
-/* line 69, sass/_header.scss */
-.right-nav {
+/* line 72, sass/_header.scss */
+.main-nav .right-nav {
+  float: left !important;
+  margin-left: -1%;
   width: 30%;
-  position: relative;
-  right: 3.25rem;
+  position: static;
 }
-
-/* line 75, sass/_header.scss */
-.stuck {
+/* line 82, sass/_header.scss */
+.main-nav .menu-arrow {
+  position: absolute;
+}
+/* line 86, sass/_header.scss */
+.main-nav.stuck {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
+/* line 92, sass/_header.scss */
+.main-nav .sub-menu {
+  left: 0;
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all linear 0.75s;
+  transition: all linear 0.75s;
+  opacity: 1;
+  background-color: #fff;
+  padding: 2.5rem 0;
+}
+/* line 103, sass/_header.scss */
+.main-nav .sub-menu.ng-hide {
+  opacity: 0;
+}
+/* line 106, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav {
+  margin-bottom: 1rem;
+}
+/* line 108, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav li {
+  color: #555555;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  height: 1.75rem;
+  text-transform: uppercase;
+}
+/* line 114, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav li:first-child {
+  font-weight: 600;
+}
 
-/* line 2, sass/_footer.scss */
+/* line 1, sass/_footer.scss */
+.footer {
+  background-image: url("../images/bg-footer.jpg");
+  background-repeat: no-repeat;
+}
+/* line 4, sass/_footer.scss */
 .footer .col-md-12 {
   width: 100%;
-  padding: 2rem 3rem 0;
+  padding: 18rem 3rem 0;
 }
-/* line 6, sass/_footer.scss */
+/* line 8, sass/_footer.scss */
 .footer .pull-left {
   float: left !important;
 }
-/* line 9, sass/_footer.scss */
+/* line 11, sass/_footer.scss */
 .footer .footer-column {
   padding: 0 1rem;
   width: 18%;
 }
-/* line 13, sass/_footer.scss */
+/* line 15, sass/_footer.scss */
 .footer .indent-margin {
   margin: 0;
 }
-/* line 17, sass/_footer.scss */
+/* line 19, sass/_footer.scss */
 .footer .child-li li {
   cursor: pointer;
   font-size: 0.65rem;
@@ -181,27 +227,29 @@ p {
   line-height: 1.7rem;
   color: #666666;
 }
-/* line 25, sass/_footer.scss */
+/* line 27, sass/_footer.scss */
 .footer .font-footer-bold {
   font-size: 0.68rem;
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
-/* line 30, sass/_footer.scss */
+/* line 32, sass/_footer.scss */
 .footer .padding-bottom-15 {
   padding-bottom: 1.5rem;
 }
-/* line 33, sass/_footer.scss */
+/* line 35, sass/_footer.scss */
 .footer .footer-bar {
   border-top: 0.15rem solid #CCCCCC;
   padding-top: 3rem;
 }
-/* line 37, sass/_footer.scss */
+/* line 39, sass/_footer.scss */
 .footer .footer-terms_condition {
   color: #666666;
   font-size: 0.65rem;
   letter-spacing: 0.05rem;
   text-align: center;
+  padding-bottom: 1.1rem !important;
+  padding-top: 3rem !important;
 }
 
 /* line 3, sass/_homepage.scss */
