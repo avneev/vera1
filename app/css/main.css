@@ -8,25 +8,42 @@ body {
   font-family: "BrandonGrotesque";
   font-size: 0.8rem;
   color: #3B3B3B;
-  height: 70rem;
 }
 
-/* line 12, sass/_core.scss */
+/* line 11, sass/_core.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "BrandonGrotesque";
+  margin: 0;
+}
+
+/* line 15, sass/_core.scss */
 .row {
   max-width: 80rem;
 }
 
-/* line 15, sass/_core.scss */
+/* line 18, sass/_core.scss */
+.small-row {
+  max-width: 63.8rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 23, sass/_core.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 26, sass/_core.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 19, sass/_core.scss */
+/* line 30, sass/_core.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 23, sass/_core.scss */
+/* line 34, sass/_core.scss */
 .silver-border {
   border-bottom: 1px solid #CCCCCC;
 }
@@ -131,4 +148,51 @@ ul li {
   transform: translateX(-50%);
 }
 
-@impot "homepage";
+/* line 2, sass/_homepage.scss */
+.live-colorful p, .live-colorful .border-bottom {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+/* line 6, sass/_homepage.scss */
+.live-colorful span {
+  background-color: #fff;
+  z-index: 1;
+  font-size: 90%;
+  padding: 0 2rem;
+}
+/* line 12, sass/_homepage.scss */
+.live-colorful .border-bottom {
+  width: 97%;
+  position: absolute;
+  left: 0;
+  top: -19px;
+  border-bottom: 1px solid #DCDCDC;
+  z-index: -1;
+}
+
+/* line 21, sass/_homepage.scss */
+.moon-blooms {
+  padding: 4rem 0 3rem;
+}
+
+/* line 24, sass/_homepage.scss */
+.threads-of-inspirations {
+  padding: 0 1rem 2rem;
+}
+
+/* line 28, sass/_homepage.scss */
+.moon-blooms-designer h3 {
+  font-size: 113%;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+/* line 33, sass/_homepage.scss */
+.moon-blooms-designer h2 {
+  font-size: 180%;
+  text-align: center;
+}
+
+/* line 38, sass/_homepage.scss */
+.featured-fan {
+  background-color: #F4F2E5;
+}
