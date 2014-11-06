@@ -27,6 +27,11 @@ ul li {
 }
 
 /* line 23, sass/_core.scss */
+.full-width {
+  max-width: 100%;
+}
+
+/* line 27, sass/_core.scss */
 .silver-border {
   border-bottom: 1px solid #CCCCCC;
 }
@@ -89,34 +94,82 @@ ul li {
 }
 
 /* line 51, sass/_header.scss */
-.nav-items {
-  margin: 4rem 0 1.3rem;
+.main-nav {
+  position: relative;
+  background-color: #FFFFFF;
+  z-index: 10;
 }
-/* line 53, sass/_header.scss */
-.nav-items li {
-  color: #3B3B3B;
+/* line 55, sass/_header.scss */
+.main-nav .nav-items {
+  margin: 4rem 0 1.35rem;
+}
+/* line 57, sass/_header.scss */
+.main-nav .nav-items li {
   display: inline-block;
   margin-right: 2rem;
   text-transform: uppercase;
 }
-
-/* line 60, sass/_header.scss */
-.left-nav {
+/* line 61, sass/_header.scss */
+.main-nav .nav-items li a {
+  color: #3B3B3B;
+}
+/* line 66, sass/_header.scss */
+.main-nav .left-nav {
   width: 30%;
   margin-left: 3rem;
+  position: static;
 }
-
-/* line 64, sass/_header.scss */
-.right-nav {
+/* line 71, sass/_header.scss */
+.main-nav .right-nav {
+  float: left !important;
+  margin-left: -1%;
   width: 30%;
-  position: relative;
-  right: 3.25rem;
+  position: static;
 }
-
-/* line 70, sass/_header.scss */
-.stuck {
+/* line 76, sass/_header.scss */
+.main-nav .right-nav .nav-items {
+  margin-bottom: 1.25rem;
+}
+/* line 81, sass/_header.scss */
+.main-nav .menu-arrow {
+  left: 58.25rem;
+  position: absolute;
+  top: 6.15rem;
+}
+/* line 87, sass/_header.scss */
+.main-nav .stuck {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+/* line 93, sass/_header.scss */
+.main-nav .sub-menu {
+  left: 0;
+  position: absolute;
+  top: 9.5rem;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all linear 0.75s;
+  transition: all linear 0.75s;
+  opacity: 1;
+}
+/* line 102, sass/_header.scss */
+.main-nav .sub-menu.ng-hide {
+  opacity: 0;
+}
+/* line 105, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav {
+  margin-bottom: 1rem;
+}
+/* line 107, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav li {
+  color: #555555;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+/* line 112, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav li:first-child {
+  font-weight: 600;
 }

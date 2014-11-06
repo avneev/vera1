@@ -48,28 +48,71 @@
  	}
  }
 
- .nav-items {
- 	margin: 4rem 0 1.3rem;
- 	li {
- 		color: $base-font-color;
- 		display: inline-block;
- 		margin-right: 2rem;
- 		text-transform: $text-uppercase;
- 	}
- }
- .left-nav {
- 	width: 30%;
- 	margin-left: 3rem;
- }
- .right-nav {
- 	width: 30%;
- 	position: relative; 
- 	right: 3.25rem;
- }
+.main-nav {
+	position: relative;
+	background-color: $white;
+	z-index: 10;
+	.nav-items {
+	 	margin: 4rem 0 1.35rem;
+	 	li {
+	 		display: inline-block;
+	 		margin-right: 2rem;
+	 		text-transform: $text-uppercase;
+	 		a {
+	 			color: $base-font-color;
+	 		}
+	 	}
+	 }
+	 .left-nav {
+	 	width: 30%;
+	 	margin-left: 3rem;
+	 	position: static;
+	 }
+	 .right-nav {
+	 	float: left !important;
+	    margin-left: -1%;
+	    width: 30%;
+	    position: static;
+	    .nav-items {
+	    	margin-bottom : 1.25rem
+	    }
+	 }
 
- .stuck{
- 	position:fixed;
- 	top:0;
- 	left: 50%;
- 	transform: translateX(-50%);;
- }
+	 .menu-arrow {
+	    left: 58.25rem;
+	    position: absolute;
+	    top: 6.15rem;
+	}
+
+	 .stuck{
+	 	position:fixed;
+	 	top:0;
+	 	left: 50%;
+	 	transform: translateX(-50%);;
+	 }
+	 .sub-menu {
+	 	left: 0;
+	    position: absolute;
+	    top: 9.5rem;
+	    width: 100%;
+	    z-index: -1;
+	    -webkit-transition:all linear 0.75s;
+	    transition:all linear 0.75s;
+	    opacity: 1;
+	    &.ng-hide {
+		    opacity:0;
+		}
+	 	.sub-menu-nav {
+	 		margin-bottom: 1rem;
+			li {
+			    color: $grey;
+			    font-size: 0.75rem;
+			    line-height: 1.75rem;
+			    text-transform: $text-uppercase;
+			    &:first-child {
+					font-weight: 600;
+				}
+			}
+		}
+	 }
+}
