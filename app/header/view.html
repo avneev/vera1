@@ -1,21 +1,22 @@
+<div class="full-width header-wrapper">
 <div class="row header">
 	<div class="large-7 columns header__left-column">
 		<span class="text-pink bold">Free shipping </span> <span class="verticle-line">|</span>  on orders of $75 or more <span>U.s only</span>
 	</div>
 	<div class="large-5 columns  header__right-column">
-		<ul class="small-4 large-4 columns header__icon-list">
+		<ul class="large-3 columns header__icon-list">
 			<li><a href="#" class="header__icon icon--1"><img src="images/icon_profile.png"></a></li>
 			<li><a href="#" class="header__icon icon--2"><img src="images/icon_fav.png"></a></li>
 			<li><a href="#" class="header__icon icon--3"><img src="images/icon_bag.png"></a></li>
 		</ul>
-		<div class="large-6 columns header__right-text"><img src="images/icon_location.png"/>Your store: <span>835 N MICHIGAN AVE</span></div>
+		<div class="large-5 columns header__right-text"><img src="images/icon_location.png"/>Your store: <span>835 N MICHIGAN AVE</span></div>
 	</div>
 </div>
-
+</div>
 <div class="row main-nav sticky-nav" sticky>
 	<div class="large-5 columns silver-border no-padding left-nav">
 		<ul class="nav-items">
-			<li ng-repeat = "item in navleft" ng-mouseover="showSubMenu(item)"  ng-mouseleave="hideSubMenu(item)">
+			<li class="pulse2" ng-repeat = "item in navleft" ng-mouseover="showSubMenu(item)"  ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
 				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
 				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
@@ -24,13 +25,13 @@
 			</li>
 		</ul>
 	</div>
-	<div class="large-4 columns no-padding">
-		<img src="images/logo.png"/>
+	<div class="large-4 columns no-padding img-margin pulse2">
+		<img class="sticky-specific" src="images/logo.png"/>
 	</div>
 	<div class="large-4 columns silver-border no-padding right-nav">
 
 		<ul class="nav-items">
-			<li ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
+			<li class="pulse2" ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
 				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
 				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
