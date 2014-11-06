@@ -553,5 +553,6 @@ p {
 }
 /* line 30, sass/_product_listing.scss */
 .filter-body .category-image {
-  margin-right: .25rem;
+  margin-right: .5rem;
+  cursor: pointer;
 }
