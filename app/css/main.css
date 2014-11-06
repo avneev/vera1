@@ -31,24 +31,31 @@ h1, h2, h3, h4, h5, h6 {
 /* line 23, sass/_core.scss */
 .full-width {
   width: 100%;
+  margin: 0;
+  max-width: 100%;
 }
 
-/* line 26, sass/_core.scss */
+/* line 28, sass/_core.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 30, sass/_core.scss */
+/* line 31, sass/_core.scss */
+p {
+  line-height: 1.4rem;
+}
+
+/* line 35, sass/_core.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 34, sass/_core.scss */
+/* line 39, sass/_core.scss */
 .full-width {
   max-width: 100%;
 }
 
-/* line 38, sass/_core.scss */
+/* line 43, sass/_core.scss */
 .silver-border {
   border-bottom: 1px solid #CCCCCC;
 }
@@ -245,19 +252,19 @@ ul li {
   padding-top: 3rem !important;
 }
 
-/* line 2, sass/_homepage.scss */
+/* line 3, sass/_homepage.scss */
 .live-colorful p, .live-colorful .border-bottom {
   margin: 2rem 1rem;
   text-align: center;
 }
-/* line 6, sass/_homepage.scss */
+/* line 7, sass/_homepage.scss */
 .live-colorful span {
   background-color: #fff;
   z-index: 1;
   font-size: 90%;
   padding: 0 2rem;
 }
-/* line 12, sass/_homepage.scss */
+/* line 13, sass/_homepage.scss */
 .live-colorful .border-bottom {
   width: 97%;
   position: absolute;
@@ -267,29 +274,181 @@ ul li {
   z-index: -1;
 }
 
-/* line 21, sass/_homepage.scss */
+/* line 22, sass/_homepage.scss */
 .moon-blooms {
   padding: 4rem 0 3rem;
 }
 
-/* line 24, sass/_homepage.scss */
+/* line 25, sass/_homepage.scss */
 .threads-of-inspirations {
   padding: 0 1rem 2rem;
 }
 
-/* line 28, sass/_homepage.scss */
+/* line 29, sass/_homepage.scss */
 .moon-blooms-designer h3 {
   font-size: 113%;
   text-align: center;
   margin: 1rem 0 0;
 }
-/* line 33, sass/_homepage.scss */
+/* line 34, sass/_homepage.scss */
 .moon-blooms-designer h2 {
   font-size: 180%;
   text-align: center;
 }
 
-/* line 38, sass/_homepage.scss */
+/* line 39, sass/_homepage.scss */
 .featured-fan {
   background-color: #F4F2E5;
+  margin: 3rem 0 0;
+  text-align: center;
+}
+/* line 43, sass/_homepage.scss */
+.featured-fan__profile {
+  margin: 6rem 0 0 3rem;
+}
+/* line 45, sass/_homepage.scss */
+.featured-fan__profile img {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 49, sass/_homepage.scss */
+.featured-fan__desc {
+  margin: 2.5rem 0 0;
+}
+/* line 51, sass/_homepage.scss */
+.featured-fan__desc h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+/* line 55, sass/_homepage.scss */
+.featured-fan__desc h1 {
+  font-size: 3.5rem;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto 1rem;
+  width: 60%;
+}
+/* line 61, sass/_homepage.scss */
+.featured-fan__desc p {
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+}
+
+/* line 67, sass/_homepage.scss */
+.top-3-things {
+  background-color: #F9F9F7;
+  text-align: center;
+}
+/* line 70, sass/_homepage.scss */
+.top-3-things h1 {
+  font-size: 1.3rem;
+}
+/* line 73, sass/_homepage.scss */
+.top-3-things p {
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 0 3.5rem;
+}
+/* line 77, sass/_homepage.scss */
+.top-3-things p:before {
+  content: "\2018\2018";
+}
+/* line 80, sass/_homepage.scss */
+.top-3-things p:after {
+  content: "\2019\2019";
+}
+/* line 84, sass/_homepage.scss */
+.top-3-things__text {
+  background-color: #F4F2E5;
+  height: 18.5rem;
+  padding: 6rem 0 0 !important;
+  width: 23.8%;
+}
+/* line 89, sass/_homepage.scss */
+.top-3-things__text span {
+  display: block;
+  font-size: 3rem;
+  padding: 0 2rem;
+}
+/* line 95, sass/_homepage.scss */
+.top-3-things--second {
+  margin-right: 0.9rem;
+}
+/* line 98, sass/_homepage.scss */
+.top-3-things .large-3 {
+  padding-top: 3rem;
+}
+
+/* line 102, sass/_homepage.scss */
+.vera-girls {
+  margin: 4rem 0 0;
+}
+/* line 104, sass/_homepage.scss */
+.vera-girls .large-3 {
+  border-right: 1px dotted #CCCCCC;
+  height: 12.7rem;
+}
+/* line 109, sass/_homepage.scss */
+.vera-girls__text p {
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  padding: 2rem 2rem 0;
+  text-align: right;
+  line-height: 2.8rem;
+}
+/* line 118, sass/_homepage.scss */
+.vera-girls__product p {
+  display: inline-block;
+}
+/* line 121, sass/_homepage.scss */
+.vera-girls__product__profile-img {
+  width: 25px;
+  height: 25px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  margin-right: 1rem;
+  vertical-align: top;
+}
+/* line 129, sass/_homepage.scss */
+.vera-girls__product__info--name {
+  display: inline-block;
+  vertical-align: middle;
+  width: 62%;
+}
+/* line 133, sass/_homepage.scss */
+.vera-girls__product__info--name h1 {
+  font-size: 1.5rem;
+}
+/* line 136, sass/_homepage.scss */
+.vera-girls__product__info--name span {
+  font-size: 1rem;
+}
+/* line 142, sass/_homepage.scss */
+.vera-girls__product__info h2 {
+  font-size: 1.1rem;
+}
+/* line 145, sass/_homepage.scss */
+.vera-girls__product__info--bottom {
+  margin: .7rem 0 0;
+}
+/* line 151, sass/_homepage.scss */
+.vera-girls__profile-info .pink-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+/* line 155, sass/_homepage.scss */
+.vera-girls__profile-info span {
+  font-size: 0.9rem;
+  display: block;
+  line-height: 1rem;
+}
+/* line 161, sass/_homepage.scss */
+.vera-girls--last {
+  border-right: 0;
+}
+
+/* line 165, sass/_homepage.scss */
+.pink-text {
+  color: #DD1264;
 }

@@ -1,3 +1,4 @@
+@import "compass/css3";
 .live-colorful {
 	p, .border-bottom {
 		margin: 2rem 1rem;
@@ -37,4 +38,130 @@
 }
 .featured-fan {
 	background-color: $gray-shade;
+	margin: 3rem 0 0;
+	text-align: center;
+	&__profile {
+		margin: 6rem 0 0 3rem;
+		img {
+			@include border-radius(100%);
+		}
+	}
+	&__desc {
+		margin: 2.5rem 0 0;
+		h2 {
+			text-transform: uppercase;
+			font-size: 1rem;
+		}
+		h1 {
+			font-size: 3.5rem;
+			border-bottom: 1px solid #ccc;
+			margin: 0 auto 1rem;
+			width: 60%;
+		}
+		p {
+			font-size: 1.1rem;
+			margin: 0 0.5rem;
+		}
+	}
+}
+.top-3-things {
+	background-color: $lighter-gray;
+	text-align: center;
+	h1 {
+		font-size: 1.3rem;
+	}
+	p {
+		font-size: 1.2rem;
+		font-style: italic;
+		padding: 0 3.5rem;
+		&:before {
+			content:"\2018\2018";
+		}
+		&:after {
+			content:"\2019\2019";
+		}
+	}
+	&__text {
+		background-color: $gray-shade;
+		height: 18.5rem;
+		padding: 6rem 0 0 !important;
+		width: 23.8%;
+		span {
+			display: block;
+			font-size: 3rem;
+			padding: 0 2rem;
+		}
+	}
+	&--second {
+		margin-right: 0.9rem;
+	}
+	.large-3 {
+		padding-top: 3rem;
+	}
+}
+.vera-girls {
+	margin: 4rem 0 0;
+	.large-3 {
+		border-right: 1px dotted $silver;
+		height: 12.7rem;
+	}
+	&__text {
+		p {
+			font-size: 2.5rem;
+			line-height: 2.8rem;
+			padding: 2rem 2rem 0;
+			text-align: right;
+			line-height: $base-line-height*2;
+		}
+	}
+	&__product {
+		p {
+			display: inline-block;
+		}
+		&__profile-img {
+			width: 25px;
+			height: 25px;
+			@include border-radius(100%);
+			margin-right: 1rem;
+			vertical-align: top;
+		}
+		&__info {
+			&--name {
+				display: inline-block;
+				vertical-align: middle;
+				width: 62%;
+				h1 {
+					font-size: 1.5rem;
+				}
+				span {
+					font-size: 1rem;
+				}
+			}
+
+
+			h2 {
+				font-size: 1.1rem;
+			}
+			&--bottom {
+				margin: .7rem 0 0;
+			}
+		}
+	}
+	&__profile-info {
+		.pink-text {
+			font-size: 1.1rem;
+			font-weight: bold;
+		}
+		span {
+			font-size: 0.9rem;
+			display: block;
+			line-height: 1rem;
+		}
+	}
+	&--last {
+		border-right:0;
+	}
+}
+.pink-text {
+	color:$color-pink;
 }
