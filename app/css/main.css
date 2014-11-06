@@ -189,25 +189,30 @@ ul li {
   font-weight: 600;
 }
 
-/* line 2, sass/_footer.scss */
+/* line 1, sass/_footer.scss */
+.footer {
+  background-image: url("../images/bg-footer.jpg");
+  background-repeat: no-repeat;
+}
+/* line 4, sass/_footer.scss */
 .footer .col-md-12 {
   width: 100%;
-  padding: 2rem 3rem 0;
+  padding: 18rem 3rem 0;
 }
-/* line 6, sass/_footer.scss */
+/* line 8, sass/_footer.scss */
 .footer .pull-left {
   float: left !important;
 }
-/* line 9, sass/_footer.scss */
+/* line 11, sass/_footer.scss */
 .footer .footer-column {
   padding: 0 1rem;
   width: 18%;
 }
-/* line 13, sass/_footer.scss */
+/* line 15, sass/_footer.scss */
 .footer .indent-margin {
   margin: 0;
 }
-/* line 17, sass/_footer.scss */
+/* line 19, sass/_footer.scss */
 .footer .child-li li {
   cursor: pointer;
   font-size: 0.65rem;
@@ -215,27 +220,29 @@ ul li {
   line-height: 1.7rem;
   color: #666666;
 }
-/* line 25, sass/_footer.scss */
+/* line 27, sass/_footer.scss */
 .footer .font-footer-bold {
   font-size: 0.68rem;
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
-/* line 30, sass/_footer.scss */
+/* line 32, sass/_footer.scss */
 .footer .padding-bottom-15 {
   padding-bottom: 1.5rem;
 }
-/* line 33, sass/_footer.scss */
+/* line 35, sass/_footer.scss */
 .footer .footer-bar {
   border-top: 0.15rem solid #CCCCCC;
   padding-top: 3rem;
 }
-/* line 37, sass/_footer.scss */
+/* line 39, sass/_footer.scss */
 .footer .footer-terms_condition {
   color: #666666;
   font-size: 0.65rem;
   letter-spacing: 0.05rem;
   text-align: center;
+  padding-bottom: 1.1rem !important;
+  padding-top: 3rem !important;
 }
 
 /* line 2, sass/_homepage.scss */
