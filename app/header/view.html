@@ -15,7 +15,7 @@
 </div>
 <div class="row main-nav sticky-nav" sticky>
 	<div class="large-5 columns silver-border no-padding left-nav">
-		<ul class="nav-items">
+		<ul ng-class="{'stuck-shown': fixedSubmenu}" class="nav-items">
 			<li class="pulse2" ng-repeat = "item in navleft" ng-mouseover="showSubMenu(item)"  ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
 				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
@@ -25,12 +25,13 @@
 			</li>
 		</ul>
 	</div>
-	<div class="large-4 columns no-padding img-margin pulse2">
+	<div class="large-4 columns no-padding img-margin">
 		<img class="sticky-specific" src="images/logo.png"/>
+		<img class="sticky-logo pulse2" src="images/logo-sticky.png"/>
 	</div>
 	<div class="large-4 columns silver-border no-padding right-nav">
 
-		<ul class="nav-items">
+		<ul ng-class="{'stuck-shown': fixedSubmenu}" class="nav-items" >
 			<li class="pulse2" ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
 				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
