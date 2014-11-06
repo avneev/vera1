@@ -105,7 +105,7 @@
 	 	left: 50%;
 	 	transform: translateX(-50%);
 	 	.nav-items{
-	 		margin: 5rem 0 0!important;
+	 		margin: 2rem 0 0!important;
 	 		opacity: 0.5;
 	 		transition: margin 2s;
 	 		li{
@@ -125,6 +125,8 @@
 	 	.sticky-logo  {
 	 		display: block;
 	 		opacity: 1;
+	 		height: 60px;
+			width: 300px;
 	 	}
 	 	.img-margin {
 	 		transition: margin-top 2s;
