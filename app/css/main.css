@@ -8,24 +8,25 @@ body {
   font-family: "BrandonGrotesque";
   font-size: 0.8rem;
   color: #3B3B3B;
+  height: 70rem;
 }
 
-/* line 11, sass/_core.scss */
+/* line 12, sass/_core.scss */
 .row {
   max-width: 80rem;
 }
 
-/* line 14, sass/_core.scss */
+/* line 15, sass/_core.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 18, sass/_core.scss */
+/* line 19, sass/_core.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 22, sass/_core.scss */
+/* line 23, sass/_core.scss */
 .silver-border {
   border-bottom: 1px solid #CCCCCC;
 }
@@ -109,4 +110,61 @@ ul li {
   width: 30%;
   position: relative;
   right: 3.25rem;
+}
+
+/* line 69, sass/_header.scss */
+.stuck {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 2, sass/_footer.scss */
+.footer .col-md-12 {
+  width: 100%;
+  padding: 2rem 3rem 0;
+}
+/* line 6, sass/_footer.scss */
+.footer .pull-left {
+  float: left !important;
+}
+/* line 9, sass/_footer.scss */
+.footer .footer-column {
+  padding: 0 1rem;
+  width: 18%;
+}
+/* line 13, sass/_footer.scss */
+.footer .indent-margin {
+  margin: 0;
+}
+/* line 17, sass/_footer.scss */
+.footer .child-li li {
+  cursor: pointer;
+  font-size: 0.65rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+  color: #666666;
+}
+/* line 25, sass/_footer.scss */
+.footer .font-footer-bold {
+  font-size: 0.68rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+/* line 30, sass/_footer.scss */
+.footer .padding-bottom-15 {
+  padding-bottom: 1.5rem;
+}
+/* line 33, sass/_footer.scss */
+.footer .footer-bar {
+  border-top: 0.15rem solid #CCCCCC;
+  padding-top: 3rem;
+}
+/* line 37, sass/_footer.scss */
+.footer .footer-terms_condition {
+  color: #666666;
+  font-size: 0.65rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
 }
