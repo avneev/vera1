@@ -30,4 +30,14 @@ angular.module('myApp.product-listing', ['ngRoute'])
 		item.active = true;
 	};
 
+	xhrFactory.getList('product-listing.json').then(
+		function(response) {
+			$scope.productListing = response;
+			console.log($scope.productListing)
+		},
+		function(error) {
+			console.log(error);
+		}
+	)
+
 }]);
