@@ -59,7 +59,9 @@
             }
         ],
         "banner1": "images/menu/menu_banner1.jpg",
-        "banner2": "images/menu/menu_banner2.jpg"
+        "banner2": "images/menu/menu_banner2.jpg",
+        "top": 5.8,
+        "left": 3.45
     },
     {
         "id": 1,
@@ -108,7 +110,9 @@
         ],
         "banner1": "images/menu/menu-bag-1.jpg",
         "banner2": "images/menu/menu-bag-2.jpg",
-        "banner3": "images/menu/menu-bag-3.jpg"
+        "banner3": "images/menu/menu-bag-3.jpg",
+        "top": 5.8,
+        "left": 7.75
     },
     {
         "id": 2,
@@ -155,7 +159,9 @@
             }
         ],
         "banner1": "images/menu/menu_banner1.jpg",
-        "banner2": "images/menu/menu_banner2.jpg"
+        "banner2": "images/menu/menu_banner2.jpg",
+        "top": 5.8,
+        "left": 12.85
     },
     {
         "id": 3,
@@ -202,6 +208,8 @@
             }
         ],
         "banner1": "images/menu/menu_banner1.jpg",
-        "banner2": "images/menu/menu_banner2.jpg"
+        "banner2": "images/menu/menu_banner2.jpg",
+        "top": 5.8,
+        "left": 20
     }
 ]

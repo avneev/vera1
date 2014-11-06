@@ -53,11 +53,12 @@
 	background-color: $white;
 	z-index: 10;
 	.nav-items {
-	 	margin: 4rem 0 1.35rem;
+	 	margin: 4rem 0 0;
 	 	li {
 	 		display: inline-block;
 	 		margin-right: 2rem;
 	 		text-transform: $text-uppercase;
+	 		height: 2.95rem;
 	 		a {
 	 			color: $base-font-color;
 	 		}
@@ -74,17 +75,15 @@
 	    width: 30%;
 	    position: static;
 	    .nav-items {
-	    	margin-bottom : 1.25rem
+	    	
 	    }
 	 }
 
 	 .menu-arrow {
-	    left: 58.25rem;
 	    position: absolute;
-	    top: 6.15rem;
 	}
 
-	 .stuck{
+	 &.stuck{
 	 	position:fixed;
 	 	top:0;
 	 	left: 50%;
@@ -93,12 +92,14 @@
 	 .sub-menu {
 	 	left: 0;
 	    position: absolute;
-	    top: 9.5rem;
+	    top: 6rem;
 	    width: 100%;
 	    z-index: -1;
 	    -webkit-transition:all linear 0.75s;
 	    transition:all linear 0.75s;
 	    opacity: 1;
+	    background-color: $white;
+	    padding: 2.5rem 0;
 	    &.ng-hide {
 		    opacity:0;
 		}
@@ -108,6 +109,7 @@
 			    color: $grey;
 			    font-size: 0.75rem;
 			    line-height: 1.75rem;
+			    height: 1.75rem;
 			    text-transform: $text-uppercase;
 			    &:first-child {
 					font-weight: 600;
