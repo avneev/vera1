@@ -19,12 +19,15 @@ angular.module('myApp.header', [])
 			console.log(error);
 		}
 	)
-
+	$scope.fixedSubmenu = false;
 	$scope.showSubMenu = function (item){
 		item.subMenuVisible = true;
+		$scope.fixedSubmenu = true;
+		console.log("I am shown"+$scope.fixedSubmenu);
 	};
 	$scope.hideSubMenu = function (item){
 		item.subMenuVisible = false;
+		$scope.fixedSubmenu = false;
 	}
 	
 
