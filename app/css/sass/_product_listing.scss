@@ -70,9 +70,15 @@
 	.padding-bottom-4{
 		padding-bottom: 0.4rem;
 	}
+	.font-size-65{
+		font-size: 0.65rem;
+	}
 	.product-detail{
 		font-size: 0.7rem;
 	    font-weight: bold;  
+	}
+	.text-transform-upper{
+		text-transform: uppercase;
 	}
 	.padding-productBlock{
 		padding-bottom: 2rem;
@@ -99,6 +105,37 @@
 		position: absolute; 
 		left: 7rem; 
 		opacity: 0;
+	}
+}
+.product-listingHeader{
+	padding: 1rem 1.8rem;
+	letter-spacing: 0.02rem;
+	font-size: 0.7rem;
+	.pull-left{
+		float: left !important;
+	}
+	.pull-right{
+		float: right !important;
+	}
+	span{
+		vertical-align: middle;
+	}
+	.selected-filter{
+		color: $silver;
+    	padding-left: 1rem;
+	}
+	.filter-sort{
+		
+		span{
+			color: $silver;
+			padding-left: 1rem;
+			a{
+				color: $silver;
+			}
+		}
+		.selected{
+			color:$grey !important;
+		}
 	}
 }
 
