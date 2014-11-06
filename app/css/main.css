@@ -197,18 +197,19 @@ p {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  border-bottom: 1px solid #CCCCCC;
 }
-/* line 107, sass/_header.scss */
+/* line 108, sass/_header.scss */
 .main-nav.stuck .nav-items {
   margin: 2rem 0 0 !important;
   opacity: 0.5;
   transition: margin 2s;
 }
-/* line 111, sass/_header.scss */
+/* line 112, sass/_header.scss */
 .main-nav.stuck .nav-items li {
   font-size: 1rem;
 }
-/* line 114, sass/_header.scss */
+/* line 115, sass/_header.scss */
 .main-nav.stuck .nav-items .pulse2 {
   -webkit-animation-name: 'pulse_animation';
   -webkit-animation-duration: 5000ms;
@@ -216,30 +217,30 @@ p {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
 }
-/* line 121, sass/_header.scss */
+/* line 122, sass/_header.scss */
 .main-nav.stuck .nav-items.stuck-shown {
   height: 23rem;
 }
-/* line 125, sass/_header.scss */
+/* line 126, sass/_header.scss */
 .main-nav.stuck .sticky-logo {
   display: block;
   opacity: 1;
   height: 60px;
   width: 300px;
 }
-/* line 131, sass/_header.scss */
+/* line 132, sass/_header.scss */
 .main-nav.stuck .img-margin {
   transition: margin-top 2s;
   margin-top: 0.402rem;
 }
-/* line 135, sass/_header.scss */
+/* line 136, sass/_header.scss */
 .main-nav.stuck .sticky-specific {
   height: 5.68rem;
   width: 25.8rem;
   display: none;
   opacity: 0;
 }
-/* line 140, sass/_header.scss */
+/* line 141, sass/_header.scss */
 .main-nav.stuck .sub-menu {
   z-index: 9999 !important;
   background-color: #fff !important;
@@ -247,15 +248,15 @@ p {
   height: 20rem;
   top: 7rem;
 }
-/* line 147, sass/_header.scss */
+/* line 148, sass/_header.scss */
 .main-nav.stuck .right-nav, .main-nav.stuck .left-nav {
   border-bottom: 0;
 }
-/* line 150, sass/_header.scss */
+/* line 151, sass/_header.scss */
 .main-nav.stuck .menu-arrow {
   display: none;
 }
-/* line 154, sass/_header.scss */
+/* line 155, sass/_header.scss */
 .main-nav .sub-menu {
   left: 0;
   position: absolute;
@@ -268,15 +269,15 @@ p {
   background-color: #FFFFFF;
   padding: 2.5rem 0;
 }
-/* line 165, sass/_header.scss */
+/* line 166, sass/_header.scss */
 .main-nav .sub-menu.ng-hide {
   opacity: 0;
 }
-/* line 168, sass/_header.scss */
+/* line 169, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav {
   margin-bottom: 1rem;
 }
-/* line 170, sass/_header.scss */
+/* line 171, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li {
   color: #555555;
   font-size: 0.75rem;
@@ -284,7 +285,7 @@ p {
   height: 1.75rem;
   text-transform: uppercase;
 }
-/* line 176, sass/_header.scss */
+/* line 177, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li:first-child {
   font-weight: 600;
 }
@@ -635,38 +636,83 @@ p {
   padding-bottom: 0.4rem;
 }
 /* line 73, sass/_product_listing.scss */
+.product-listing .font-size-65 {
+  font-size: 0.65rem;
+}
+/* line 76, sass/_product_listing.scss */
 .product-listing .product-detail {
   font-size: 0.7rem;
   font-weight: bold;
 }
-/* line 77, sass/_product_listing.scss */
+/* line 80, sass/_product_listing.scss */
+.product-listing .text-transform-upper {
+  text-transform: uppercase;
+}
+/* line 83, sass/_product_listing.scss */
 .product-listing .padding-productBlock {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
-/* line 80, sass/_product_listing.scss */
+/* line 86, sass/_product_listing.scss */
 .product-listing .padding-productBlock:hover {
   cursor: pointer;
   background-color: #F5F5F5;
 }
-/* line 83, sass/_product_listing.scss */
+/* line 89, sass/_product_listing.scss */
 .product-listing .padding-productBlock:hover .productImg {
   margin-top: 45px;
   width: 190px;
 }
-/* line 87, sass/_product_listing.scss */
+/* line 93, sass/_product_listing.scss */
 .product-listing .padding-productBlock:hover .product-rating {
   opacity: 1;
 }
-/* line 92, sass/_product_listing.scss */
+/* line 98, sass/_product_listing.scss */
 .product-listing .padding-productBlock .image-fixed-dimention {
   height: 235px;
   margin: 0 auto;
   width: 235px;
 }
-/* line 98, sass/_product_listing.scss */
+/* line 104, sass/_product_listing.scss */
 .product-listing .product-rating {
   position: absolute;
   left: 7rem;
   opacity: 0;
+}
+
+/* line 110, sass/_product_listing.scss */
+.product-listingHeader {
+  padding: 1rem 1.8rem;
+  letter-spacing: 0.02rem;
+  font-size: 0.7rem;
+}
+/* line 114, sass/_product_listing.scss */
+.product-listingHeader .pull-left {
+  float: left !important;
+}
+/* line 117, sass/_product_listing.scss */
+.product-listingHeader .pull-right {
+  float: right !important;
+}
+/* line 120, sass/_product_listing.scss */
+.product-listingHeader span {
+  vertical-align: middle;
+}
+/* line 123, sass/_product_listing.scss */
+.product-listingHeader .selected-filter {
+  color: #CCCCCC;
+  padding-left: 1rem;
+}
+/* line 129, sass/_product_listing.scss */
+.product-listingHeader .filter-sort span {
+  color: #CCCCCC;
+  padding-left: 1rem;
+}
+/* line 132, sass/_product_listing.scss */
+.product-listingHeader .filter-sort span a {
+  color: #CCCCCC;
+}
+/* line 136, sass/_product_listing.scss */
+.product-listingHeader .filter-sort .selected {
+  color: #555555 !important;
 }
