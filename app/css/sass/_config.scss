@@ -1,5 +1,6 @@
 $base-font-family		   :"BrandonGrotesque";
 $base-font-size			   :0.8rem;
+$base-line-height          :1.4rem;
 $base-font-weight-normal   :normal;
 $base-font-weight-bold     :bold;
 $base-font-color           :#3B3B3B;
@@ -12,9 +13,13 @@ $text-uppercase            :uppercase;
 
 
 
-
 /*Color Set*/
-
+$white                     :#FFFFFF;
 $base                      :#AAAAAA;
+$grey                      :#555555;
 $silver                    :#CCCCCC;
 $white					   :#fff;
+$gray-border               :#DCDCDC;
+$gray-shade				   :#F4F2E5;
+$light-gray                :#8B847A;
+$lighter-gray  			   :#F9F9F7;

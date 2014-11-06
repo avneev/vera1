@@ -4,7 +4,7 @@
  .header {
  	font-size: 95%;
  	padding: 0.5rem 0 0.2rem;
- 	width: 88%;
+ 	width: 95%;
  	&__left-column, &__right-column {
  		text-transform: uppercase;
  		font-size: 85%;
@@ -32,6 +32,7 @@
  		&-list{
  			margin: -.2rem 0 0;
  			float: right;
+ 			padding-right: 0;
  			li {
  				display: inline;
  				padding: 0 3px;
@@ -40,6 +41,7 @@
  	}
  	&__right-text{
  		float: right;
+ 		padding: 0;
  	}
  	.text-pink {
  		color: $color-pink;
@@ -49,71 +51,107 @@
  		}
  	}
  }
-.sticky-nav {
+
+.main-nav {
+	position: relative;
 	background-color: $white;
-	z-index: 9999;
-}
- .nav-items {
- 	margin: 4rem 0 1.3rem;
- 	li {
- 		color: $base-font-color;
- 		display: inline-block;
- 		margin-right: 2rem;
- 		text-transform: $text-uppercase;
- 	}
- 	 
- }
- .left-nav {
- 	width: 30%;
- 	margin-left: 3rem;
- }
- .right-nav {
- 	width: 30%;
- 	position: relative; 
- 	right: 3.25rem;
- }
+	z-index: 10;
+	.nav-items {
+	 	margin: 4rem 0 0;
+	 	li {
+	 		display: inline-block;
+	 		margin-right: 2rem;
+	 		text-transform: $text-uppercase;
+	 		height: 2.95rem;
+	 		a {
+	 			color: $base-font-color;
+	 		}
+	 	}
+	 }
+	 .left-nav {
+	 	width: 30%;
+	 	margin-left: 3rem;
+	 	position: static;
+	 }
+	 .right-nav {
+	 	float: left !important;
+	    margin-left: -1%;
+	    width: 30%;
+	    position: static;
+	    .nav-items {
+	    	
+	    }
+	 }
 
-
- .img-margin{
- 	margin-top: -0.02rem;
- }
-
- @-webkit-keyframes pulse_animation {
-	0% { -webkit-transform: scale(1); }
-	30% { -webkit-transform: scale(1); }
-	40% { -webkit-transform: scale(1.08); }
-	50% { -webkit-transform: scale(1); }
-	60% { -webkit-transform: scale(1); }
-	70% { -webkit-transform: scale(1.05); }
-	80% { -webkit-transform: scale(1); }
-	100% { -webkit-transform: scale(1); }
-}
- .stuck{
- 	position:fixed;
- 	top:0;
- 	left: 50%;
- 	transform: translateX(-50%);
- 	.nav-items{
- 		margin: 1.3rem 0 !important;
- 		opacity: 0.5;
- 		transition: margin 2s;
- 		li{
- 			font-size: 1rem;
- 		}
- 		.pulse2 {
-			-webkit-animation-name: 'pulse_animation';
-			-webkit-animation-duration: 5000ms;
-			-webkit-transform-origin:70% 70%;
-			-webkit-animation-iteration-count: 1;
-			-webkit-animation-timing-function: linear;
-		}
- 	}
- 	.img-margin {
- 		transition: margin-top 2s;
-	    margin-top: 0.402rem;
+	 .menu-arrow {
+	    position: absolute;
 	}
- 	.sticky-specific{
- 		height: 5.68rem;
-    	width: 25.8rem;
- 	}
- }
+	 @-webkit-keyframes pulse_animation {
+		0% { -webkit-transform: scale(1); }
+		30% { -webkit-transform: scale(1); }
+		40% { -webkit-transform: scale(1.08); }
+		50% { -webkit-transform: scale(1); }
+		60% { -webkit-transform: scale(1); }
+		70% { -webkit-transform: scale(1.05); }
+		80% { -webkit-transform: scale(1); }
+		100% { -webkit-transform: scale(1); }
+	}
+	 &.stuck{
+	 	position:fixed;
+	 	top:0;
+	 	left: 50%;
+	 	transform: translateX(-50%);
+	 	.nav-items{
+	 		margin: 1.3rem 0 !important;
+	 		opacity: 0.5;
+	 		transition: margin 2s;
+	 		li{
+	 			font-size: 1rem;
+	 		}
+	 		.pulse2 {
+				-webkit-animation-name: 'pulse_animation';
+				-webkit-animation-duration: 5000ms;
+				-webkit-transform-origin:70% 70%;
+				-webkit-animation-iteration-count: 1;
+				-webkit-animation-timing-function: linear;
+			}
+	 	}
+	 	.img-margin {
+	 		transition: margin-top 2s;
+		    margin-top: 0.402rem;
+		}
+	 	.sticky-specific{
+	 		height: 5.68rem;
+	    	width: 25.8rem;
+	 	}
+	 }
+	 .sub-menu {
+	 	left: 0;
+	    position: absolute;
+	    top: 6rem;
+	    width: 100%;
+	    z-index: -1;
+	    -webkit-transition:all linear 0.75s;
+	    transition:all linear 0.75s;
+	    opacity: 1;
+	    background-color: $white;
+	    padding: 2.5rem 0;
+	    &.ng-hide {
+		    opacity:0;
+		}
+	 	.sub-menu-nav {
+	 		margin-bottom: 1rem;
+			li {
+			    color: $grey;
+			    font-size: 0.75rem;
+			    line-height: 1.75rem;
+			    height: 1.75rem;
+			    text-transform: $text-uppercase;
+			    &:first-child {
+					font-weight: 600;
+				}
+			}
+		}
+	 }
+}
+
