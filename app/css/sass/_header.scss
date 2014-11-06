@@ -47,21 +47,28 @@
  	}
  }
 
-.nav-items {
-	margin: 4rem 0 1.3rem;
-	li {
-		color: $base-font-color;
-	    display: inline-block;
-	    margin-right: 2rem;
-	    text-transform: $text-uppercase;
-	}
-}
-.left-nav {
-	width: 30%;
-	margin-left: 3rem;
-}
-.right-nav {
-	width: 30%;
-	position: relative; 
-	right: 3.25rem;
-}
+ .nav-items {
+ 	margin: 4rem 0 1.3rem;
+ 	li {
+ 		color: $base-font-color;
+ 		display: inline-block;
+ 		margin-right: 2rem;
+ 		text-transform: $text-uppercase;
+ 	}
+ }
+ .left-nav {
+ 	width: 30%;
+ 	margin-left: 3rem;
+ }
+ .right-nav {
+ 	width: 30%;
+ 	position: relative; 
+ 	right: 3.25rem;
+ }
+
+ .stuck{
+ 	position:fixed;
+ 	top:0;
+ 	left: 50%;
+ 	transform: translateX(-50%);;
+ }
