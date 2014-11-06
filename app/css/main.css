@@ -200,7 +200,7 @@ p {
 }
 /* line 107, sass/_header.scss */
 .main-nav.stuck .nav-items {
-  margin: 5rem 0 0 !important;
+  margin: 2rem 0 0 !important;
   opacity: 0.5;
   transition: margin 2s;
 }
@@ -224,20 +224,22 @@ p {
 .main-nav.stuck .sticky-logo {
   display: block;
   opacity: 1;
+  height: 60px;
+  width: 300px;
 }
-/* line 129, sass/_header.scss */
+/* line 131, sass/_header.scss */
 .main-nav.stuck .img-margin {
   transition: margin-top 2s;
   margin-top: 0.402rem;
 }
-/* line 133, sass/_header.scss */
+/* line 135, sass/_header.scss */
 .main-nav.stuck .sticky-specific {
   height: 5.68rem;
   width: 25.8rem;
   display: none;
   opacity: 0;
 }
-/* line 138, sass/_header.scss */
+/* line 140, sass/_header.scss */
 .main-nav.stuck .sub-menu {
   z-index: 9999 !important;
   background-color: #fff !important;
@@ -245,15 +247,15 @@ p {
   height: 20rem;
   top: 7rem;
 }
-/* line 145, sass/_header.scss */
+/* line 147, sass/_header.scss */
 .main-nav.stuck .right-nav, .main-nav.stuck .left-nav {
   border-bottom: 0;
 }
-/* line 148, sass/_header.scss */
+/* line 150, sass/_header.scss */
 .main-nav.stuck .menu-arrow {
   display: none;
 }
-/* line 152, sass/_header.scss */
+/* line 154, sass/_header.scss */
 .main-nav .sub-menu {
   left: 0;
   position: absolute;
@@ -266,15 +268,15 @@ p {
   background-color: #FFFFFF;
   padding: 2.5rem 0;
 }
-/* line 163, sass/_header.scss */
+/* line 165, sass/_header.scss */
 .main-nav .sub-menu.ng-hide {
   opacity: 0;
 }
-/* line 166, sass/_header.scss */
+/* line 168, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav {
   margin-bottom: 1rem;
 }
-/* line 168, sass/_header.scss */
+/* line 170, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li {
   color: #555555;
   font-size: 0.75rem;
@@ -282,7 +284,7 @@ p {
   height: 1.75rem;
   text-transform: uppercase;
 }
-/* line 174, sass/_header.scss */
+/* line 176, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li:first-child {
   font-weight: 600;
 }
