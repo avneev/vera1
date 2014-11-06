@@ -589,12 +589,31 @@ p {
   margin-right: .5rem;
   cursor: pointer;
 }
+/* line 33, sass/_product_listing.scss */
+.filter-body .category-image.active {
+  border: 2px solid #69D8C7;
+  border-radius: 4px;
+}
+/* line 38, sass/_product_listing.scss */
+.filter-body .added-filter {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  background-color: #CCCCCC;
+  font-size: 0.8rem;
+  margin: 1rem auto 0;
+  padding: 5px;
+  width: 50%;
+}
+/* line 47, sass/_product_listing.scss */
+.filter-body .remove-filter {
+  color: #000000;
+}
 
-/* line 36, sass/_product_listing.scss */
+/* line 53, sass/_product_listing.scss */
 .product-listing .center-align {
   text-align: center;
 }
-/* line 39, sass/_product_listing.scss */
+/* line 56, sass/_product_listing.scss */
 .product-listing .new-tag {
   position: absolute;
   color: #FFFFFF;
@@ -603,49 +622,49 @@ p {
   top: 1rem;
   font-weight: bold;
 }
-/* line 47, sass/_product_listing.scss */
+/* line 64, sass/_product_listing.scss */
 .product-listing .left-align {
   text-align: left;
 }
-/* line 50, sass/_product_listing.scss */
+/* line 67, sass/_product_listing.scss */
 .product-listing .padding-bottom-5 {
   padding-bottom: 0.5rem;
 }
-/* line 53, sass/_product_listing.scss */
+/* line 70, sass/_product_listing.scss */
 .product-listing .padding-bottom-4 {
   padding-bottom: 0.4rem;
 }
-/* line 56, sass/_product_listing.scss */
+/* line 73, sass/_product_listing.scss */
 .product-listing .product-detail {
   font-size: 0.7rem;
   font-weight: bold;
 }
-/* line 60, sass/_product_listing.scss */
+/* line 77, sass/_product_listing.scss */
 .product-listing .padding-productBlock {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
-/* line 63, sass/_product_listing.scss */
+/* line 80, sass/_product_listing.scss */
 .product-listing .padding-productBlock:hover {
   cursor: pointer;
   background-color: #F5F5F5;
 }
-/* line 66, sass/_product_listing.scss */
+/* line 83, sass/_product_listing.scss */
 .product-listing .padding-productBlock:hover .productImg {
   margin-top: 45px;
   width: 190px;
 }
-/* line 70, sass/_product_listing.scss */
+/* line 87, sass/_product_listing.scss */
 .product-listing .padding-productBlock:hover .product-rating {
   opacity: 1;
 }
-/* line 75, sass/_product_listing.scss */
+/* line 92, sass/_product_listing.scss */
 .product-listing .padding-productBlock .image-fixed-dimention {
   height: 235px;
   margin: 0 auto;
   width: 235px;
 }
-/* line 81, sass/_product_listing.scss */
+/* line 98, sass/_product_listing.scss */
 .product-listing .product-rating {
   position: absolute;
   left: 7rem;

@@ -15,7 +15,10 @@
 </div>
 <div class="row filter-body text-center">
 	<div class="filter-body-inner">
-		<img class="category-image" ng-repeat="item in selectedCategory" ng-src="{{item.img}}"/>
+		<div style="display:inline-block; vertical-align:top;" ng-repeat="item in selectedCategory">
+			<img ng-click="addFilter(item)" class="category-image" ng-class="{'active': item.active}" ng-src="{{item.img}}"/>
+			<p ng-show="item.active" class="added-filter">{{item.name}} <a class="remove-filter" href="javascript:void(0);" ng-click="removeFilter(item)">x</a></p>
+		</div>
 	</div>
 </div>
 
