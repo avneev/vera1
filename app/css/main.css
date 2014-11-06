@@ -8,24 +8,25 @@ body {
   font-family: "BrandonGrotesque";
   font-size: 0.8rem;
   color: #3B3B3B;
+  height: 70rem;
 }
 
-/* line 11, sass/_core.scss */
+/* line 12, sass/_core.scss */
 .row {
   max-width: 80rem;
 }
 
-/* line 14, sass/_core.scss */
+/* line 15, sass/_core.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 18, sass/_core.scss */
+/* line 19, sass/_core.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 22, sass/_core.scss */
+/* line 23, sass/_core.scss */
 .silver-border {
   border-bottom: 1px solid #CCCCCC;
 }
@@ -35,62 +36,63 @@ ul li {
   background-color: #F7F7F9;
   font-size: 95%;
   padding: 0.5rem 0 0.2rem;
+  width: 88%;
 }
-/* line 5, sass/_header.scss */
+/* line 6, sass/_header.scss */
 .header__left-column, .header__right-column {
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 10, sass/_header.scss */
+/* line 11, sass/_header.scss */
 .header__right-column span {
   color: #A5A5A5;
 }
-/* line 14, sass/_header.scss */
+/* line 15, sass/_header.scss */
 .header__left-column {
   padding-top: 0.25rem;
   font-size: 104%;
   color: #666666;
 }
-/* line 18, sass/_header.scss */
+/* line 19, sass/_header.scss */
 .header__left-column span {
   font-size: 77%;
 }
-/* line 21, sass/_header.scss */
+/* line 22, sass/_header.scss */
 .header__left-column .verticle-line {
   font-size: 100%;
   height: 2rem;
   padding: .01rem .2rem 0;
   vertical-align: top;
 }
-/* line 29, sass/_header.scss */
+/* line 30, sass/_header.scss */
 .header__icon-list {
   margin: -.2rem 0 0;
   float: right;
 }
-/* line 32, sass/_header.scss */
+/* line 33, sass/_header.scss */
 .header__icon-list li {
   display: inline;
   padding: 0 3px;
 }
-/* line 38, sass/_header.scss */
+/* line 39, sass/_header.scss */
 .header__right-text {
   float: right;
 }
-/* line 41, sass/_header.scss */
+/* line 42, sass/_header.scss */
 .header .text-pink {
   color: #DD1264;
   font-size: inherit;
 }
-/* line 44, sass/_header.scss */
+/* line 45, sass/_header.scss */
 .header .text-pink.bold {
   font-weight: bold;
 }
 
-/* line 50, sass/_header.scss */
+/* line 51, sass/_header.scss */
 .nav-items {
   margin: 4rem 0 1.3rem;
 }
-/* line 52, sass/_header.scss */
+/* line 53, sass/_header.scss */
 .nav-items li {
   color: #3B3B3B;
   display: inline-block;
@@ -98,15 +100,23 @@ ul li {
   text-transform: uppercase;
 }
 
-/* line 59, sass/_header.scss */
+/* line 60, sass/_header.scss */
 .left-nav {
   width: 30%;
   margin-left: 3rem;
 }
 
-/* line 63, sass/_header.scss */
+/* line 64, sass/_header.scss */
 .right-nav {
   width: 30%;
   position: relative;
   right: 3.25rem;
+}
+
+/* line 70, sass/_header.scss */
+.stuck {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
