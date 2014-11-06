@@ -1,0 +1,34 @@
+.filter-head {
+	background-color: $biege-green;
+	.filter-nav {
+		margin-bottom: 0;
+		li {
+		    display: inline-block;
+		    width: 8rem;
+		    text-transform: $text-uppercase;
+		    font-size: .9rem;
+		    line-height: 2.75rem;
+		    a {
+		    	color: $grey;
+		    }
+		    &.active-category {
+			    background: url("../images/plp/tab_arrow.png") no-repeat scroll center bottom;
+			}
+		}
+	}
+	.filter-hint {
+		color: $white;
+		text-transform: $text-uppercase;
+		font-size: .75rem;
+		line-height: 2.75rem;
+		margin-bottom: 0;
+	}
+}
+.filter-body {
+	background-color: $light-grey;
+	padding: 1rem 0 3rem;
+	.category-image {
+		margin-right: .25rem;
+	}
+}
+
