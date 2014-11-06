@@ -1,7 +1,9 @@
  .footer {
+ 	background-image: url("../images/bg-footer.jpg");
+    background-repeat: no-repeat;
  	.col-md-12{
  		width: 100%; 
- 		padding: 2rem 3rem 0;
+ 		padding: 18rem 3rem 0;
  	}
  	.pull-left{
  		float: left !important;
@@ -39,5 +41,7 @@
 	    font-size: 0.65rem;
 	    letter-spacing: 0.05rem;
 	    text-align: center;
+	    padding-bottom: 1.1rem !important;
+    	padding-top: 3rem !important;
  	}
  }
