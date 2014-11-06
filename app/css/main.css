@@ -11,87 +11,132 @@ body {
   height: 70rem;
 }
 
+<<<<<<< HEAD
 /* line 12, sass/_core.scss */
+=======
+/* line 11, sass/_core.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "BrandonGrotesque";
+  margin: 0;
+}
+
+/* line 15, sass/_core.scss */
+>>>>>>> master
 .row {
   max-width: 80rem;
 }
 
+<<<<<<< HEAD
 /* line 15, sass/_core.scss */
+=======
+/* line 18, sass/_core.scss */
+.small-row {
+  max-width: 63.8rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 23, sass/_core.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 26, sass/_core.scss */
+>>>>>>> master
 ul li {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
 /* line 19, sass/_core.scss */
+=======
+/* line 30, sass/_core.scss */
+>>>>>>> master
 .no-padding {
   padding: 0;
 }
 
+<<<<<<< HEAD
 /* line 23, sass/_core.scss */
+=======
+/* line 34, sass/_core.scss */
+>>>>>>> master
 .silver-border {
   border-bottom: 1px solid #CCCCCC;
 }
 
 /* line 1, sass/_header.scss */
-.header {
+.header-wrapper {
   background-color: #F7F7F9;
+}
+
+/* line 4, sass/_header.scss */
+.header {
   font-size: 95%;
   padding: 0.5rem 0 0.2rem;
+  width: 88%;
 }
-/* line 5, sass/_header.scss */
+/* line 8, sass/_header.scss */
 .header__left-column, .header__right-column {
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 10, sass/_header.scss */
+/* line 13, sass/_header.scss */
 .header__right-column span {
   color: #A5A5A5;
 }
-/* line 14, sass/_header.scss */
+/* line 17, sass/_header.scss */
 .header__left-column {
   padding-top: 0.25rem;
   font-size: 104%;
   color: #666666;
 }
-/* line 18, sass/_header.scss */
+/* line 21, sass/_header.scss */
 .header__left-column span {
   font-size: 77%;
 }
-/* line 21, sass/_header.scss */
+/* line 24, sass/_header.scss */
 .header__left-column .verticle-line {
   font-size: 100%;
   height: 2rem;
   padding: .01rem .2rem 0;
   vertical-align: top;
 }
-/* line 29, sass/_header.scss */
+/* line 32, sass/_header.scss */
 .header__icon-list {
   margin: -.2rem 0 0;
   float: right;
 }
-/* line 32, sass/_header.scss */
+/* line 35, sass/_header.scss */
 .header__icon-list li {
   display: inline;
   padding: 0 3px;
 }
-/* line 38, sass/_header.scss */
+/* line 41, sass/_header.scss */
 .header__right-text {
   float: right;
 }
-/* line 41, sass/_header.scss */
+/* line 44, sass/_header.scss */
 .header .text-pink {
   color: #DD1264;
   font-size: inherit;
 }
-/* line 44, sass/_header.scss */
+/* line 47, sass/_header.scss */
 .header .text-pink.bold {
   font-weight: bold;
 }
 
-/* line 50, sass/_header.scss */
+/* line 52, sass/_header.scss */
+.sticky-nav {
+  background-color: #fff;
+  z-index: 9999;
+}
+
+/* line 56, sass/_header.scss */
 .nav-items {
   margin: 4rem 0 1.3rem;
 }
-/* line 52, sass/_header.scss */
+/* line 58, sass/_header.scss */
 .nav-items li {
   color: #3B3B3B;
   display: inline-block;
@@ -99,20 +144,24 @@ ul li {
   text-transform: uppercase;
 }
 
-/* line 59, sass/_header.scss */
+/* line 65, sass/_header.scss */
 .left-nav {
   width: 30%;
   margin-left: 3rem;
 }
 
-/* line 63, sass/_header.scss */
+/* line 69, sass/_header.scss */
 .right-nav {
   width: 30%;
   position: relative;
   right: 3.25rem;
 }
 
+<<<<<<< HEAD
 /* line 69, sass/_header.scss */
+=======
+/* line 75, sass/_header.scss */
+>>>>>>> master
 .stuck {
   position: fixed;
   top: 0;
@@ -120,6 +169,7 @@ ul li {
   transform: translateX(-50%);
 }
 
+<<<<<<< HEAD
 /* line 2, sass/_footer.scss */
 .footer .col-md-12 {
   width: 100%;
@@ -168,3 +218,53 @@ ul li {
   letter-spacing: 0.05rem;
   text-align: center;
 }
+=======
+/* line 2, sass/_homepage.scss */
+.live-colorful p, .live-colorful .border-bottom {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+/* line 6, sass/_homepage.scss */
+.live-colorful span {
+  background-color: #fff;
+  z-index: 1;
+  font-size: 90%;
+  padding: 0 2rem;
+}
+/* line 12, sass/_homepage.scss */
+.live-colorful .border-bottom {
+  width: 97%;
+  position: absolute;
+  left: 0;
+  top: -19px;
+  border-bottom: 1px solid #DCDCDC;
+  z-index: -1;
+}
+
+/* line 21, sass/_homepage.scss */
+.moon-blooms {
+  padding: 4rem 0 3rem;
+}
+
+/* line 24, sass/_homepage.scss */
+.threads-of-inspirations {
+  padding: 0 1rem 2rem;
+}
+
+/* line 28, sass/_homepage.scss */
+.moon-blooms-designer h3 {
+  font-size: 113%;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+/* line 33, sass/_homepage.scss */
+.moon-blooms-designer h2 {
+  font-size: 180%;
+  text-align: center;
+}
+
+/* line 38, sass/_homepage.scss */
+.featured-fan {
+  background-color: #F4F2E5;
+}
+>>>>>>> master

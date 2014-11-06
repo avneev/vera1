@@ -1,0 +1,40 @@
+.live-colorful {
+	p, .border-bottom {
+		margin: 2rem 1rem;
+		text-align: center;
+	}
+	span {
+		background-color: $white;
+		z-index: 1;
+		font-size: 90%;
+		padding: 0 2rem;
+	}
+	.border-bottom {
+		width: 97%;
+		position: absolute;
+		left: 0;
+		top:-19px;
+		border-bottom: 1px solid $gray-border;
+		z-index: -1;
+	}
+}
+.moon-blooms {
+	padding: 4rem 0 3rem;
+}
+.threads-of-inspirations {
+	padding: 0 1rem 2rem;
+}
+.moon-blooms-designer {
+	h3 {
+		font-size: 113%;
+		text-align: center;
+		margin: 1rem 0 0;
+	}
+	h2 {
+		font-size: 180%;
+		text-align: center;
+	}
+}
+.featured-fan {
+	background-color: $gray-shade;
+}
