@@ -32,67 +32,77 @@ ul li {
 }
 
 /* line 1, sass/_header.scss */
-.header {
+.header-wrapper {
   background-color: #F7F7F9;
+}
+
+/* line 4, sass/_header.scss */
+.header {
   font-size: 95%;
   padding: 0.5rem 0 0.2rem;
   width: 88%;
 }
-/* line 6, sass/_header.scss */
+/* line 8, sass/_header.scss */
 .header__left-column, .header__right-column {
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 11, sass/_header.scss */
+/* line 13, sass/_header.scss */
 .header__right-column span {
   color: #A5A5A5;
 }
-/* line 15, sass/_header.scss */
+/* line 17, sass/_header.scss */
 .header__left-column {
   padding-top: 0.25rem;
   font-size: 104%;
   color: #666666;
 }
-/* line 19, sass/_header.scss */
+/* line 21, sass/_header.scss */
 .header__left-column span {
   font-size: 77%;
 }
-/* line 22, sass/_header.scss */
+/* line 24, sass/_header.scss */
 .header__left-column .verticle-line {
   font-size: 100%;
   height: 2rem;
   padding: .01rem .2rem 0;
   vertical-align: top;
 }
-/* line 30, sass/_header.scss */
+/* line 32, sass/_header.scss */
 .header__icon-list {
   margin: -.2rem 0 0;
   float: right;
 }
-/* line 33, sass/_header.scss */
+/* line 35, sass/_header.scss */
 .header__icon-list li {
   display: inline;
   padding: 0 3px;
 }
-/* line 39, sass/_header.scss */
+/* line 41, sass/_header.scss */
 .header__right-text {
   float: right;
 }
-/* line 42, sass/_header.scss */
+/* line 44, sass/_header.scss */
 .header .text-pink {
   color: #DD1264;
   font-size: inherit;
 }
-/* line 45, sass/_header.scss */
+/* line 47, sass/_header.scss */
 .header .text-pink.bold {
   font-weight: bold;
 }
 
-/* line 51, sass/_header.scss */
+/* line 52, sass/_header.scss */
+.sticky-nav {
+  background-color: #fff;
+  z-index: 9999;
+}
+
+/* line 56, sass/_header.scss */
 .nav-items {
   margin: 4rem 0 1.3rem;
 }
-/* line 53, sass/_header.scss */
+/* line 58, sass/_header.scss */
 .nav-items li {
   color: #3B3B3B;
   display: inline-block;
@@ -100,23 +110,25 @@ ul li {
   text-transform: uppercase;
 }
 
-/* line 60, sass/_header.scss */
+/* line 65, sass/_header.scss */
 .left-nav {
   width: 30%;
   margin-left: 3rem;
 }
 
-/* line 64, sass/_header.scss */
+/* line 69, sass/_header.scss */
 .right-nav {
   width: 30%;
   position: relative;
   right: 3.25rem;
 }
 
-/* line 70, sass/_header.scss */
+/* line 75, sass/_header.scss */
 .stuck {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
+
+@impot "homepage";
