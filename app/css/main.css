@@ -126,7 +126,7 @@ p {
 /* line 55, sass/_header.scss */
 .main-nav {
   position: relative;
-  background-color: #fff;
+  background-color: #FFFFFF;
   z-index: 10;
 }
 /* line 59, sass/_header.scss */
@@ -232,7 +232,7 @@ p {
   -webkit-transition: all linear 0.75s;
   transition: all linear 0.75s;
   opacity: 1;
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 2.5rem 0;
 }
 /* line 139, sass/_header.scss */
@@ -319,7 +319,7 @@ p {
 }
 /* line 7, sass/_homepage.scss */
 .live-colorful span {
-  background-color: #fff;
+  background-color: #FFFFFF;
   z-index: 1;
   font-size: 90%;
   padding: 0 2rem;
@@ -511,4 +511,47 @@ p {
 /* line 165, sass/_homepage.scss */
 .pink-text {
   color: #DD1264;
+}
+
+/* line 1, sass/_product_listing.scss */
+.filter-head {
+  background-color: #69D8C7;
+}
+/* line 3, sass/_product_listing.scss */
+.filter-head .filter-nav {
+  margin-bottom: 0;
+}
+/* line 5, sass/_product_listing.scss */
+.filter-head .filter-nav li {
+  display: inline-block;
+  width: 8rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  line-height: 2.75rem;
+}
+/* line 11, sass/_product_listing.scss */
+.filter-head .filter-nav li a {
+  color: #555555;
+}
+/* line 14, sass/_product_listing.scss */
+.filter-head .filter-nav li.active-category {
+  background: url("../images/plp/tab_arrow.png") no-repeat scroll center bottom;
+}
+/* line 19, sass/_product_listing.scss */
+.filter-head .filter-hint {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 2.75rem;
+  margin-bottom: 0;
+}
+
+/* line 27, sass/_product_listing.scss */
+.filter-body {
+  background-color: #F1F1F1;
+  padding: 1rem 0 3rem;
+}
+/* line 30, sass/_product_listing.scss */
+.filter-body .category-image {
+  margin-right: .25rem;
 }
