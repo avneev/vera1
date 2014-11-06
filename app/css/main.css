@@ -110,25 +110,84 @@ ul li {
   text-transform: uppercase;
 }
 
-/* line 65, sass/_header.scss */
+/* line 66, sass/_header.scss */
 .left-nav {
   width: 30%;
   margin-left: 3rem;
 }
 
-/* line 69, sass/_header.scss */
+/* line 70, sass/_header.scss */
 .right-nav {
   width: 30%;
   position: relative;
   right: 3.25rem;
 }
 
-/* line 75, sass/_header.scss */
+/* line 77, sass/_header.scss */
+.img-margin {
+  margin-top: -0.02rem;
+}
+
+@-webkit-keyframes pulse_animation {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.08);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* line 91, sass/_header.scss */
 .stuck {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+/* line 96, sass/_header.scss */
+.stuck .nav-items {
+  margin: 1.3rem 0 !important;
+  opacity: 0.5;
+  transition: margin 2s;
+}
+/* line 100, sass/_header.scss */
+.stuck .nav-items li {
+  font-size: 1rem;
+}
+/* line 103, sass/_header.scss */
+.stuck .nav-items .pulse2 {
+  -webkit-animation-name: 'pulse_animation';
+  -webkit-animation-duration: 5000ms;
+  -webkit-transform-origin: 70% 70%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+/* line 111, sass/_header.scss */
+.stuck .img-margin {
+  transition: margin-top 2s;
+  margin-top: 0.402rem;
+}
+/* line 115, sass/_header.scss */
+.stuck .sticky-specific {
+  height: 5.68rem;
+  width: 25.8rem;
 }
 
 @impot "homepage";
