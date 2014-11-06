@@ -8,8 +8,12 @@ body {
   font-family: "BrandonGrotesque";
   font-size: 0.8rem;
   color: #3B3B3B;
+  height: 70rem;
 }
 
+<<<<<<< HEAD
+/* line 12, sass/_core.scss */
+=======
 /* line 11, sass/_core.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "BrandonGrotesque";
@@ -17,10 +21,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 15, sass/_core.scss */
+>>>>>>> master
 .row {
   max-width: 80rem;
 }
 
+<<<<<<< HEAD
+/* line 15, sass/_core.scss */
+=======
 /* line 18, sass/_core.scss */
 .small-row {
   max-width: 63.8rem;
@@ -34,16 +42,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 26, sass/_core.scss */
+>>>>>>> master
 ul li {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
+/* line 19, sass/_core.scss */
+=======
 /* line 30, sass/_core.scss */
+>>>>>>> master
 .no-padding {
   padding: 0;
 }
 
+<<<<<<< HEAD
+/* line 23, sass/_core.scss */
+=======
 /* line 34, sass/_core.scss */
+>>>>>>> master
 .silver-border {
   border-bottom: 1px solid #CCCCCC;
 }
@@ -140,7 +157,11 @@ ul li {
   right: 3.25rem;
 }
 
+<<<<<<< HEAD
+/* line 69, sass/_header.scss */
+=======
 /* line 75, sass/_header.scss */
+>>>>>>> master
 .stuck {
   position: fixed;
   top: 0;
@@ -148,6 +169,56 @@ ul li {
   transform: translateX(-50%);
 }
 
+<<<<<<< HEAD
+/* line 2, sass/_footer.scss */
+.footer .col-md-12 {
+  width: 100%;
+  padding: 2rem 3rem 0;
+}
+/* line 6, sass/_footer.scss */
+.footer .pull-left {
+  float: left !important;
+}
+/* line 9, sass/_footer.scss */
+.footer .footer-column {
+  padding: 0 1rem;
+  width: 18%;
+}
+/* line 13, sass/_footer.scss */
+.footer .indent-margin {
+  margin: 0;
+}
+/* line 17, sass/_footer.scss */
+.footer .child-li li {
+  cursor: pointer;
+  font-size: 0.65rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+  color: #666666;
+}
+/* line 25, sass/_footer.scss */
+.footer .font-footer-bold {
+  font-size: 0.68rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+/* line 30, sass/_footer.scss */
+.footer .padding-bottom-15 {
+  padding-bottom: 1.5rem;
+}
+/* line 33, sass/_footer.scss */
+.footer .footer-bar {
+  border-top: 0.15rem solid #CCCCCC;
+  padding-top: 3rem;
+}
+/* line 37, sass/_footer.scss */
+.footer .footer-terms_condition {
+  color: #666666;
+  font-size: 0.65rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+=======
 /* line 2, sass/_homepage.scss */
 .live-colorful p, .live-colorful .border-bottom {
   margin: 2rem 1rem;
@@ -196,3 +267,4 @@ ul li {
 .featured-fan {
   background-color: #F4F2E5;
 }
+>>>>>>> master
