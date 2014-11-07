@@ -5,46 +5,108 @@
 	</div>
 	<div class="large-5 columns  header__right-column">
 		<ul class="large-3 columns header__icon-list">
-			<li><a href="#" class="header__icon icon--1"><img src="images/icon_profile.png"></a></li>
-			<li><a href="#" class="header__icon icon--2"><img src="images/icon_fav.png"></a></li>
-			<li><a href="#" class="header__icon icon--3"><img src="images/icon_bag.png"></a></li>
+			<li><a href="#" class="header__icon icon--1"><img class="outlet-hidden" src="images/icon_profile.png"><img class="outlet-shown" src="images/outlet/icon_profile_o.png"></a></li>
+			<li><a href="#" class="header__icon icon--2"><img class="outlet-hidden" src="images/icon_fav.png"><img class="outlet-shown" src="images/outlet/icon_fav_o.png"></a></li>
+			<li><a href="#" class="header__icon icon--3"><img class="outlet-hidden" src="images/icon_bag.png"><img class="outlet-shown" src="images/outlet/icon_bag_o.png"></a></li>
 		</ul>
-		<div class="large-5 columns header__right-text"><img src="images/icon_location.png"/>Your store: <span>835 N MICHIGAN AVE</span></div>
+		<div class="large-5 columns header__right-text"><img class="outlet-hidden" src="images/icon_location.png"/><img class="outlet-shown" src="images/outlet/icon_location_o.png"/>Your store: <span>835 N MICHIGAN AVE</span></div>
 	</div>
 </div>
 </div>
-<div class="row main-nav sticky-nav" sticky>
-	<div class="large-5 columns silver-border no-padding left-nav">
+<div class="row main-nav sticky-nav">
+	<div class="large-4 columns silver-border no-padding left-nav">
 		<ul ng-class="{'stuck-shown': fixedSubmenu}" class="nav-items">
-			<li class="pulse2" ng-repeat = "item in navleft" ng-mouseover="showSubMenu(item)"  ng-mouseleave="hideSubMenu(item)">
+			<li ng-repeat = "item in navleft" ng-mouseover="showSubMenu(item)"  ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
-				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
+				<div class="sub-menu" ng-class="{'submenu-hidden': !item.subMenuVisible}" ng-include src="'partials/sub-menu.html'"></div>
 				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
 					<img src="images/menu/arrow_menu.jpg">
 				</div>
 			</li>
 		</ul>
+		<div class="menu-small"><img class="pulse2" src="images/icon_menu.jpg"></div>
 	</div>
 	<div class="large-4 columns no-padding img-margin">
-		<img class="sticky-specific" src="images/logo.png"/>
-		<img class="sticky-logo pulse2" src="images/logo-sticky.png"/>
+		<a href="#/"><img class="sticky-specific outlet-hidden" src="images/logo.png"/>
+		<img class="sticky-logo pulse2" src="images/small_logo.png"/><img class="sticky-logo pulse2 outlet-shown" src="images/outlet/orange_logo.png"/></a>
 	</div>
-	<div class="large-4 columns silver-border no-padding right-nav">
+	<div class="large-3 columns silver-border no-padding right-nav">
 
 		<ul ng-class="{'stuck-shown': fixedSubmenu}" class="nav-items" >
-			<li class="pulse2" ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
+			<li ng-if="!isOutlet" class="pulse2" ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
-				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
+				<div class="sub-menu" ng-class="{'submenu-hidden': !item.subMenuVisible}" ng-include src="'partials/sub-menu.html'"></div>
 				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
 					<img src="images/menu/arrow_menu.jpg">
 				</div>
 			</li>
-			<li>
-				<a href="">
-					<img src="images/menu/icon_menu_search.jpg">
-				</a>
+			<li ng-if="isOutlet" class="pulse2" ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
+				<a href="{{item.link}}">{{item.name}}</a>
+				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu-outlet.html'"></div>
+				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
+					<img src="images/menu/arrow_menu.jpg">
+				</div>
 			</li>
 		</ul>
+
+		<ul class="fixed-header-icons">		
+			<li class="pulse2"><a href="#"><img src="images/menu/icon_menu_search.jpg"></a></li>
+		    <li class="pulse2"><a href="#"><img src="images/icon_profile.png"></a></li>
+			<li class="pulse2"><a href="#"><img src="images/icon_fav.png"></a></li>
+			<li class="pulse2"><a href="#"><img src="images/icon_bag.png"></a></li>
+		</ul>
+	</div>
+	<div class="large-1 columns search silver-border">
+	     <img class="search-logo" src="images/small_logo.png"/>
+		 <form class="searchbox">
+		 <input type="text" placeholder="Search......" name="search" class="searchbox-input" required>
+		 <input type="submit" class="searchbox-submit" value="GO">
+		 <span class="searchbox-icon"><img src="images/menu/icon_menu_search.jpg"></span>
+		 </form>
 	</div>
 </div>
+<script type="text/javascript">
+ jQuery(document).ready(function(){
+  var submitIcon = $('.searchbox-icon');
+  var inputBox = $('.searchbox-input');
+  var searchBox = $('.searchbox');
+  var isOpen = false;
+  submitIcon.click(function(){
+   if(isOpen == false){
+   	$('.sticky-nav').addClass('fixed-header-search-expanded');
+   	$('.right-nav').hide();
+   	$('.left-nav').hide();
+   	$('.img-margin').hide();
+   	$('.search-logo').fadeIn();
+   	$('.img-margin').addClass('img-expanded');
+   	$('.search').addClass('search-expanded');
+    searchBox.addClass('searchbox-open');
+    inputBox.focus();
+    isOpen = true;
+   } else {
+   	$('.sticky-nav').removeClass('fixed-header-search-expanded');
+   	$('.right-nav').show();
+   	$('.left-nav').show();
+   	$('.img-margin').show();
+   	$('.search-logo').hide();
+    $('.search').removeClass('search-expanded');
+    $('.img-margin').removeClass('img-expanded');
+    searchBox.removeClass('searchbox-open');
+    inputBox.focusout();
+    isOpen = false;
+   }
+  }); 
+ });
+jQuery(window).scroll(function() {
+ var currentScrollPos = $(window).scrollTop();
+ console.log("position is"+currentScrollPos);
+ if (currentScrollPos >=198){
+ 	$('.sticky-nav').addClass('stuck');
+ }
+ else {
+ 	$('.sticky-nav').removeClass('stuck');
+ }
+});
+ </script>
 
+ 
