@@ -8,6 +8,7 @@ angular.module('myApp', [
   'myApp.footer',
   'myApp.home',
   'myApp.product-listing',
+  'myApp.product-detail',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
