@@ -36,7 +36,8 @@
 		</div>
 	</div>
 	<div class="large-12 columns product-listing">
-	<div class="large-3 columns center-align padding-productBlock"  ng-repeat="products in productListing">
+	<div class="columns center-align" ng-class="{'large-3  padding-productBlock': !products.is_ad, 'large-{{products.ad_spacing}} padding-ad': products.is_ad}"  ng-repeat="products in productListing">
+	<div ng-if="!products.is_ad">
 			<div class="product-rating">
 			  <div class="padding-bottom-5"><img src="images/plp/stars.png"></div>
 			   <div>"{{products.product_tag}}"</div>
@@ -50,6 +51,8 @@
 				<div class="product-detail padding-bottom-4">{{products.product_name}}</div>
 				<div class="product-detail">{{products.price}}</div>
 			</div>
+		</div>
+		<div ng-if="products.is_ad"><img  class="productImg" ng-src="{{products.image}}"/></div>
 		</div>
 	</div>
 </div>
