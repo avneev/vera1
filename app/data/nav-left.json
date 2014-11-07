@@ -60,8 +60,9 @@
         ],
         "banner1": "images/menu/menu_banner1.jpg",
         "banner2": "images/menu/menu_banner2.jpg",
-        "top": 5.8,
-        "left": 3.45
+        "top": 5.75,
+        "left": 3.45,
+        "class":"new-submenu"
     },
     {
         "id": 1,
@@ -108,11 +109,11 @@
                 "name": "jewelry sale"
             }
         ],
-        "banner1": "images/menu/menu-bag-1.jpg",
-        "banner2": "images/menu/menu-bag-2.jpg",
-        "banner3": "images/menu/menu-bag-3.jpg",
-        "top": 5.8,
-        "left": 7.75
+        "banner1": "images/menu/zip_banner.jpg",
+        "banner2": "images/menu/brightest_banner.jpg",
+        "top": 5.75,
+        "left": 7.75,
+        "class":"bags-submenu"
     },
     {
         "id": 2,
@@ -160,8 +161,9 @@
         ],
         "banner1": "images/menu/menu_banner1.jpg",
         "banner2": "images/menu/menu_banner2.jpg",
-        "top": 5.8,
-        "left": 12.85
+        "top": 5.75,
+        "left": 12.85,
+        "class":"travel-submenu"
     },
     {
         "id": 3,
@@ -209,7 +211,8 @@
         ],
         "banner1": "images/menu/menu_banner1.jpg",
         "banner2": "images/menu/menu_banner2.jpg",
-        "top": 5.8,
-        "left": 20
+        "top": 5.75,
+        "left": 20,
+        "class":"accessories-submenu"
     }
 ]

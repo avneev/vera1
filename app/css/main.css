@@ -65,108 +65,116 @@ p {
   background-color: #F7F7F9;
 }
 
-/* line 4, sass/_header.scss */
+/* line 5, sass/_header.scss */
 .header {
   font-size: 95%;
   padding: 0.5rem 0 0.2rem;
   width: 95%;
 }
-/* line 8, sass/_header.scss */
+/* line 9, sass/_header.scss */
 .header__left-column, .header__right-column {
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 13, sass/_header.scss */
+/* line 14, sass/_header.scss */
 .header__right-column span {
   color: #A5A5A5;
 }
-/* line 17, sass/_header.scss */
+/* line 18, sass/_header.scss */
 .header__left-column {
   padding-top: 0.25rem;
   font-size: 104%;
   color: #666666;
 }
-/* line 21, sass/_header.scss */
+/* line 22, sass/_header.scss */
 .header__left-column span {
   font-size: 77%;
 }
-/* line 24, sass/_header.scss */
+/* line 25, sass/_header.scss */
 .header__left-column .verticle-line {
   font-size: 100%;
   height: 2rem;
   padding: .01rem .2rem 0;
   vertical-align: top;
 }
-/* line 32, sass/_header.scss */
+/* line 33, sass/_header.scss */
 .header__icon-list {
   margin: -.2rem 0 0;
   float: right;
   padding-right: 0;
 }
-/* line 36, sass/_header.scss */
+/* line 37, sass/_header.scss */
 .header__icon-list li {
   display: inline;
   padding: 0 3px;
 }
-/* line 42, sass/_header.scss */
+/* line 43, sass/_header.scss */
 .header__right-text {
   float: right;
   padding: 0;
 }
-/* line 46, sass/_header.scss */
+/* line 47, sass/_header.scss */
 .header .text-pink {
   color: #DD1264;
   font-size: inherit;
 }
-/* line 49, sass/_header.scss */
+/* line 50, sass/_header.scss */
 .header .text-pink.bold {
   font-weight: bold;
 }
 
-/* line 55, sass/_header.scss */
+/* line 56, sass/_header.scss */
 video {
   width: 100%;
 }
 
-/* line 58, sass/_header.scss */
+/* line 59, sass/_header.scss */
 .main-nav {
   position: relative;
   background-color: #FFFFFF;
   z-index: 10;
 }
-/* line 62, sass/_header.scss */
+/* line 63, sass/_header.scss */
 .main-nav .nav-items {
-  margin: 4rem 0 0;
+  margin: 3.95rem 0 0;
 }
-/* line 64, sass/_header.scss */
+/* line 65, sass/_header.scss */
 .main-nav .nav-items li {
   display: inline-block;
   margin-right: 2rem;
   text-transform: uppercase;
   height: 3rem;
 }
-/* line 69, sass/_header.scss */
+/* line 70, sass/_header.scss */
 .main-nav .nav-items li a {
   color: #3B3B3B;
 }
-/* line 74, sass/_header.scss */
+/* line 75, sass/_header.scss */
 .main-nav .left-nav {
   width: 30%;
   margin-left: 3rem;
   position: static;
 }
-/* line 79, sass/_header.scss */
+/* line 80, sass/_header.scss */
 .main-nav .right-nav {
   float: left !important;
   margin-left: -1%;
-  width: 15%;
+  width: 24%;
   position: static;
 }
 /* line 85, sass/_header.scss */
+.main-nav .right-nav .nav-items {
+  margin-left: 2rem;
+}
+/* line 87, sass/_header.scss */
+.main-nav .right-nav .nav-items li {
+  margin-right: 3.5rem;
+}
+/* line 89, sass/_header.scss */
 .main-nav .right-nav .nav-items li:last-child {
   margin-right: 0;
 }
-/* line 91, sass/_header.scss */
+/* line 96, sass/_header.scss */
 .main-nav .menu-arrow {
   position: absolute;
 }
@@ -204,11 +212,11 @@ video {
     opacity: 0;
   }
 }
-/* line 108, sass/_header.scss */
+/* line 113, sass/_header.scss */
 .main-nav .sticky-logo {
   display: none;
 }
-/* line 111, sass/_header.scss */
+/* line 116, sass/_header.scss */
 .main-nav.stuck {
   position: fixed;
   top: 0;
@@ -216,25 +224,25 @@ video {
   transform: translateX(-50%);
   border-bottom: 1px solid #CCCCCC;
 }
-/* line 117, sass/_header.scss */
+/* line 122, sass/_header.scss */
 .main-nav.stuck .fixed-header-icons, .main-nav.stuck .menu-small {
   display: block;
 }
-/* line 120, sass/_header.scss */
+/* line 125, sass/_header.scss */
 .main-nav.stuck .menu-small {
   margin: 1.3rem 0 0;
 }
-/* line 123, sass/_header.scss */
+/* line 128, sass/_header.scss */
 .main-nav.stuck .nav-items {
   margin: 1rem 0 0 !important;
   opacity: 1;
   transition: margin 2s;
 }
-/* line 127, sass/_header.scss */
+/* line 132, sass/_header.scss */
 .main-nav.stuck .nav-items li {
   font-size: 1rem;
 }
-/* line 130, sass/_header.scss */
+/* line 135, sass/_header.scss */
 .main-nav.stuck .nav-items .pulse2 {
   animation-name: 'pulse_animation';
   animation-duration: 1000ms;
@@ -242,11 +250,11 @@ video {
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
-/* line 137, sass/_header.scss */
+/* line 142, sass/_header.scss */
 .main-nav.stuck .nav-items.stuck-shown {
   height: 23rem;
 }
-/* line 141, sass/_header.scss */
+/* line 146, sass/_header.scss */
 .main-nav.stuck .sticky-logo {
   display: block;
   opacity: 1;
@@ -254,36 +262,36 @@ video {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 148, sass/_header.scss */
+/* line 153, sass/_header.scss */
 .main-nav.stuck .img-margin {
   transition: margin-top 2s;
   margin-top: 0.402rem;
 }
-/* line 152, sass/_header.scss */
+/* line 157, sass/_header.scss */
 .main-nav.stuck .sticky-specific {
   height: 5.68rem;
   width: 25.8rem;
   display: none;
   opacity: 0;
 }
-/* line 157, sass/_header.scss */
+/* line 162, sass/_header.scss */
 .main-nav.stuck .sub-menu {
   top: 3rem;
 }
-/* line 160, sass/_header.scss */
+/* line 165, sass/_header.scss */
 .main-nav.stuck .right-nav .nav-items, .main-nav.stuck .left-nav .nav-items, .main-nav.stuck .search {
   border-bottom: 0;
   display: none;
 }
-/* line 164, sass/_header.scss */
+/* line 169, sass/_header.scss */
 .main-nav.stuck .right-nav, .main-nav.stuck .left-nav {
   border-bottom: 0;
 }
-/* line 167, sass/_header.scss */
+/* line 172, sass/_header.scss */
 .main-nav.stuck .right-nav {
   width: 33%;
 }
-/* line 170, sass/_header.scss */
+/* line 175, sass/_header.scss */
 .main-nav.stuck .menu-arrow {
   -webkit-animation-name: 'pulse_animation';
   -webkit-animation-duration: 1000ms;
@@ -291,33 +299,38 @@ video {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
 }
-/* line 177, sass/_header.scss */
+/* line 182, sass/_header.scss */
 .main-nav.stuck .search {
   margin-top: 1rem;
   border-bottom: 0;
 }
-/* line 182, sass/_header.scss */
+/* line 187, sass/_header.scss */
 .main-nav .sub-menu {
   left: 0;
   position: absolute;
   top: 6rem;
   width: 100%;
   z-index: -1;
-  -webkit-transition: all linear 0.75s;
-  transition: all linear 0.75s;
+  overflow: hidden;
+  max-height: 500px;
+  /* approximate max height */
   opacity: 1;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0, 1, 1, 1);
   background-color: #FFFFFF;
   padding: 2.5rem 0;
 }
-/* line 193, sass/_header.scss */
-.main-nav .sub-menu.ng-hide {
+/* line 201, sass/_header.scss */
+.main-nav .sub-menu.submenu-hidden {
   opacity: 0;
+  max-height: 0;
 }
-/* line 196, sass/_header.scss */
+/* line 205, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav {
   margin-bottom: 1rem;
 }
-/* line 198, sass/_header.scss */
+/* line 207, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li {
   color: #555555;
   font-size: 0.75rem;
@@ -325,41 +338,42 @@ video {
   height: 1.75rem;
   text-transform: uppercase;
 }
-/* line 204, sass/_header.scss */
+/* line 213, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li:first-child {
   font-weight: 600;
 }
 
-/* line 211, sass/_header.scss */
+/* line 221, sass/_header.scss */
 .fixed-header-icons {
   float: right;
   margin: 1.5rem 2rem 0 0;
 }
-/* line 214, sass/_header.scss */
+/* line 224, sass/_header.scss */
 .fixed-header-icons li {
   display: inline;
   padding: 0 3px;
 }
 
-/* line 220, sass/_header.scss */
+/* line 230, sass/_header.scss */
 .fixed-header-icons, .menu-small {
   display: none;
 }
 
-/* line 223, sass/_header.scss */
+/* line 233, sass/_header.scss */
 .search {
   position: relative;
   float: left !important;
-  margin: 3.85rem 0 0;
+  margin: 3.8rem 0 0;
+  width: 6%;
 }
 
-/* line 228, sass/_header.scss */
+/* line 239, sass/_header.scss */
 .searchbox {
   position: relative;
   width: 100%;
 }
 
-/* line 232, sass/_header.scss */
+/* line 243, sass/_header.scss */
 .searchbox-input {
   position: absolute;
   top: 0;
@@ -375,12 +389,12 @@ video {
   opacity: 0;
 }
 
-/* line 246, sass/_header.scss */
+/* line 257, sass/_header.scss */
 .searchbox-open .searchbox-input {
   opacity: 1;
 }
 
-/* line 249, sass/_header.scss */
+/* line 260, sass/_header.scss */
 .searchbox-icon,
 .searchbox-submit {
   display: block;
@@ -394,7 +408,7 @@ video {
   cursor: pointer;
 }
 
-/* line 261, sass/_header.scss */
+/* line 272, sass/_header.scss */
 .searchbox {
   position: relative;
   min-width: 50px;
@@ -411,7 +425,7 @@ video {
 /*......*/
 /*......*/
 /*......*/
-/* line 277, sass/_header.scss */
+/* line 288, sass/_header.scss */
 .searchbox-open {
   width: 49%;
   clear: both;
@@ -419,7 +433,7 @@ video {
   transform: translateX(-50%);
 }
 
-/* line 283, sass/_header.scss */
+/* line 294, sass/_header.scss */
 .search-expanded {
   width: 100%;
   text-align: center;
@@ -429,12 +443,12 @@ video {
   margin-top: 1rem;
 }
 
-/* line 291, sass/_header.scss */
+/* line 302, sass/_header.scss */
 .search-logo {
   display: none;
 }
 
-/* line 295, sass/_header.scss */
+/* line 306, sass/_header.scss */
 .fixed-header-search-expanded .sticky-logo {
   display: none !important;
 }
