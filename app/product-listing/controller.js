@@ -10,7 +10,7 @@ angular.module('myApp.product-listing', ['ngRoute'])
 }])
 
 .controller('ProductListingCtrl', ['$scope', '$rootScope', 'xhrFactory', function($scope, $rootScope, xhrFactory) {
-
+	$rootScope.layoutClass="product-listing";
 	$scope.showQuickView = false;
 
 	xhrFactory.getList('quick-view.json').then(
