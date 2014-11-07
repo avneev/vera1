@@ -1,0 +1,231 @@
+[
+    {
+        "id": 0,
+        "name": "categories",
+        "active": false,
+        "imgList": [
+            {
+                "id": 0,
+                "img": "images/plp/icon_crossbody.png",
+                "added": false,
+                "name": "crossbody"
+            },
+            {
+                "id": 1,
+                "img": "images/plp/icon_shoulder.png",
+                "added": false,
+                "name": "shoulder"
+            },
+            {
+                "id": 2,
+                "img": "images/plp/icon_backpacks.png",
+                "added": false,
+                "name": "backpacks"
+            },
+            {
+                "id": 3,
+                "img": "images/plp/icon_totes.png",
+                "added": false,
+                "name": "Totes"
+            },
+            {
+                "id": 4,
+                "img": "images/plp/icon_baby_bags.png",
+                "added": false,
+                "name": "baby bags"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "colors",
+        "active": false,
+        "imgList": [
+            {
+                "id": 0,
+                "img": "images/plp/icon_crossbody.png",
+                "added": false,
+                "name": "crossbody"
+            },
+            {
+                "id": 1,
+                "img": "images/plp/icon_shoulder.png",
+                "added": false,
+                "name": "shoulder"
+            },
+            {
+                "id": 2,
+                "img": "images/plp/icon_backpacks.png",
+                "added": false,
+                "name": "backpacks"
+            },
+            {
+                "id": 3,
+                "img": "images/plp/icon_totes.png",
+                "added": false,
+                "name": "Totes"
+            },
+            {
+                "id": 4,
+                "img": "images/plp/icon_baby_bags.png",
+                "added": false,
+                "name": "baby bags"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "patterns",
+        "active": false,
+        "imgList": [
+            {
+                "id": 0,
+                "img": "images/plp/icon_crossbody.png",
+                "added": false,
+                "name": "crossbody"
+            },
+            {
+                "id": 1,
+                "img": "images/plp/icon_shoulder.png",
+                "added": false,
+                "name": "shoulder"
+            },
+            {
+                "id": 2,
+                "img": "images/plp/icon_backpacks.png",
+                "added": false,
+                "name": "backpacks"
+            },
+            {
+                "id": 3,
+                "img": "images/plp/icon_totes.png",
+                "added": false,
+                "name": "Totes"
+            },
+            {
+                "id": 4,
+                "img": "images/plp/icon_baby_bags.png",
+                "added": false,
+                "name": "baby bags"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "materials",
+        "active": false,
+        "imgList": [
+            {
+                "id": 0,
+                "img": "images/plp/icon_crossbody.png",
+                "added": false,
+                "name": "crossbody"
+            },
+            {
+                "id": 1,
+                "img": "images/plp/icon_shoulder.png",
+                "added": false,
+                "name": "shoulder"
+            },
+            {
+                "id": 2,
+                "img": "images/plp/icon_backpacks.png",
+                "added": false,
+                "name": "backpacks"
+            },
+            {
+                "id": 3,
+                "img": "images/plp/icon_totes.png",
+                "added": false,
+                "name": "Totes"
+            },
+            {
+                "id": 4,
+                "img": "images/plp/icon_baby_bags.png",
+                "added": false,
+                "name": "baby bags"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "occasion",
+        "active": false,
+        "imgList": [
+            {
+                "id": 0,
+                "img": "images/plp/51.png",
+                "added": false,
+                "name": "nights out"
+            },
+            {
+                "id": 1,
+                "img": "images/plp/52.png",
+                "added": false,
+                "name": "weekending"
+            },
+            {
+                "id": 2,
+                "img": "images/plp/53.png",
+                "added": false,
+                "name": "work days"
+            },
+            {
+                "id": 3,
+                "img": "images/plp/54.png",
+                "added": false,
+                "name": "play dates"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "what's inside",
+        "active": false,
+        "imgList": [
+            {
+                "id": 0,
+                "img": "images/plp/61.jpg",
+                "added": false,
+                "name": "a little"
+            },
+            {
+                "id": 1,
+                "img": "images/plp/62.jpg",
+                "added": false,
+                "name": "enough"
+            },
+            {
+                "id": 2,
+                "img": "images/plp/63.jpg",
+                "added": false,
+                "name": "a lot"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "fans say",
+        "active": false,
+        "imgList": [
+            {
+                "id": 0,
+                "img": "images/plp/71.jpg",
+                "added": false,
+                "name": "Characterstics"
+            },
+            {
+                "id": 1,
+                "img": "images/plp/72.jpg",
+                "added": false,
+                "name": "personality"
+            },
+            {
+                "id": 2,
+                "img": "images/plp/73.jpg",
+                "added": false,
+                "name": "Just right for"
+            }
+        ]
+    }
+]

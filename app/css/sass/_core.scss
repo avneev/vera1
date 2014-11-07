@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: "BrandonGrotesque";
+    src: url(../fonts/brandon_re.ttf);
+}
+body {
+	font-family:$base-font-family;
+	font-size:$base-font-size;
+	color:$base-font-color;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:$base-font-family;
+	margin: 0;
+}
+.row {
+	 max-width:80rem;
+}
+.small-row {
+	 max-width:63.8rem;
+	 margin: 0 auto;
+	 position: relative;
+}
+.full-width {
+	width: 100%;
+	margin: 0;
+	max-width: 100%;
+}
+ul li {
+	list-style-type:none;
+}
+p {
+	line-height: $base-line-height;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.full-width {
+	max-width: 100%;
+}
+
+.silver-border {
+	border-bottom: 1px solid $silver;
+}

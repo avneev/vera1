@@ -1,0 +1,256 @@
+[
+    {
+        "id": 0,
+        "product_name": "Triple Zip Hipster",
+        "image": "images/plp/bag_a.jpg",
+        "product_color": "Pink swirals",
+        "sku": 14342214,
+        "price": "$58",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "ad_spacing":6,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ],
+        "active":false,
+        "arrPos":7.5,
+        "imgList": [
+            {
+                "id": 0,
+                "name": "taupe",
+                "src":"images/plp/thumb_1.jpg"
+            },
+            {
+                "id": 1,
+                "name": "black",
+                "src":"images/plp/thumb_2.jpg"
+            },
+            {
+                "id": 2,
+                "name": "orange",
+                "src":"images/plp/thumb_3.jpg"
+            }
+        ],
+        "plpImgList": [
+            {
+                "id": 0,
+                "src": "images/plp/bag_a.jpg"
+            },
+            {
+                "id": 1,
+                "src": "images/plp/bag_b.jpg"
+            },
+            {
+                "id": 2,
+                "src": "images/plp/bag_c.jpg"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "product_name": "Triple Zip Hipster",
+        "image": "images/plp/p_img2.jpg",
+        "product_color": "Pink swirals",
+        "sku": 14342214,
+        "price": "$58",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "ad_spacing":6,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ],
+        "active":false,
+        "arrPos":28,
+        "imgList": [
+            {
+                "id": 0,
+                "name": "taupe",
+                "src":"images/plp/thumb_1.jpg"
+            },
+            {
+                "id": 1,
+                "name": "black",
+                "src":"images/plp/thumb_2.jpg"
+            },
+            {
+                "id": 2,
+                "name": "orange",
+                "src":"images/plp/thumb_3.jpg"
+            }
+        ],
+        "plpImgList": [
+            {
+                "id": 0,
+                "src": "images/plp/bag_a.jpg"
+            },
+            {
+                "id": 1,
+                "src": "images/plp/bag_b.jpg"
+            },
+            {
+                "id": 2,
+                "src": "images/plp/bag_c.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "product_name": "Triple Zip Hipster",
+        "image": "images/plp/p_img3.jpg",
+        "product_color": "Pink swirals",
+        "sku": 14342214,
+        "price": "$58",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ],
+        "active":false,
+        "arrPos":47.5,
+        "imgList": [
+            {
+                "id": 0,
+                "name": "taupe",
+                "src":"images/plp/thumb_1.jpg"
+            },
+            {
+                "id": 1,
+                "name": "black",
+                "src":"images/plp/thumb_2.jpg"
+            },
+            {
+                "id": 2,
+                "name": "orange",
+                "src":"images/plp/thumb_3.jpg"
+            }
+        ],
+        "plpImgList": [
+            {
+                "id": 0,
+                "src": "images/plp/bag_a.jpg"
+            },
+            {
+                "id": 1,
+                "src": "images/plp/bag_b.jpg"
+            },
+            {
+                "id": 2,
+                "src": "images/plp/bag_c.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "product_name": "Triple Zip Hipster",
+        "image": "images/plp/p_img4.jpg",
+        "product_color": "Pink swirals",
+        "sku": 14342214,
+        "price": "$58",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ],
+        "active":false,
+        "arrPos":66.5,
+        "imgList": [
+            {
+                "id": 0,
+                "name": "taupe",
+                "src":"images/plp/thumb_1.jpg"
+            },
+            {
+                "id": 1,
+                "name": "black",
+                "src":"images/plp/thumb_2.jpg"
+            },
+            {
+                "id": 2,
+                "name": "orange",
+                "src":"images/plp/thumb_3.jpg"
+            }
+        ],
+        "plpImgList": [
+            {
+                "id": 0,
+                "src": "images/plp/bag_a.jpg"
+            },
+            {
+                "id": 1,
+                "src": "images/plp/bag_b.jpg"
+            },
+            {
+                "id": 2,
+                "src": "images/plp/bag_c.jpg"
+            }
+        ]
+    }
+]

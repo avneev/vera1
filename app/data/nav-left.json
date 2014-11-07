@@ -1,0 +1,218 @@
+[
+    {
+        "id": 0,
+        "name": "new",
+        "link": "#/new",
+        "subMenuVisible": false,
+        "menuList1": [
+            {
+                "id": 0,
+                "name": "Category"
+            },
+            {
+                "id": 1,
+                "name": "hand bags"
+            },
+            {
+                "id": 2,
+                "name": "travel"
+            },
+            {
+                "id": 3,
+                "name": "accessories"
+            },
+            {
+                "id": 4,
+                "name": "sale colors"
+            },
+            {
+                "id": 5,
+                "name": "view all"
+            }
+        ],
+        "menuList2": [
+            {
+                "id": 0,
+                "name": "Feature"
+            },
+            {
+                "id": 1,
+                "name": "baby sale"
+            },
+            {
+                "id": 2,
+                "name": "jewelry sale"
+            }
+        ],
+        "menuList3": [
+            {
+                "id": 0,
+                "name": "Outlet"
+            },
+            {
+                "id": 1,
+                "name": "new arrivals"
+            },
+            {
+                "id": 2,
+                "name": "view all"
+            }
+        ],
+        "banner1": "images/menu/menu_banner1.jpg",
+        "banner2": "images/menu/menu_banner2.jpg",
+        "top": 5.75,
+        "left": 3.45,
+        "class":"new-submenu"
+    },
+    {
+        "id": 1,
+        "name": "bags",
+        "link": "#/bags",
+        "subMenuVisible": false,
+        "menuList1": [
+            {
+                "id": 0,
+                "name": "Category"
+            },
+            {
+                "id": 1,
+                "name": "hand bags"
+            },
+            {
+                "id": 2,
+                "name": "travel"
+            },
+            {
+                "id": 3,
+                "name": "accessories"
+            },
+            {
+                "id": 4,
+                "name": "sale colors"
+            },
+            {
+                "id": 5,
+                "name": "view all"
+            }
+        ],
+        "menuList2": [
+            {
+                "id": 0,
+                "name": "Feature"
+            },
+            {
+                "id": 1,
+                "name": "baby sale"
+            },
+            {
+                "id": 2,
+                "name": "jewelry sale"
+            }
+        ],
+        "banner1": "images/menu/zip_banner.jpg",
+        "banner2": "images/menu/brightest_banner.jpg",
+        "top": 5.75,
+        "left": 7.75,
+        "class":"bags-submenu"
+    },
+    {
+        "id": 2,
+        "name": "travel",
+        "subMenuVisible": false,
+        "menuList1": [
+            {
+                "id": 0,
+                "name": "Category"
+            },
+            {
+                "id": 1,
+                "name": "hand bags"
+            },
+            {
+                "id": 2,
+                "name": "travel"
+            },
+            {
+                "id": 3,
+                "name": "accessories"
+            },
+            {
+                "id": 4,
+                "name": "sale colors"
+            },
+            {
+                "id": 5,
+                "name": "view all"
+            }
+        ],
+        "menuList2": [
+            {
+                "id": 0,
+                "name": "Feature"
+            },
+            {
+                "id": 1,
+                "name": "baby sale"
+            },
+            {
+                "id": 2,
+                "name": "jewelry sale"
+            }
+        ],
+        "banner1": "images/menu/menu_banner1.jpg",
+        "banner2": "images/menu/menu_banner2.jpg",
+        "top": 5.75,
+        "left": 12.85,
+        "class":"travel-submenu"
+    },
+    {
+        "id": 3,
+        "name": "accessories",
+        "subMenuVisible": false,
+        "menuList1": [
+            {
+                "id": 0,
+                "name": "Category"
+            },
+            {
+                "id": 1,
+                "name": "hand bags"
+            },
+            {
+                "id": 2,
+                "name": "travel"
+            },
+            {
+                "id": 3,
+                "name": "accessories"
+            },
+            {
+                "id": 4,
+                "name": "sale colors"
+            },
+            {
+                "id": 5,
+                "name": "view all"
+            }
+        ],
+        "menuList2": [
+            {
+                "id": 0,
+                "name": "Feature"
+            },
+            {
+                "id": 1,
+                "name": "baby sale"
+            },
+            {
+                "id": 2,
+                "name": "jewelry sale"
+            }
+        ],
+        "banner1": "images/menu/menu_banner1.jpg",
+        "banner2": "images/menu/menu_banner2.jpg",
+        "top": 5.75,
+        "left": 20,
+        "class":"accessories-submenu"
+    }
+]

@@ -1,0 +1,130 @@
+<div class="row">
+	<img src="images/plp/p_hero1.jpg">
+</div>
+<div class="row filter-head">
+	<div class="large-1 push-1 columns text-center no-padding">
+		<p class="filter-hint">Filtered by :</p>
+	</div>
+	<div class="large-10 columns">
+		<ul class="filter-nav">
+			<li ng-repeat="item in categories" class="text-center" ng-class="{'active-category': item.active}">
+				<a href="javascript:void(0);" ng-click="changeCategory(item)">{{item.name}}</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row filter-body text-center">
+	<div class="filter-body-inner">
+		<div style="display:inline-block; vertical-align:top;" ng-repeat="item in selectedCategory">
+			<img ng-click="addFilter(item)" class="category-image" ng-class="{'active': item.active}" ng-src="{{item.img}}"/>
+			<p ng-show="item.active" class="added-filter">{{item.name}} <a class="remove-filter" href="javascript:void(0);" ng-click="removeFilter(item)">x</a></p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="large-12 columns product-listingHeader">
+		  <div class="pull-left"><span>FILTERED BY:</span><span class="selected-filter"> NONE SELECTED</span></div>
+			<div class="pull-right filter-sort">
+				<span >SORT BY:</span>
+				<span ><a class="selected">NEWEST</a></span>
+				<span><a>PRICE</a></span>
+				<span><a>MOST<img src="images/plp/pink_fav.png" style="margin-top: -3px;"></a></span>
+			</div>
+	</div>
+
+	<div class="large-12 columns product-listing quick-view-row">
+		<div class="large-3 padding-productBlock columns center-align" ng-repeat="products in quickViewListing" change-on-hover="products">
+			<div class="product-rating">
+			  <div class="padding-bottom-5"><img src="images/plp/stars.png"></div>
+			   <div>"{{products.product_tag}}"</div>
+			</div>
+			<div class="image-fixed-dimention">
+				<a href="#/product-detail"><img  class="productImg" ng-src="{{products.image}}"/></a>
+			</div>
+			<div ng-if="products.is_new" class="new-tag">NEW</div>
+			<div class="row product-details-container">
+				<div class="left left-align text-transform-upper product-details">
+					<div class="padding-bottom-5 font-size-65">{{products.product_color}}<span>&nbsp;| {{products.avalable_color.length}} colors<img src="images/plp/pink_down_arrow.png" style="margin-top: -4px;"></span></div>
+					<div class="product-detail padding-bottom-4"><a href="#/product-detail">{{products.product_name}}</a></div>
+					<div class="product-detail">{{products.price}}</div>
+				</div>
+				<div class="right quick-view-btn" ng-click="quickView(products)">
+					<img src="images/plp/plus_icon.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="large-12 columns quick-view-container" ng-show="showQuickView">
+		<div class="arrow-quick-view" style="left: {{productView.arrPos}}rem;"><img src="images/plp/quickview_arrow.png"></div>
+		<div class="close-quick-view" ng-click="closeQuickView()">x</div>
+		<div class="row"> 
+			<div class="large-6 columns">
+				<h2 class="name">{{productView.product_name}}</h2>
+			    <p class="sku">#{{productView.sku}}</p>
+			    <p class="price">{{productView.price}}</p>
+			    <div class="row thumb-imgs">
+			    	<div class="thumb-img" ng-repeat="img in productView.imgList">
+			    		<img ng-src="{{img.src}}">	
+			    		<p>{{img.name}}</p>
+			    	</div>
+			    </div>
+			    <div class="row">
+			    	<img class="add-to-cart" src="images/plp/b_add_bag.jpg">
+			    	<img src="images/plp/b_fav_this.jpg">
+			    </div>
+			    <p class="pink-text">More Details</p>
+			</div>
+			<div class="large-6 columns">
+				<ul class="example-orbit" data-orbit> 
+					<li> 
+						<img src="images/plp/quick_view_image.jpg"/>
+					</li>
+					<li class="active"> 
+						<img src="images/plp/quick_view_image2.jpg"/>
+					</li> 
+					<li> 
+						<img src="images/plp/quick_view_image3.jpg"/>
+					</li>
+					<li> 
+						<img src="images/plp/quick_view_image4.jpg"/>
+					</li>
+					<li> 
+						<img src="images/plp/quick_view_image5.jpg"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="large-12 columns product-listing">
+	<div class="columns center-align" ng-class="{'large-3  padding-productBlock': !products.is_ad, 'large-{{products.ad_spacing}} padding-ad': products.is_ad}"  ng-repeat="products in productListing">
+	<div ng-if="!products.is_ad">
+			<div class="product-rating">
+			  <div class="padding-bottom-5"><img src="images/plp/stars.png"></div>
+			   <div>"{{products.product_tag}}"</div>
+			</div>
+			<div class="image-fixed-dimention">
+			<img  class="productImg" ng-src="{{products.image}}"/>
+			</div>
+			<div ng-if="products.is_new" class="new-tag">NEW</div>
+			<div class="left-align text-transform-upper">
+				<div class="padding-bottom-5 font-size-65">{{products.product_color}}<span>&nbsp;| {{products.avalable_color.length}} colors<img src="images/plp/pink_down_arrow.png" style="margin-top: -4px;"></span></div>
+				<div class="product-detail padding-bottom-4">{{products.product_name}}</div>
+				<div class="product-detail">{{products.price}}</div>
+			</div>
+		</div>
+		<div ng-if="products.is_ad">
+			<img ng-if="!products.is_video" class="productImg" ng-src="{{products.image}}"/>
+			<div ng-if="products.is_video">
+				<video width="100%" height="400" autoplay loop muted>
+				  <source src="videos/plp-video.mp4" type="video/mp4">
+				  <source src="videos/plp-video.webm" type="video/webm">
+				</video> 
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
