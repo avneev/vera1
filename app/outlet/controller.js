@@ -10,13 +10,5 @@ angular.module('myApp.outlet', ['ngRoute'])
 }])
 
 .controller('OutletCtrl',  ['$scope', '$rootScope', 'xhrFactory', function($scope, $rootScope, xhrFactory) {
-	//angular.element('body').addClass('outlet');
-	// xhrFactory.getList('nav-right-outlet.json').then(
-	// 	function(response) {
-	// 		$rootScope.navRight = response;
-	// 	},
-	// 	function(error) {
-	// 		console.log(error);
-	// 	}
-	// )
+$rootScope.layoutClass ="outlet";
 }]);

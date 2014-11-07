@@ -15,7 +15,6 @@ angular.module('myApp.header', [])
 	$scope.showSubMenu = function (item){
 		item.subMenuVisible = true;
 		$scope.fixedSubmenu = true;
-		console.log("I am shown"+$scope.fixedSubmenu);
 	};
 	$scope.hideSubMenu = function (item){
 		item.subMenuVisible = false;

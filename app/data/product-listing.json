@@ -178,12 +178,13 @@
     {
         "id": 6,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/animated_banner.jpg",
+        "image": "videos/plp-video.webm",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": true,
+        "is_video": true,
         "is_new": true,
         "ad_spacing":6,
         "avalable_color": [

@@ -1,14 +1,14 @@
 @import "compass/css3";
 .live-colorful {
 	p, .border-bottom {
-		margin: 2rem 1rem;
+		margin: 1.8rem 1rem;
 		text-align: center;
 	}
 	span {
 		background-color: $white;
 		z-index: 1;
 		font-size: 90%;
-		padding: 0 2rem;
+		padding: 0 4rem;
 	}
 	.border-bottom {
 		width: 97%;
@@ -26,15 +26,7 @@
 	padding: 0 1rem 2rem;
 }
 .moon-blooms-designer {
-	h3 {
-		font-size: 113%;
-		text-align: center;
-		margin: 1rem 0 0;
-	}
-	h2 {
-		font-size: 180%;
-		text-align: center;
-	}
+
 }
 .featured-fan {
 	background-color: $gray-shade;
@@ -82,7 +74,8 @@
 		}
 	}
 	&__text {
-		background-color: $gray-shade;
+		background-color: $light-pink;
+		color:$white;
 		height: 18.5rem;
 		padding: 6rem 0 0 !important;
 		width: 23.8%;

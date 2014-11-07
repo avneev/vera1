@@ -11,6 +11,16 @@ angular.module('myApp.product-listing', ['ngRoute'])
 
 .controller('ProductListingCtrl', ['$scope', '$rootScope', 'xhrFactory', function($scope, $rootScope, xhrFactory) {
 
+	$scope.showQuickView = false;
+
+	xhrFactory.getList('quick-view.json').then(
+		function(response) {
+			$scope.quickViewListing = response;		},
+		function(error) {
+			console.log(error);
+		}
+	)
+
 	xhrFactory.getList('filter-categories.json').then(
 		function(response) {
 			$scope.categories = response;
@@ -38,6 +48,16 @@ angular.module('myApp.product-listing', ['ngRoute'])
 		item.active = false;
 	};
 
+	$scope.quickView = function(product) {
+		$scope.showQuickView = true;
+		$scope.productView = product;
+	};
+	$scope.closeQuickView = function() {
+		console.log('asda')
+		$scope.showQuickView = false;
+		$scope.productView = [];
+	};
+
 	xhrFactory.getList('product-listing.json').then(
 		function(response) {
 			$scope.productListing = response;
@@ -47,5 +67,16 @@ angular.module('myApp.product-listing', ['ngRoute'])
 			console.log(error);
 		}
 	)
+
+	$(document).foundation({
+	  orbit: {
+	    animation: 'slide',
+	    timer_speed: 5000,
+	    pause_on_hover: true,
+	    animation_speed: 1000,
+	    navigation_arrows: false,
+	    bullets: true
+	  }
+	});
 
 }]);
