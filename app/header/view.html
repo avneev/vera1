@@ -13,12 +13,12 @@
 	</div>
 </div>
 </div>
-<div class="row main-nav sticky-nav" sticky>
+<div class="row main-nav sticky-nav">
 	<div class="large-4 columns silver-border no-padding left-nav">
 		<ul ng-class="{'stuck-shown': fixedSubmenu}" class="nav-items">
 			<li ng-repeat = "item in navleft" ng-mouseover="showSubMenu(item)"  ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
-				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
+				<div class="sub-menu" ng-class="{'submenu-hidden': !item.subMenuVisible}" ng-include src="'partials/sub-menu.html'"></div>
 				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
 					<img src="images/menu/arrow_menu.jpg">
 				</div>
@@ -35,7 +35,7 @@
 		<ul ng-class="{'stuck-shown': fixedSubmenu}" class="nav-items" >
 			<li ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
-				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
+				<div class="sub-menu" ng-class="{'submenu-hidden': !item.subMenuVisible}" ng-include src="'partials/sub-menu.html'"></div>
 				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
 					<img src="images/menu/arrow_menu.jpg">
 				</div>
@@ -89,4 +89,14 @@
    }
   }); 
  });
+jQuery(window).scroll(function() {
+ var currentScrollPos = $(window).scrollTop();
+ console.log("position is"+currentScrollPos);
+ if (currentScrollPos >=198){
+ 	$('.sticky-nav').addClass('stuck');
+ }
+ else {
+ 	$('.sticky-nav').removeClass('stuck');
+ }
+});
  </script>
