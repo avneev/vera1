@@ -143,3 +143,75 @@
 	}
 }
 
+.quick-view-row {
+	.product-details-container {
+		padding: 0 2rem;
+	}
+	.product-details {
+		width: 80%;
+	}
+	.quick-view-btn {
+		margin-top: 1rem;
+	    width: 20%;
+	}
+}
+.quick-view-container {
+	background-color: $color-gray; 
+	padding: 2rem 4rem;
+	margin: 2.5rem 0;
+	.name {
+		font-size: 3.25rem;
+		color: $fake-black;
+	}
+	.sku {
+		font-size: .8rem;
+		color: $base;	
+		margin-bottom: .5rem;
+	}
+	.price {
+		font-size: 3rem;
+    	font-weight: bold;
+    	color: $fake-black;
+    	margin: 2rem 0 3rem;
+	}
+	.add-to-cart {
+	    margin: 0 1rem;
+	}
+	.pink-text {
+		text-transform: $text-uppercase;
+		margin-top: 1rem;
+		font-weight: 600;
+	}
+	.thumb-imgs {
+		margin-left: 0rem;
+		.thumb-img {
+			display:inline-block; 
+			margin-right:.5rem;
+			p {
+				color: $base;
+			    font-size: 0.8rem;
+			    text-transform: $text-uppercase;
+			    text-align: center;
+			}
+		}
+	}
+	.close-quick-view {
+	    position: absolute;
+	    right: 2rem;
+	    top: .5rem;
+	    font-size: 3rem;
+	    color: $base;
+	    cursor: pointer;
+	}
+	.arrow-quick-view {
+	    position: absolute;
+	    top: -28px;
+	    transition: left 0.5s ease;
+	}
+	.orbit-bullets {
+		li {
+			cursor:pointer;
+		}
+	}
+}
+

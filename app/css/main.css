@@ -859,3 +859,87 @@ video {
 .product-listingHeader .filter-sort .selected {
   color: #555555 !important;
 }
+
+/* line 147, sass/_product_listing.scss */
+.quick-view-row .product-details-container {
+  padding: 0 2rem;
+}
+/* line 150, sass/_product_listing.scss */
+.quick-view-row .product-details {
+  width: 80%;
+}
+/* line 153, sass/_product_listing.scss */
+.quick-view-row .quick-view-btn {
+  margin-top: 1rem;
+  width: 20%;
+}
+
+/* line 158, sass/_product_listing.scss */
+.quick-view-container {
+  background-color: #F7F7F9;
+  padding: 2rem 4rem;
+  margin: 2.5rem 0;
+}
+/* line 162, sass/_product_listing.scss */
+.quick-view-container .name {
+  font-size: 3.25rem;
+  color: #242424;
+}
+/* line 166, sass/_product_listing.scss */
+.quick-view-container .sku {
+  font-size: .8rem;
+  color: #AAAAAA;
+  margin-bottom: .5rem;
+}
+/* line 171, sass/_product_listing.scss */
+.quick-view-container .price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #242424;
+  margin: 2rem 0 3rem;
+}
+/* line 177, sass/_product_listing.scss */
+.quick-view-container .add-to-cart {
+  margin: 0 1rem;
+}
+/* line 180, sass/_product_listing.scss */
+.quick-view-container .pink-text {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+/* line 185, sass/_product_listing.scss */
+.quick-view-container .thumb-imgs {
+  margin-left: 0rem;
+}
+/* line 187, sass/_product_listing.scss */
+.quick-view-container .thumb-imgs .thumb-img {
+  display: inline-block;
+  margin-right: .5rem;
+}
+/* line 190, sass/_product_listing.scss */
+.quick-view-container .thumb-imgs .thumb-img p {
+  color: #AAAAAA;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 198, sass/_product_listing.scss */
+.quick-view-container .close-quick-view {
+  position: absolute;
+  right: 2rem;
+  top: .5rem;
+  font-size: 3rem;
+  color: #AAAAAA;
+  cursor: pointer;
+}
+/* line 206, sass/_product_listing.scss */
+.quick-view-container .arrow-quick-view {
+  position: absolute;
+  top: -28px;
+  transition: left 0.5s ease;
+}
+/* line 212, sass/_product_listing.scss */
+.quick-view-container .orbit-bullets li {
+  cursor: pointer;
+}
