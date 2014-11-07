@@ -9,5 +9,6 @@ angular.module('myApp.home', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', ['$rootScope',function($rootScope) {
+	  $rootScope.layoutClass="";
 }]);
