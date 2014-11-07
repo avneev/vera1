@@ -34,7 +34,7 @@
  			float: right;
  			padding-right: 0;
  			li {
- 				display: inline;
+ 				display: inline-block;
  				padding: 0 3px;
  			}
  		}
@@ -42,6 +42,7 @@
  	&__right-text{
  		float: right;
  		padding: 0;
+ 		width: 42%;
  	}
  	.text-pink {
  		color: $color-pink;
@@ -141,6 +142,12 @@
  			&.stuck-shown {
  				height: 23rem;
  			}
+ 		}
+ 		.outlet-shown {
+ 			display: none!important;
+ 		}
+ 		.right-nav .outlet-shown {
+ 			display: inline-block!important;
  		}
  		.sticky-logo  {
  			display: block;
@@ -306,3 +313,31 @@
  		display: none!important;
  	}
  } 
+.outlet {
+	.header-wrapper {
+		background-color:$yellow-color;
+		color:$white;
+	}
+	 .header {
+	 	&__left-column {
+			color:$white;
+	 	}
+	 	&__right-column { 
+	 		span {
+	 			color:$white;
+	 		}
+	 	}
+	 }
+	 .text-pink {
+	 	color: $light-yellow;
+	 }
+	 .outlet-shown {
+	 	display: inline-block;
+	 }
+	 .outlet-hidden {
+	 	display: none;
+	 }
+}
+.outlet-shown {
+	display: none;
+}
