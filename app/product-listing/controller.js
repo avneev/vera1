@@ -10,7 +10,7 @@ angular.module('myApp.product-listing', ['ngRoute'])
 }])
 
 .controller('ProductListingCtrl', ['$scope', '$rootScope', 'xhrFactory', function($scope, $rootScope, xhrFactory) {
-
+	$rootScope.layoutClass="product-listing";
 	$scope.showQuickView = false;
 
 	xhrFactory.getList('quick-view.json').then(
@@ -53,7 +53,6 @@ angular.module('myApp.product-listing', ['ngRoute'])
 		$scope.productView = product;
 	};
 	$scope.closeQuickView = function() {
-		console.log('asda')
 		$scope.showQuickView = false;
 		$scope.productView = [];
 	};
@@ -61,7 +60,6 @@ angular.module('myApp.product-listing', ['ngRoute'])
 	xhrFactory.getList('product-listing.json').then(
 		function(response) {
 			$scope.productListing = response;
-			console.log($scope.productListing)
 		},
 		function(error) {
 			console.log(error);

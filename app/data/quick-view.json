@@ -51,10 +51,14 @@
         "plpImgList": [
             {
                 "id": 0,
-                "src": "images/plp/bag_b.jpg"
+                "src": "images/plp/bag_a.jpg"
             },
             {
                 "id": 1,
+                "src": "images/plp/bag_b.jpg"
+            },
+            {
+                "id": 2,
                 "src": "images/plp/bag_c.jpg"
             }
         ]
@@ -107,6 +111,20 @@
                 "name": "orange",
                 "src":"images/plp/thumb_3.jpg"
             }
+        ],
+        "plpImgList": [
+            {
+                "id": 0,
+                "src": "images/plp/bag_a.jpg"
+            },
+            {
+                "id": 1,
+                "src": "images/plp/bag_b.jpg"
+            },
+            {
+                "id": 2,
+                "src": "images/plp/bag_c.jpg"
+            }
         ]
     },
     {
@@ -156,6 +174,20 @@
                 "name": "orange",
                 "src":"images/plp/thumb_3.jpg"
             }
+        ],
+        "plpImgList": [
+            {
+                "id": 0,
+                "src": "images/plp/bag_a.jpg"
+            },
+            {
+                "id": 1,
+                "src": "images/plp/bag_b.jpg"
+            },
+            {
+                "id": 2,
+                "src": "images/plp/bag_c.jpg"
+            }
         ]
     },
     {
@@ -204,6 +236,20 @@
                 "id": 2,
                 "name": "orange",
                 "src":"images/plp/thumb_3.jpg"
+            }
+        ],
+        "plpImgList": [
+            {
+                "id": 0,
+                "src": "images/plp/bag_a.jpg"
+            },
+            {
+                "id": 1,
+                "src": "images/plp/bag_b.jpg"
+            },
+            {
+                "id": 2,
+                "src": "images/plp/bag_c.jpg"
             }
         ]
     }
