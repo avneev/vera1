@@ -26,15 +26,22 @@
 		</ul>
 	</div>
 	<div class="large-4 columns no-padding img-margin">
-		<img class="sticky-specific" src="images/logo.png"/>
-		<img class="sticky-logo pulse2" src="images/logo-sticky.png"/>
+		<a href="#/home"><img class="sticky-specific" src="images/logo.png"/>
+		<img class="sticky-logo pulse2" src="images/logo-sticky.png"/><a/>
 	</div>
 	<div class="large-4 columns silver-border no-padding right-nav">
 
 		<ul ng-class="{'stuck-shown': fixedSubmenu}" class="nav-items" >
-			<li class="pulse2" ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
+			<li ng-if="!isOutlet" class="pulse2" ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
 				<a href="{{item.link}}">{{item.name}}</a>
 				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu.html'"></div>
+				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
+					<img src="images/menu/arrow_menu.jpg">
+				</div>
+			</li>
+			<li ng-if="isOutlet" class="pulse2" ng-repeat = "item in navRight" ng-mouseover="showSubMenu(item)" ng-mouseleave="hideSubMenu(item)">
+				<a href="{{item.link}}">{{item.name}}</a>
+				<div class="sub-menu" ng-show="item.subMenuVisible" ng-include src="'partials/sub-menu-outlet.html'"></div>
 				<div class="menu-arrow" ng-show="item.subMenuVisible" style="top: {{item.top}}rem; left: {{item.left}}rem">
 					<img src="images/menu/arrow_menu.jpg">
 				</div>
@@ -46,5 +53,6 @@
 			</li>
 		</ul>
 	</div>
+
 </div>
 

@@ -11,14 +11,6 @@ angular.module('myApp.header', [])
 			console.log(error);
 		}
 	)
-	xhrFactory.getList('nav-right.json').then(
-		function(response) {
-			$scope.navRight = response;
-		},
-		function(error) {
-			console.log(error);
-		}
-	)
 	$scope.fixedSubmenu = false;
 	$scope.showSubMenu = function (item){
 		item.subMenuVisible = true;
