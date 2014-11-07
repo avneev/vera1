@@ -9,6 +9,7 @@
         "product_tag": "Sturdy and petite",
         "is_ad": false,
         "is_new": true,
+        "ad_spacing":6,
         "avalable_color": [
             {
                 "id": 0,
@@ -38,6 +39,7 @@
         "product_tag": "Sturdy and petite",
         "is_ad": false,
         "is_new": true,
+        "ad_spacing":6,
         "avalable_color": [
             {
                 "id": 0,
@@ -176,13 +178,14 @@
     {
         "id": 6,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/p_img7.jpg",
+        "image": "images/plp/animated_banner.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
-        "is_ad": false,
+        "is_ad": true,
         "is_new": true,
+        "ad_spacing":6,
         "avalable_color": [
             {
                 "id": 0,
@@ -321,13 +324,14 @@
     {
         "id": 11,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/p_img12.jpg",
+        "image": "images/plp/free_banner.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
-        "is_ad": false,
+        "is_ad": true,
         "is_new": true,
+        "ad_spacing":3,
         "avalable_color": [
             {
                 "id": 0,
