@@ -67,7 +67,7 @@
     {
         "id": 1,
         "name": "sale",
-        "link": "#/product-listing",
+        "link": "#/outlet",
         "subMenuVisible": false,
         "menuList1": [
             {
