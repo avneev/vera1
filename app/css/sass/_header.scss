@@ -107,7 +107,7 @@
 	 	border-bottom: 1px solid $silver;
 	 	.nav-items{
 	 		margin: 2rem 0 0!important;
-	 		opacity: 0.5;
+	 		opacity: 1;
 	 		transition: margin 2s;
 	 		li{
 	 			font-size: 1rem;
@@ -139,10 +139,6 @@
 	    	display: none;opacity: 0;
 	 	}
 	 	.sub-menu {
-	 		z-index: 9999!important;
-	 		background-color: #fff!important;
-	 		opacity: 1!important;
-	 		height: 20rem;
 	 		top: 7rem;
 	 	}
 	 	.right-nav, .left-nav {
