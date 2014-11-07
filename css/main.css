@@ -1,0 +1,714 @@
+/*Color Set*/
+@font-face {
+  font-family: "BrandonGrotesque";
+  src: url(../fonts/brandon_re.ttf);
+}
+/* line 6, sass/_core.scss */
+body {
+  font-family: "BrandonGrotesque";
+  font-size: 0.8rem;
+  color: #3B3B3B;
+}
+
+/* line 11, sass/_core.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "BrandonGrotesque";
+  margin: 0;
+}
+
+/* line 15, sass/_core.scss */
+.row {
+  max-width: 80rem;
+}
+
+/* line 18, sass/_core.scss */
+.small-row {
+  max-width: 63.8rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 23, sass/_core.scss */
+.full-width {
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 28, sass/_core.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 31, sass/_core.scss */
+p {
+  line-height: 1.4rem;
+}
+
+/* line 35, sass/_core.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 39, sass/_core.scss */
+.full-width {
+  max-width: 100%;
+}
+
+/* line 43, sass/_core.scss */
+.silver-border {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* line 1, sass/_header.scss */
+.header-wrapper {
+  background-color: #F7F7F9;
+}
+
+/* line 4, sass/_header.scss */
+.header {
+  font-size: 95%;
+  padding: 0.5rem 0 0.2rem;
+  width: 95%;
+}
+/* line 8, sass/_header.scss */
+.header__left-column, .header__right-column {
+  text-transform: uppercase;
+  font-size: 85%;
+}
+/* line 13, sass/_header.scss */
+.header__right-column span {
+  color: #A5A5A5;
+}
+/* line 17, sass/_header.scss */
+.header__left-column {
+  padding-top: 0.25rem;
+  font-size: 104%;
+  color: #666666;
+}
+/* line 21, sass/_header.scss */
+.header__left-column span {
+  font-size: 77%;
+}
+/* line 24, sass/_header.scss */
+.header__left-column .verticle-line {
+  font-size: 100%;
+  height: 2rem;
+  padding: .01rem .2rem 0;
+  vertical-align: top;
+}
+/* line 32, sass/_header.scss */
+.header__icon-list {
+  margin: -.2rem 0 0;
+  float: right;
+  padding-right: 0;
+}
+/* line 36, sass/_header.scss */
+.header__icon-list li {
+  display: inline;
+  padding: 0 3px;
+}
+/* line 42, sass/_header.scss */
+.header__right-text {
+  float: right;
+  padding: 0;
+}
+/* line 46, sass/_header.scss */
+.header .text-pink {
+  color: #DD1264;
+  font-size: inherit;
+}
+/* line 49, sass/_header.scss */
+.header .text-pink.bold {
+  font-weight: bold;
+}
+
+/* line 55, sass/_header.scss */
+.main-nav {
+  position: relative;
+  background-color: #FFFFFF;
+  z-index: 10;
+}
+/* line 59, sass/_header.scss */
+.main-nav .nav-items {
+  margin: 4rem 0 0;
+}
+/* line 61, sass/_header.scss */
+.main-nav .nav-items li {
+  display: inline-block;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  height: 3rem;
+}
+/* line 66, sass/_header.scss */
+.main-nav .nav-items li a {
+  color: #3B3B3B;
+}
+/* line 71, sass/_header.scss */
+.main-nav .left-nav {
+  width: 30%;
+  margin-left: 3rem;
+  position: static;
+}
+/* line 76, sass/_header.scss */
+.main-nav .right-nav {
+  float: left !important;
+  margin-left: -1%;
+  width: 30%;
+  position: static;
+}
+/* line 86, sass/_header.scss */
+.main-nav .menu-arrow {
+  position: absolute;
+}
+@-webkit-keyframes pulse_animation {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.08);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* line 99, sass/_header.scss */
+.main-nav .sticky-logo {
+  display: none;
+}
+/* line 102, sass/_header.scss */
+.main-nav.stuck {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid #CCCCCC;
+}
+/* line 108, sass/_header.scss */
+.main-nav.stuck .nav-items {
+  margin: 2rem 0 0 !important;
+  opacity: 1;
+  transition: margin 2s;
+}
+/* line 112, sass/_header.scss */
+.main-nav.stuck .nav-items li {
+  font-size: 1rem;
+}
+/* line 115, sass/_header.scss */
+.main-nav.stuck .nav-items .pulse2 {
+  -webkit-animation-name: 'pulse_animation';
+  -webkit-animation-duration: 5000ms;
+  -webkit-transform-origin: 70% 70%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+/* line 122, sass/_header.scss */
+.main-nav.stuck .nav-items.stuck-shown {
+  height: 23rem;
+}
+/* line 126, sass/_header.scss */
+.main-nav.stuck .sticky-logo {
+  display: block;
+  opacity: 1;
+  height: 60px;
+  width: 300px;
+}
+/* line 132, sass/_header.scss */
+.main-nav.stuck .img-margin {
+  transition: margin-top 2s;
+  margin-top: 0.402rem;
+}
+/* line 136, sass/_header.scss */
+.main-nav.stuck .sticky-specific {
+  height: 5.68rem;
+  width: 25.8rem;
+  display: none;
+  opacity: 0;
+}
+/* line 141, sass/_header.scss */
+.main-nav.stuck .sub-menu {
+  top: 7rem;
+}
+/* line 144, sass/_header.scss */
+.main-nav.stuck .right-nav, .main-nav.stuck .left-nav {
+  border-bottom: 0;
+}
+/* line 147, sass/_header.scss */
+.main-nav.stuck .menu-arrow {
+  display: none;
+}
+/* line 151, sass/_header.scss */
+.main-nav .sub-menu {
+  left: 0;
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all linear 0.75s;
+  transition: all linear 0.75s;
+  opacity: 1;
+  background-color: #FFFFFF;
+  padding: 2.5rem 0;
+}
+/* line 162, sass/_header.scss */
+.main-nav .sub-menu.ng-hide {
+  opacity: 0;
+}
+/* line 165, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav {
+  margin-bottom: 1rem;
+}
+/* line 167, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav li {
+  color: #555555;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  height: 1.75rem;
+  text-transform: uppercase;
+}
+/* line 173, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav li:first-child {
+  font-weight: 600;
+}
+
+/* line 1, sass/_footer.scss */
+.footer {
+  background-image: url("../images/bg-footer.jpg");
+  background-repeat: no-repeat;
+}
+/* line 4, sass/_footer.scss */
+.footer .col-md-12 {
+  width: 100%;
+  padding: 18rem 3rem 0;
+}
+/* line 8, sass/_footer.scss */
+.footer .pull-left {
+  float: left !important;
+}
+/* line 11, sass/_footer.scss */
+.footer .footer-column {
+  padding: 0 1rem;
+  width: 18%;
+}
+/* line 15, sass/_footer.scss */
+.footer .indent-margin {
+  margin: 0;
+}
+/* line 19, sass/_footer.scss */
+.footer .child-li li {
+  cursor: pointer;
+  font-size: 0.65rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+  color: #666666;
+}
+/* line 27, sass/_footer.scss */
+.footer .font-footer-bold {
+  font-size: 0.68rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+/* line 32, sass/_footer.scss */
+.footer .padding-bottom-15 {
+  padding-bottom: 1.5rem;
+}
+/* line 35, sass/_footer.scss */
+.footer .footer-bar {
+  border-top: 0.15rem solid #CCCCCC;
+  padding-top: 3rem;
+}
+/* line 39, sass/_footer.scss */
+.footer .footer-terms_condition {
+  color: #666666;
+  font-size: 0.65rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  padding-bottom: 1.1rem !important;
+  padding-top: 3rem !important;
+}
+
+/* line 3, sass/_homepage.scss */
+.live-colorful p, .live-colorful .border-bottom {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+/* line 7, sass/_homepage.scss */
+.live-colorful span {
+  background-color: #FFFFFF;
+  z-index: 1;
+  font-size: 90%;
+  padding: 0 2rem;
+}
+/* line 13, sass/_homepage.scss */
+.live-colorful .border-bottom {
+  width: 97%;
+  position: absolute;
+  left: 0;
+  top: -19px;
+  border-bottom: 1px solid #DCDCDC;
+  z-index: -1;
+}
+
+/* line 22, sass/_homepage.scss */
+.moon-blooms {
+  padding: 4rem 0 3rem;
+}
+
+/* line 25, sass/_homepage.scss */
+.threads-of-inspirations {
+  padding: 0 1rem 2rem;
+}
+
+/* line 29, sass/_homepage.scss */
+.moon-blooms-designer h3 {
+  font-size: 113%;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+/* line 34, sass/_homepage.scss */
+.moon-blooms-designer h2 {
+  font-size: 180%;
+  text-align: center;
+}
+
+/* line 39, sass/_homepage.scss */
+.featured-fan {
+  background-color: #F4F2E5;
+  margin: 3rem 0 0;
+  text-align: center;
+}
+/* line 43, sass/_homepage.scss */
+.featured-fan__profile {
+  margin: 6rem 0 0 3rem;
+}
+/* line 45, sass/_homepage.scss */
+.featured-fan__profile img {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 49, sass/_homepage.scss */
+.featured-fan__desc {
+  margin: 2.5rem 0 0;
+}
+/* line 51, sass/_homepage.scss */
+.featured-fan__desc h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+/* line 55, sass/_homepage.scss */
+.featured-fan__desc h1 {
+  font-size: 3.5rem;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto 1rem;
+  width: 60%;
+}
+/* line 61, sass/_homepage.scss */
+.featured-fan__desc p {
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+}
+
+/* line 67, sass/_homepage.scss */
+.top-3-things {
+  background-color: #F9F9F7;
+  text-align: center;
+}
+/* line 70, sass/_homepage.scss */
+.top-3-things h1 {
+  font-size: 1.3rem;
+}
+/* line 73, sass/_homepage.scss */
+.top-3-things p {
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 0 3.5rem;
+}
+/* line 77, sass/_homepage.scss */
+.top-3-things p:before {
+  content: "\2018\2018";
+}
+/* line 80, sass/_homepage.scss */
+.top-3-things p:after {
+  content: "\2019\2019";
+}
+/* line 84, sass/_homepage.scss */
+.top-3-things__text {
+  background-color: #F4F2E5;
+  height: 18.5rem;
+  padding: 6rem 0 0 !important;
+  width: 23.8%;
+}
+/* line 89, sass/_homepage.scss */
+.top-3-things__text span {
+  display: block;
+  font-size: 3rem;
+  padding: 0 2rem;
+}
+/* line 95, sass/_homepage.scss */
+.top-3-things--second {
+  margin-right: 0.9rem;
+}
+/* line 98, sass/_homepage.scss */
+.top-3-things .large-3 {
+  padding-top: 3rem;
+}
+
+/* line 102, sass/_homepage.scss */
+.vera-girls {
+  margin: 4rem 0 0;
+}
+/* line 104, sass/_homepage.scss */
+.vera-girls .large-3 {
+  border-right: 1px dotted #CCCCCC;
+  height: 12.7rem;
+}
+/* line 109, sass/_homepage.scss */
+.vera-girls__text p {
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  padding: 2rem 2rem 0;
+  text-align: right;
+  line-height: 2.8rem;
+}
+/* line 118, sass/_homepage.scss */
+.vera-girls__product p {
+  display: inline-block;
+}
+/* line 121, sass/_homepage.scss */
+.vera-girls__product__profile-img {
+  width: 25px;
+  height: 25px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  margin-right: 1rem;
+  vertical-align: top;
+}
+/* line 129, sass/_homepage.scss */
+.vera-girls__product__info--name {
+  display: inline-block;
+  vertical-align: middle;
+  width: 62%;
+}
+/* line 133, sass/_homepage.scss */
+.vera-girls__product__info--name h1 {
+  font-size: 1.5rem;
+}
+/* line 136, sass/_homepage.scss */
+.vera-girls__product__info--name span {
+  font-size: 1rem;
+}
+/* line 142, sass/_homepage.scss */
+.vera-girls__product__info h2 {
+  font-size: 1.1rem;
+}
+/* line 145, sass/_homepage.scss */
+.vera-girls__product__info--bottom {
+  margin: .7rem 0 0;
+}
+/* line 151, sass/_homepage.scss */
+.vera-girls__profile-info .pink-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+/* line 155, sass/_homepage.scss */
+.vera-girls__profile-info span {
+  font-size: 0.9rem;
+  display: block;
+  line-height: 1rem;
+}
+/* line 161, sass/_homepage.scss */
+.vera-girls--last {
+  border-right: 0;
+}
+
+/* line 165, sass/_homepage.scss */
+.pink-text {
+  color: #DD1264;
+}
+
+/* line 1, sass/_product_listing.scss */
+.filter-head {
+  background-color: #69D8C7;
+}
+/* line 3, sass/_product_listing.scss */
+.filter-head .filter-nav {
+  margin-bottom: 0;
+}
+/* line 5, sass/_product_listing.scss */
+.filter-head .filter-nav li {
+  display: inline-block;
+  width: 8rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  line-height: 2.75rem;
+}
+/* line 11, sass/_product_listing.scss */
+.filter-head .filter-nav li a {
+  color: #555555;
+}
+/* line 14, sass/_product_listing.scss */
+.filter-head .filter-nav li.active-category {
+  background: url("../images/plp/tab_arrow.png") no-repeat scroll center bottom;
+}
+/* line 19, sass/_product_listing.scss */
+.filter-head .filter-hint {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 2.75rem;
+  margin-bottom: 0;
+}
+
+/* line 27, sass/_product_listing.scss */
+.filter-body {
+  background-color: #F1F1F1;
+  padding: 1rem 0 3rem;
+}
+/* line 30, sass/_product_listing.scss */
+.filter-body .category-image {
+  margin-right: .5rem;
+  cursor: pointer;
+}
+/* line 33, sass/_product_listing.scss */
+.filter-body .category-image.active {
+  border: 2px solid #69D8C7;
+  border-radius: 4px;
+}
+/* line 38, sass/_product_listing.scss */
+.filter-body .added-filter {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  background-color: #CCCCCC;
+  font-size: 0.8rem;
+  margin: 1rem auto 0;
+  padding: 5px;
+  width: 50%;
+}
+/* line 47, sass/_product_listing.scss */
+.filter-body .remove-filter {
+  color: #000000;
+}
+
+/* line 53, sass/_product_listing.scss */
+.product-listing .center-align {
+  text-align: center;
+}
+/* line 56, sass/_product_listing.scss */
+.product-listing .new-tag {
+  position: absolute;
+  color: #FFFFFF;
+  background-color: #3a3845;
+  padding: 0.3rem 0.7rem;
+  top: 1rem;
+  font-weight: bold;
+}
+/* line 64, sass/_product_listing.scss */
+.product-listing .left-align {
+  text-align: left;
+}
+/* line 67, sass/_product_listing.scss */
+.product-listing .padding-bottom-5 {
+  padding-bottom: 0.5rem;
+}
+/* line 70, sass/_product_listing.scss */
+.product-listing .padding-bottom-4 {
+  padding-bottom: 0.4rem;
+}
+/* line 73, sass/_product_listing.scss */
+.product-listing .font-size-65 {
+  font-size: 0.65rem;
+}
+/* line 76, sass/_product_listing.scss */
+.product-listing .product-detail {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+/* line 80, sass/_product_listing.scss */
+.product-listing .text-transform-upper {
+  text-transform: uppercase;
+}
+/* line 83, sass/_product_listing.scss */
+.product-listing .padding-productBlock {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+/* line 86, sass/_product_listing.scss */
+.product-listing .padding-productBlock:hover {
+  cursor: pointer;
+  background-color: #F5F5F5;
+}
+/* line 89, sass/_product_listing.scss */
+.product-listing .padding-productBlock:hover .productImg {
+  margin-top: 45px;
+  width: 190px;
+}
+/* line 93, sass/_product_listing.scss */
+.product-listing .padding-productBlock:hover .product-rating {
+  opacity: 1;
+}
+/* line 98, sass/_product_listing.scss */
+.product-listing .padding-productBlock .image-fixed-dimention {
+  height: 235px;
+  margin: 0 auto;
+  width: 235px;
+}
+/* line 104, sass/_product_listing.scss */
+.product-listing .product-rating {
+  position: absolute;
+  left: 7rem;
+  opacity: 0;
+}
+
+/* line 110, sass/_product_listing.scss */
+.product-listingHeader {
+  padding: 1rem 1.8rem;
+  letter-spacing: 0.02rem;
+  font-size: 0.7rem;
+}
+/* line 114, sass/_product_listing.scss */
+.product-listingHeader .pull-left {
+  float: left !important;
+}
+/* line 117, sass/_product_listing.scss */
+.product-listingHeader .pull-right {
+  float: right !important;
+}
+/* line 120, sass/_product_listing.scss */
+.product-listingHeader span {
+  vertical-align: middle;
+}
+/* line 123, sass/_product_listing.scss */
+.product-listingHeader .selected-filter {
+  color: #CCCCCC;
+  padding-left: 1rem;
+}
+/* line 129, sass/_product_listing.scss */
+.product-listingHeader .filter-sort span {
+  color: #CCCCCC;
+  padding-left: 1rem;
+}
+/* line 132, sass/_product_listing.scss */
+.product-listingHeader .filter-sort span a {
+  color: #CCCCCC;
+}
+/* line 136, sass/_product_listing.scss */
+.product-listingHeader .filter-sort .selected {
+  color: #555555 !important;
+}

@@ -1,0 +1,145 @@
+.filter-head {
+	background-color: $biege-green;
+	.filter-nav {
+		margin-bottom: 0;
+		li {
+		    display: inline-block;
+		    width: 8rem;
+		    text-transform: $text-uppercase;
+		    font-size: .9rem;
+		    line-height: 2.75rem;
+		    a {
+		    	color: $grey;
+		    }
+		    &.active-category {
+			    background: url("../images/plp/tab_arrow.png") no-repeat scroll center bottom;
+			}
+		}
+	}
+	.filter-hint {
+		color: $white;
+		text-transform: $text-uppercase;
+		font-size: .75rem;
+		line-height: 2.75rem;
+		margin-bottom: 0;
+	}
+}
+.filter-body {
+	background-color: $light-grey;
+	padding: 1rem 0 3rem;
+	.category-image {
+		margin-right: .5rem;
+		cursor:pointer;
+		&.active {
+			border: 2px solid $biege-green;
+			border-radius: 4px;
+		}
+	}
+	.added-filter {
+		text-transform: $text-uppercase;
+		margin-top: 1rem;
+		background-color: $silver;
+		font-size: 0.8rem;
+	    margin: 1rem auto 0;
+	    padding: 5px;
+	    width: 50%;
+	}
+	.remove-filter {
+		color: $black;
+	}
+}
+
+.product-listing{
+	.center-align{
+		text-align: center;
+	}
+	.new-tag{
+		position: absolute; 
+		color: $white; 
+		background-color: #3a3845; 
+		padding: 0.3rem 0.7rem; 
+		top: 1rem;
+		font-weight: bold;
+	}
+	.left-align{
+		text-align: left;
+	}
+	.padding-bottom-5{
+		padding-bottom: 0.5rem;
+	}
+	.padding-bottom-4{
+		padding-bottom: 0.4rem;
+	}
+	.padding-ad{
+		padding-bottom: 2rem;
+    	padding-top: 2rem;
+	}
+	.font-size-65{
+		font-size: 0.65rem;
+	}
+	.product-detail{
+		font-size: 0.7rem;
+	    font-weight: bold;  
+	}
+	.text-transform-upper{
+		text-transform: uppercase;
+	}
+	.padding-productBlock{
+		padding-bottom: 2rem;
+    	padding-top: 2rem;
+    	&:hover{
+    		cursor:pointer;
+    		background-color:#F5F5F5;
+    		.productImg{
+				margin-top: 45px;
+    			width: 190px;
+			}
+			.product-rating{
+				opacity: 1;
+			}
+			
+    	}
+    	.image-fixed-dimention{
+    		height: 235px;
+		    margin: 0 auto;
+		    width: 235px;
+		}
+	}
+	.product-rating{
+		position: absolute; 
+		left: 7rem; 
+		opacity: 0;
+	}
+}
+.product-listingHeader{
+	padding: 1rem 1.8rem;
+	letter-spacing: 0.02rem;
+	font-size: 0.7rem;
+	.pull-left{
+		float: left !important;
+	}
+	.pull-right{
+		float: right !important;
+	}
+	span{
+		vertical-align: middle;
+	}
+	.selected-filter{
+		color: $silver;
+    	padding-left: 1rem;
+	}
+	.filter-sort{
+		
+		span{
+			color: $silver;
+			padding-left: 1rem;
+			a{
+				color: $silver;
+			}
+		}
+		.selected{
+			color:$grey !important;
+		}
+	}
+}
+
