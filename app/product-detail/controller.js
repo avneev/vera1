@@ -12,6 +12,7 @@ angular.module('myApp.product-detail', ['ngRoute'])
 .controller('ProductDetailCtrl', ['$scope', '$rootScope', 'xhrFactory', function($scope, $rootScope, xhrFactory) {
 	$scope.selectedUrl = "images/pdp/big_bag.jpg";
 	$scope.toggleOpen = true;
+  $rootScope.breadCrumb = "<a href='#'>HOME</a> / <a href='#/product-listing'>BAGS</a> / <a style='font-weight:bold;' href='#/product-detail'>SHOULDER BAGS</a>";
 	jQuery(document).foundation({
 	  orbit: {
 	   animation: 'slide',

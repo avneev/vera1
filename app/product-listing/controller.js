@@ -13,7 +13,7 @@ angular.module('myApp.product-listing', ['ngRoute'])
 	$rootScope.layoutClass="product-listing";
 	$scope.showQuickView = false;
 	$scope.filtersList = [];
-
+	$rootScope.breadCrumb = "<a href='#'>HOME</a> / <a style='font-weight:bold;' href='#/product-listing'>BAGS</a>";
 	xhrFactory.getList('quick-view.json').then(
 		function(response) {
 			$scope.quickViewListing = response;		},

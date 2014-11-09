@@ -50,6 +50,7 @@ run(function($rootScope, $route, $http, $location, xhrFactory) {
     $('html,body').animate({scrollTop: 0}, 100);
     if($location.path() == '/outlet'){
       $rootScope.isOutlet = true;
+      $rootScope.breadCrumb = "";
       xhrFactory.getList('nav-right-outlet.json').then(
         function(response) {
           $rootScope.navRight = response;
@@ -59,6 +60,9 @@ run(function($rootScope, $route, $http, $location, xhrFactory) {
         }
       )
     }else{
+        if($location.path() == '/'){
+          $rootScope.breadCrumb = "";
+        }
         $rootScope.isOutlet = false;
         xhrFactory.getList('nav-right.json').then(
           function(response) {
@@ -70,4 +74,8 @@ run(function($rootScope, $route, $http, $location, xhrFactory) {
         )
     }
   });
-});
+}).filter('to_trusted', ['$sce', function($sce){
+      return function(text) {
+          return $sce.trustAsHtml(text);
+      };
+}]);
