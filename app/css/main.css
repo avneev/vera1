@@ -1137,127 +1137,135 @@ a.main-nav-list.active {
   font-size: 1.8rem;
 }
 /* line 53, sass/_product_detail.scss */
-.product-detail .product-description .desc-list, .product-detail .product-description .read-review {
+.product-detail .product-description .desc-list {
   font-size: 0.7rem;
   font-weight: bold;
 }
 /* line 57, sass/_product_detail.scss */
 .product-detail .product-description .read-review {
+  font-size: 0.9rem;
   letter-spacing: 0.05rem;
   cursor: pointer;
   padding-left: 0.5rem;
+  font-family: "BrandonGrotesqueMedium";
 }
-/* line 63, sass/_product_detail.scss */
+/* line 64, sass/_product_detail.scss */
 .product-detail .product-description .product-color-choose {
   padding-top: 2rem;
 }
-/* line 65, sass/_product_detail.scss */
+/* line 66, sass/_product_detail.scss */
 .product-detail .product-description .product-color-choose span {
   padding-right: 0.5rem;
   cursor: pointer;
 }
-/* line 69, sass/_product_detail.scss */
+/* line 70, sass/_product_detail.scss */
 .product-detail .product-description .product-color-choose div {
   font-size: 0.66rem;
   font-weight: bold;
   padding-top: 0.5rem;
 }
-/* line 74, sass/_product_detail.scss */
+/* line 75, sass/_product_detail.scss */
 .product-detail .product-description .product-color-choose .color-selected {
   border: 0.3rem solid #dc1065;
   padding: 0.12rem;
 }
-/* line 79, sass/_product_detail.scss */
+/* line 80, sass/_product_detail.scss */
 .product-detail .product-description .purchase-buttons {
   padding: 2rem 0;
   border-bottom: 1px solid #DCDCDC;
   width: 21rem;
 }
-/* line 83, sass/_product_detail.scss */
+/* line 84, sass/_product_detail.scss */
 .product-detail .product-description .purchase-buttons span {
   margin-right: 1rem;
   cursor: pointer;
 }
-/* line 88, sass/_product_detail.scss */
+/* line 89, sass/_product_detail.scss */
 .product-detail .product-description .open-close-menu {
   padding-right: 0.45rem;
   vertical-align: bottom;
 }
-/* line 92, sass/_product_detail.scss */
+/* line 93, sass/_product_detail.scss */
 .product-detail .product-description .common-padding-width-class, .product-detail .product-description .store-locator {
   border-bottom: 1px solid #DCDCDC;
   padding: 1rem 0;
   width: 21rem;
 }
-/* line 99, sass/_product_detail.scss */
+/* line 100, sass/_product_detail.scss */
 .product-detail .product-description .store-locator span {
   font-size: 0.7rem;
   font-weight: bold;
 }
-/* line 103, sass/_product_detail.scss */
+/* line 104, sass/_product_detail.scss */
 .product-detail .product-description .store-locator ul {
   font-size: 0.8rem;
   padding-top: 1rem;
 }
-/* line 108, sass/_product_detail.scss */
+/* line 109, sass/_product_detail.scss */
 .product-detail .product-description .store-locator ul li span {
   color: #A5A5A5;
 }
-/* line 114, sass/_product_detail.scss */
+/* line 115, sass/_product_detail.scss */
 .product-detail .product-description .product-share {
   font-size: 1rem;
 }
-/* line 121, sass/_product_detail.scss */
+/* line 120, sass/_product_detail.scss */
+.product-detail .product-description .font-brandon {
+  font-family: "BrandonGrotesqueMedium";
+  font-size: 0.75rem !important;
+  font-weight: normal !important;
+}
+/* line 127, sass/_product_detail.scss */
 .product-detail .product-display .text-center, .product-detail .product-display .product-items {
   text-align: center;
 }
-/* line 126, sass/_product_detail.scss */
+/* line 132, sass/_product_detail.scss */
 .product-detail .product-display .product-items span {
   padding: 0 0.5rem;
   cursor: pointer;
 }
-/* line 129, sass/_product_detail.scss */
+/* line 135, sass/_product_detail.scss */
 .product-detail .product-display .product-items span img {
   border: 1px solid #DCDCDC;
 }
-/* line 133, sass/_product_detail.scss */
+/* line 139, sass/_product_detail.scss */
 .product-detail .product-display .product-items .selected {
   border: 1px solid #3a3845;
 }
-/* line 138, sass/_product_detail.scss */
+/* line 144, sass/_product_detail.scss */
 .product-detail .footer-color {
   color: #3a3845;
   padding-bottom: 3rem;
 }
-/* line 141, sass/_product_detail.scss */
+/* line 147, sass/_product_detail.scss */
 .product-detail .footer-color .product-name {
   font-size: 1rem;
   padding-bottom: 0.2rem;
   padding-top: 0.5rem;
 }
-/* line 146, sass/_product_detail.scss */
+/* line 152, sass/_product_detail.scss */
 .product-detail .footer-color .price {
   font-weight: bold;
 }
-/* line 150, sass/_product_detail.scss */
+/* line 156, sass/_product_detail.scss */
 .product-detail .complete-look {
   font-size: 2.2rem;
   padding-bottom: 1.5rem;
 }
-/* line 154, sass/_product_detail.scss */
+/* line 160, sass/_product_detail.scss */
 .product-detail .zoom {
   display: inline-block;
   position: relative;
 }
-/* line 158, sass/_product_detail.scss */
+/* line 164, sass/_product_detail.scss */
 .product-detail .zoom img {
   display: block;
 }
-/* line 161, sass/_product_detail.scss */
+/* line 167, sass/_product_detail.scss */
 .product-detail .zoom img::selection {
   background-color: transparent;
 }
-/* line 162, sass/_product_detail.scss */
+/* line 168, sass/_product_detail.scss */
 .product-detail .heightAccordian {
   height: 7rem;
   overflow: hidden;
