@@ -159,4 +159,10 @@
 		display: block;
 	}
 	.zoom img::selection { background-color: transparent; }
+	.heightAccordian{
+		height: 7rem;
+		overflow: hidden;
+  		-webkit-transition: 0.5s linear all;
+  		transition: 0.5s linear all;
+	}
 }
