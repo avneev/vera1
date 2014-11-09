@@ -23,39 +23,37 @@
             },
             {
                 "id": 4,
-                "name": "sale colors"
+                "name": "gifts"
             },
             {
                 "id": 5,
+                "name": "jewelry"
+            },
+            {
+                "id": 6,
                 "name": "view all"
             }
         ],
         "menuList2": [
             {
                 "id": 0,
-                "name": "Feature"
+                "name": "collections"
             },
             {
                 "id": 1,
-                "name": "baby sale"
+                "name": "patterns"
             },
             {
                 "id": 2,
-                "name": "jewelry sale"
-            }
-        ],
-        "menuList3": [
-            {
-                "id": 0,
-                "name": "Outlet"
+                "name": "leather"
             },
             {
-                "id": 1,
-                "name": "new arrivals"
+                "id": 3,
+                "name": "vera vera"
             },
             {
-                "id": 2,
-                "name": "view all"
+                "id": 4,
+                "name": "signature"
             }
         ],
         "banner1": "images/menu/menu_banner1.jpg",
@@ -126,37 +124,47 @@
             },
             {
                 "id": 1,
-                "name": "hand bags"
+                "name": "wallets"
             },
             {
                 "id": 2,
-                "name": "travel"
+                "name": "wristlets"
             },
             {
                 "id": 3,
-                "name": "accessories"
+                "name": " fashion accessories"
             },
             {
                 "id": 4,
-                "name": "sale colors"
+                "name": "cosmetics"
             },
             {
                 "id": 5,
+                "name": "tech"
+            },
+            {
+                "id": 6,
+                "name": "lunch bags"
+            },
+            {
+                "id": 7,
+                "name": "personal accessories"
+            },
+            {
+                "id": 8,
+                "name": "paper & gifts"
+            },
+            {
+                "id": 9,
+                "name": "home"
+            },
+            {
+                "id": 10,
                 "name": "view all"
-            }
-        ],
-        "menuList2": [
-            {
-                "id": 0,
-                "name": "Feature"
             },
             {
-                "id": 1,
-                "name": "baby sale"
-            },
-            {
-                "id": 2,
-                "name": "jewelry sale"
+                "id": 11,
+                "name": "most hearted"
             }
         ],
         "banner1": "images/menu/menu_banner1.jpg",
@@ -176,37 +184,47 @@
             },
             {
                 "id": 1,
-                "name": "hand bags"
+                "name": "wallets"
             },
             {
                 "id": 2,
-                "name": "travel"
+                "name": "wristlets"
             },
             {
                 "id": 3,
-                "name": "accessories"
+                "name": " fashion accessories"
             },
             {
                 "id": 4,
-                "name": "sale colors"
+                "name": "cosmetics"
             },
             {
                 "id": 5,
+                "name": "tech"
+            },
+            {
+                "id": 6,
+                "name": "lunch bags"
+            },
+            {
+                "id": 7,
+                "name": "personal accessories"
+            },
+            {
+                "id": 8,
+                "name": "paper & gifts"
+            },
+            {
+                "id": 9,
+                "name": "home"
+            },
+            {
+                "id": 10,
                 "name": "view all"
-            }
-        ],
-        "menuList2": [
-            {
-                "id": 0,
-                "name": "Feature"
             },
             {
-                "id": 1,
-                "name": "baby sale"
-            },
-            {
-                "id": 2,
-                "name": "jewelry sale"
+                "id": 11,
+                "name": "most hearted"
             }
         ],
         "banner1": "images/menu/menu_banner1.jpg",

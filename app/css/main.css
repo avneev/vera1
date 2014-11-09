@@ -313,7 +313,12 @@ video {
   margin-top: 1rem;
   border-bottom: 0;
 }
-/* line 193, sass/_header.scss */
+/* line 192, sass/_header.scss */
+.main-nav.stuck .vera-mid-logo {
+  position: absolute;
+  height: 4.2rem;
+}
+/* line 199, sass/_header.scss */
 .main-nav .sub-menu {
   left: 0;
   position: absolute;
@@ -330,16 +335,16 @@ video {
   background-color: #FFFFFF;
   padding: 2.5rem 0;
 }
-/* line 207, sass/_header.scss */
+/* line 213, sass/_header.scss */
 .main-nav .sub-menu.submenu-hidden {
   opacity: 0;
   max-height: 0;
 }
-/* line 211, sass/_header.scss */
+/* line 217, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav {
   margin-bottom: 1rem;
 }
-/* line 213, sass/_header.scss */
+/* line 219, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li {
   color: #555555;
   font-size: 0.75rem;
@@ -347,42 +352,44 @@ video {
   height: 1.75rem;
   text-transform: uppercase;
 }
-/* line 219, sass/_header.scss */
+/* line 225, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li:first-child {
   font-weight: 600;
 }
 
-/* line 227, sass/_header.scss */
+/* line 233, sass/_header.scss */
 .fixed-header-icons {
   float: right;
   margin: 1.5rem 2rem 0 0;
 }
-/* line 230, sass/_header.scss */
+/* line 236, sass/_header.scss */
 .fixed-header-icons li {
   display: inline;
   padding: 0 3px;
 }
 
-/* line 236, sass/_header.scss */
+/* line 242, sass/_header.scss */
 .fixed-header-icons, .menu-small {
   display: none;
 }
 
-/* line 239, sass/_header.scss */
+/* line 245, sass/_header.scss */
 .search {
   position: relative;
   float: left !important;
-  margin: 3.8rem 0 0;
+  /*margin: 3.8rem 0 0;*/
+  margin: 3.7rem 0 0;
+  padding-bottom: 0.1rem;
   width: 6%;
 }
 
-/* line 245, sass/_header.scss */
+/* line 253, sass/_header.scss */
 .searchbox {
   position: relative;
   width: 100%;
 }
 
-/* line 249, sass/_header.scss */
+/* line 257, sass/_header.scss */
 .searchbox-input {
   position: absolute;
   top: 0;
@@ -398,12 +405,12 @@ video {
   opacity: 0;
 }
 
-/* line 263, sass/_header.scss */
+/* line 271, sass/_header.scss */
 .searchbox-open .searchbox-input {
   opacity: 1;
 }
 
-/* line 266, sass/_header.scss */
+/* line 274, sass/_header.scss */
 .searchbox-icon,
 .searchbox-submit {
   display: block;
@@ -417,7 +424,7 @@ video {
   cursor: pointer;
 }
 
-/* line 278, sass/_header.scss */
+/* line 286, sass/_header.scss */
 .searchbox {
   position: relative;
   min-width: 50px;
@@ -434,7 +441,7 @@ video {
 /*......*/
 /*......*/
 /*......*/
-/* line 294, sass/_header.scss */
+/* line 302, sass/_header.scss */
 .searchbox-open {
   width: 49%;
   clear: both;
@@ -442,7 +449,7 @@ video {
   transform: translateX(-50%);
 }
 
-/* line 300, sass/_header.scss */
+/* line 308, sass/_header.scss */
 .search-expanded {
   width: 100%;
   text-align: center;
@@ -452,45 +459,50 @@ video {
   margin-top: 1rem;
 }
 
-/* line 308, sass/_header.scss */
+/* line 316, sass/_header.scss */
 .search-logo {
   display: none;
 }
 
-/* line 312, sass/_header.scss */
+/* line 320, sass/_header.scss */
 .fixed-header-search-expanded .sticky-logo {
   display: none !important;
 }
 
-/* line 317, sass/_header.scss */
+/* line 325, sass/_header.scss */
 .outlet .header-wrapper {
   background-color: #FE7F2E;
   color: #FFFFFF;
 }
-/* line 322, sass/_header.scss */
+/* line 330, sass/_header.scss */
 .outlet .header__left-column {
   color: #FFFFFF;
 }
-/* line 326, sass/_header.scss */
+/* line 334, sass/_header.scss */
 .outlet .header__right-column span {
   color: #FFFFFF;
 }
-/* line 331, sass/_header.scss */
+/* line 339, sass/_header.scss */
 .outlet .text-pink {
   color: #F5D666;
 }
-/* line 334, sass/_header.scss */
+/* line 342, sass/_header.scss */
 .outlet .outlet-shown {
   display: inline-block;
 }
-/* line 337, sass/_header.scss */
+/* line 345, sass/_header.scss */
 .outlet .outlet-hidden {
   display: none;
 }
 
-/* line 341, sass/_header.scss */
+/* line 349, sass/_header.scss */
 .outlet-shown {
   display: none;
+}
+
+/* line 353, sass/_header.scss */
+.nav-items > li > a.main-nav-list:hover {
+  font-weight: bold;
 }
 
 /* line 1, sass/_footer.scss */
