@@ -115,15 +115,15 @@
         "plpImgList": [
             {
                 "id": 0,
-                "src": "images/plp/bag_a.jpg"
+                "src":"images/plp/p_img2.jpg"
             },
             {
                 "id": 1,
-                "src": "images/plp/bag_b.jpg"
+                "src":"images/plp/p_img2-a.jpg"
             },
             {
                 "id": 2,
-                "src": "images/plp/bag_c.jpg"
+                "src":"images/plp/p_img2-b.jpg"
             }
         ]
     },
@@ -178,15 +178,15 @@
         "plpImgList": [
             {
                 "id": 0,
-                "src": "images/plp/bag_a.jpg"
+                "src": "images/plp/p_img3.jpg"
             },
             {
                 "id": 1,
-                "src": "images/plp/bag_b.jpg"
+                "src": "images/plp/p_img3_a.jpg"
             },
             {
                 "id": 2,
-                "src": "images/plp/bag_c.jpg"
+                "src": "images/plp/p_img3_b.jpg"
             }
         ]
     },
@@ -241,15 +241,18 @@
         "plpImgList": [
             {
                 "id": 0,
-                "src": "images/plp/bag_a.jpg"
+                "name": "taupe",
+                "src":"images/plp/p_img4.jpg"
             },
             {
                 "id": 1,
-                "src": "images/plp/bag_b.jpg"
+                "name": "black",
+                "src":"images/plp/p_img4_a.jpg"
             },
             {
                 "id": 2,
-                "src": "images/plp/bag_c.jpg"
+                "name": "orange",
+                "src":"images/plp/p_img4_b.jpg"
             }
         ]
     }
