@@ -2,14 +2,14 @@
 	<!-- <img src="images/plp/p_hero1.jpg"> -->
 
 <div class="large-12 columns ">
-<div class="pdp-headerPath"><span>HOME</span>/<span>BAGS</span>/<span>HANDBAGS</span>/<span class="selected">LEATHER</span></div>
+<div class="pdp-headerPath"><span><a href="#">HOME</a></span>/<span><a href="#/product-listing">BAGS</a></span>/<span class="selected">SHOULDER BAGS</span></div>
 </div>
 <div class="large-12 columns padding-bottom-3em">
 	<div class="large-4 columns product-description">
 		<div class="product-name highlightd-color padding-bottom-7">Quilted Emma Satchel</div>
 		<div class="padding-bottom-5 product-number">#14342231</div>
 		<div class="price padding-bottom-5 highlightd-color">$258</div>
-		<div><img class="margin-top-minus-3" src="images/plp/stars.png"/><span class="read-review">READ ALL REVIEWS</span></div>
+		<div><img class="margin-top-minus-3" src="images/plp/stars.png"/><span class="read-review highlightd-color">READ ALL REVIEWS</span></div>
 		<div class="product-color-choose padding-bottom-4">
 		<span><img class="color-selected" src="images/pdp/thumb_1a.jpg"/></span>
 		<span><img src="images/pdp/thumb_2a.jpg"/></span>
@@ -21,35 +21,35 @@
 			<span><img src="images/pdp/b_fav_this.jpg"></span>
 		</div>
 		<div class="store-locator">
-			<span class="open-close-menu"><img src="images/pdp/minus.png"/></span><span>AVALABLE AT <span style="color: rgb(220, 16, 101);">3</span> STORES</span>
-			<ul style="margin-bottom: 0px;">
+			<div ng-click="toggleCustom()" style="cursor: pointer;"><span class="open-close-menu"><img ng-if="toggleOpen" src="images/pdp/minus.png"/><img ng-if="!toggleOpen" src="images/pdp/plus.png"/></span ><span class="font-brandon">AVAILABLE AT <span style="color: rgb(220, 16, 101);">3</span> STORES</span></div>
+			<ul style="margin-bottom: 0px;" class="heightAccordian">
 				<li>835 N Michigan Avenue <span>(< 1 mi.)</span></li>
 				<li>111 N State St. <span>(< 1 mi.)</span></li>
 				<li class="padding-bottom-5">Old Orchard Center <span>(< 19 mi.)</span></li>
 				<li><img src="images/pdp/rabbit.jpg"></li>	
 			</ul>
 		</div>
-		<div class="common-padding-width-class desc-list" >
-			<span class="open-close-menu"><img src="images/pdp/plus.png"/></span><span>DETAILS & CARE</span>
+		<div class="common-padding-width-class desc-list" style="cursor: pointer;">
+			<span class="open-close-menu"><img src="images/pdp/plus.png"/></span><span class="font-brandon">DETAILS & CARE</span>
 		</div>
-		<div class="common-padding-width-class desc-list">
-			<span class="open-close-menu"><img src="images/pdp/plus.png"/></span><span>SHIPPING & STORAGE PICK UP</span>
+		<div class="common-padding-width-class desc-list" style="cursor: pointer;">
+			<span class="open-close-menu"><img src="images/pdp/plus.png"/></span><span class="font-brandon">SHIPPING & STORE PICK UP</span>
 		</div>
 		<div class="padding-top-2" >
 			<div class="product-share">SHARE</div>
-			<div><img src="images/social_icons_footer.png"></div>
+			<div><img src="images/pdp/social-icons.png"></div>
 		</div>
 	</div>
 	<div class="large-8 columns product-display">
 		<div class="text-center">
-			<!-- <img src="images/pdp/big_bag.jpg"> -->
 			<span class='zoom' id='ex1'  style="position: relative; overflow: hidden;">
-				<img src='{{selectedUrl}}' heigit="555" width="555" alt='Daisy on the Ohoopee'/>
+				<img src='{{selectedUrl}}' heigit="800" width="800" alt='Daisy on the Ohoopee'/>
 			</span>
 		</div>
 		<div class="product-items">
 			<span class="detectclick" ng-click="changeImg('images/pdp/big_bag.jpg')">
 			<img src="images/pdp/big_bag.jpg" ng-class="{'selected': selectedUrl=='images/pdp/big_bag.jpg'}" style="height: 5rem; width: 5rem;"></span>
+			<span class="detectclick" ng-click="changeImg('images/pdp/small_2.jpg')"><img src="images/pdp/small_2.jpg" ng-class="{'selected': selectedUrl=='images/pdp/small_2.jpg'}" style="height: 5rem; width: 5rem;"></span>
 			<span class="detectclick" ng-click="changeImg('images/pdp/small_3.jpg')"><img src="images/pdp/small_3.jpg" ng-class="{'selected': selectedUrl=='images/pdp/small_3.jpg'}" style="height: 5rem; width: 5rem;"></span>
 			<span class="detectclick" ng-click="changeImg('images/pdp/small_4.jpg')"><img src="images/pdp/small_4.jpg" ng-class="{'selected': selectedUrl=='images/pdp/small_4.jpg'}" style="height: 5rem; width: 5rem;"></span>
 			<span class="detectclick" ng-click="changeImg('images/pdp/small_5.jpg')"><img src="images/pdp/small_5.jpg" ng-class="{'selected': selectedUrl=='images/pdp/small_5.jpg'}" style="height: 5rem; width: 5rem;"></span>

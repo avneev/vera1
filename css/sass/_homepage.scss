@@ -158,3 +158,42 @@
 .pink-text {
 	color:$color-pink;
 }
+.roleover{
+	border: 0.2rem solid $white;
+    color: $white;
+    font-weight: $base-font-weight-bold ;
+    padding: 0.7rem 2rem;
+    position: absolute;
+    cursor: pointer;
+    &:hover{
+    	background-color:$white;
+    	color: $chromeBlack;
+    }
+}
+.roleover-Bag{
+	.shop-now{
+		display: none;
+	}
+	&:hover{
+		.shop-now{
+			display:block;
+			border: 0.2rem solid $white;
+			font-weight: $base-font-weight-bold ;
+		    padding: 0.5rem 1.8rem;
+		    position: absolute;
+		    cursor: pointer;
+	    	background-color:$white;
+	    	color: $chromeBlack;
+	    	left: 10rem;
+    		top: 10rem;
+		}
+    }
+}
+.shopRecoment-Pos{
+	left: 6.5rem;
+    top: 16rem;
+}
+.shopTogether-pos{
+	left: 10.7rem;
+    top: 16rem;
+}

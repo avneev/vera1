@@ -7,54 +7,36 @@
         "menuList1": [
             {
                 "id": 0,
-                "name": "Category"
-            },
-            {
-                "id": 1,
-                "name": "hand bags"
-            },
-            {
-                "id": 2,
-                "name": "travel"
-            },
-            {
-                "id": 3,
-                "name": "accessories"
-            },
-            {
-                "id": 4,
-                "name": "sale colors"
-            },
-            {
-                "id": 5,
-                "name": "view all"
+                "name": "gifts"
             }
         ],
         "menuList2": [
             {
                 "id": 0,
-                "name": "Feature"
+                "name": "gifts Ideas"
             },
             {
                 "id": 1,
-                "name": "baby sale"
+                "name": "brights"
             },
             {
                 "id": 2,
-                "name": "jewelry sale"
-            }
-        ],
-        "menuList3": [
-            {
-                "id": 0,
-                "name": "Outlet"
+                "name": "Most loved"
             },
             {
-                "id": 1,
-                "name": "new arrivals"
+                "id": 3,
+                "name": "under $100"
             },
             {
-                "id": 2,
+                "id": 4,
+                "name": "design a bag"
+            },
+            {
+                "id": 5,
+                "name": "gift cards"
+            },
+            {
+                "id": 6,
                 "name": "view all"
             }
         ],
@@ -67,7 +49,6 @@
     {
         "id": 1,
         "name": "sale",
-        "link": "#/outlet",
         "subMenuVisible": false,
         "menuList1": [
             {

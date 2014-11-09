@@ -24,7 +24,9 @@
 				<img ng-src="{{item.banner1}}">
 			</div>
 			<div class="columns" ng-class="{'large-4': !item.banner3, 'large-2 push-2': item.banner3}">
-				<img ng-src="{{item.banner2}}">
+				<a href="#/outlet">
+					<img ng-src="{{item.banner2}}">
+				</a>
 			</div> 
 			<div class="large-2 columns" ng-if="item.banner3">
 				<img ng-src="{{item.banner2}}">

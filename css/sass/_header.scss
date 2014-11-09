@@ -189,6 +189,12 @@
  			margin-top: 1rem;
  			border-bottom: 0;
  		}
+ 		.vera-mid-logo{
+ 			position: absolute;
+ 			height: 4.2rem;
+ 		}
+ 		
+
  	}
  	.sub-menu {
  		left: 0;
@@ -203,7 +209,7 @@
 		transition-duration: 500ms;
 		transition-timing-function: cubic-bezier(0, 1,1, 1);
  		background-color: $white;
- 		padding: 2.5rem 0;
+ 		margin-top: 2.5rem;
  		&.submenu-hidden {
  			opacity:0;
  			max-height:0;
@@ -239,7 +245,9 @@
  .search {
  	position: relative;
  	float: left!important;
- 	margin: 3.8rem 0 0;
+ 	/*margin: 3.8rem 0 0;*/
+ 	margin: 3.5rem 0 0;
+    padding-bottom: 0.3rem;
  	width: 6%;
  }
  .searchbox{
@@ -340,4 +348,16 @@
 }
 .outlet-shown {
 	display: none;
+}
+
+a.main-nav-list.active {
+	font-weight: bold;
+}
+.nav-bread-crumb {
+	display: inline-block; 
+	margin-left: 2rem; 
+	font-size: 0.9rem;
+	a{
+		color: $base-font-color;
+	}
 }

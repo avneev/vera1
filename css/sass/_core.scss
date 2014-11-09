@@ -3,6 +3,22 @@
     font-family: "BrandonGrotesque";
     src: url(../fonts/brandon_re.ttf);
 }
+@font-face {
+	font-family: "BrandonGrotesqueMedium";
+	src: url(../fonts/BrandonGrotesque-Medium.ttf);
+}
+@font-face {
+	font-family: "BrandonGrotesqueBold";
+	src: url(../fonts/BrandonGrotesque-Bold.ttf);
+}
+@font-face {
+	font-family: "MrsEavesMedium";
+	src: url(../fonts/MRSEAMedium.ttf);
+}
+@font-face {
+	font-family: "MrsEavesBold";
+	src: url(../fonts/MRSEAVBold.ttf);
+}
 body {
 	font-family:$base-font-family;
 	font-size:$base-font-size;
@@ -42,4 +58,7 @@ p {
 
 .silver-border {
 	border-bottom: 1px solid $silver;
+}
+video {
+	cursor:pointer;
 }
