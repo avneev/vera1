@@ -53,6 +53,19 @@
 	.center-align{
 		text-align: center;
 	}
+	.breadcrums{
+		span{
+			a{
+				color: $color-light-gray;
+				&:hover{
+					color: $color-light-gray;
+				}
+			}
+		}
+	}
+	.selected1{
+		color: $color-gray-dark;
+	}
 	.new-tag{
 		position: absolute; 
 		color: $white; 
