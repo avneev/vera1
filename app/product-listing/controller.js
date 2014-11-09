@@ -12,10 +12,20 @@ angular.module('myApp.product-listing', ['ngRoute'])
 .controller('ProductListingCtrl', ['$scope', '$rootScope', 'xhrFactory', function($scope, $rootScope, xhrFactory) {
 	$rootScope.layoutClass="product-listing";
 	$scope.showQuickView = false;
+	$scope.filtersList = [];
 
 	xhrFactory.getList('quick-view.json').then(
 		function(response) {
 			$scope.quickViewListing = response;		},
+		function(error) {
+			console.log(error);
+		}
+	)
+
+	xhrFactory.getList('filter-listing.json').then(
+		function(response) {
+			$scope.filterListing = response;
+		},
 		function(error) {
 			console.log(error);
 		}
@@ -42,10 +52,15 @@ angular.module('myApp.product-listing', ['ngRoute'])
 
 	$scope.addFilter = function(item) {
 		item.active = true;
+		$scope.filtersList.push(item)
 	};
 
 	$scope.removeFilter = function(item) {
 		item.active = false;
+		angular.forEach($scope.filtersList, function(value, key){
+			if(value.name == item.name)
+				$scope.filtersList.splice(key,1); 
+		});
 	};
 
 	$scope.quickView = function(product) {
@@ -73,7 +88,8 @@ angular.module('myApp.product-listing', ['ngRoute'])
 	    pause_on_hover: true,
 	    animation_speed: 1000,
 	    navigation_arrows: false,
-	    bullets: true
+	    bullets: true,
+	    timer:false
 	  }
 	});
 
