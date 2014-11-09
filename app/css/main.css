@@ -60,6 +60,11 @@ p {
   border-bottom: 1px solid #CCCCCC;
 }
 
+/* line 46, sass/_core.scss */
+video {
+  cursor: pointer;
+}
+
 /* line 1, sass/_header.scss */
 .header-wrapper {
   background-color: #F7F7F9;
