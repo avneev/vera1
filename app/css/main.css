@@ -526,6 +526,17 @@ a.main-nav-list.active {
   font-weight: bold;
 }
 
+/* line 356, sass/_header.scss */
+.nav-bread-crumb {
+  display: inline-block;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+}
+/* line 360, sass/_header.scss */
+.nav-bread-crumb a {
+  color: #3B3B3B;
+}
+
 /* line 1, sass/_footer.scss */
 .footer {
   background-image: url("../images/bg-footer.jpg");

@@ -24,7 +24,10 @@
 				</div>
 			</li>
 		</ul>
-		<div class="menu-small"><img class="pulse2" src="images/icon_menu.jpg"></div>
+		<div class="menu-small">
+			<img class="pulse2" src="images/icon_menu.jpg"> 
+			<p class="nav-bread-crumb" ng-bind-html="breadCrumb | to_trusted"></p>
+		</div>
 	</div>
 	<div class="large-4 columns no-padding img-margin">
 		<a href="#/"><img class="sticky-specific outlet-hidden" src="images/logo.png"/>
