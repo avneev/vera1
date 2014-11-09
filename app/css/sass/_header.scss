@@ -209,7 +209,7 @@
 		transition-duration: 500ms;
 		transition-timing-function: cubic-bezier(0, 1,1, 1);
  		background-color: $white;
- 		padding: 2.5rem 0;
+ 		margin-top: 2.5rem;
  		&.submenu-hidden {
  			opacity:0;
  			max-height:0;
@@ -349,7 +349,6 @@
 .outlet-shown {
 	display: none;
 }
-
-.nav-items > li > a.main-nav-list:hover{
+a.main-nav-list.active {
 	font-weight: bold;
 }
