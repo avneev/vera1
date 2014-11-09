@@ -189,6 +189,12 @@
  			margin-top: 1rem;
  			border-bottom: 0;
  		}
+ 		.vera-mid-logo{
+ 			position: absolute;
+ 			height: 4.2rem;
+ 		}
+ 		
+
  	}
  	.sub-menu {
  		left: 0;
@@ -239,7 +245,9 @@
  .search {
  	position: relative;
  	float: left!important;
- 	margin: 3.8rem 0 0;
+ 	/*margin: 3.8rem 0 0;*/
+ 	margin: 3.7rem 0 0;
+    padding-bottom: 0.1rem;
  	width: 6%;
  }
  .searchbox{
@@ -340,4 +348,8 @@
 }
 .outlet-shown {
 	display: none;
+}
+
+.nav-items > li > a.main-nav-list:hover{
+	font-weight: bold;
 }
