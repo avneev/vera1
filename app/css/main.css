@@ -1184,3 +1184,10 @@ video {
 .product-detail .zoom img::selection {
   background-color: transparent;
 }
+/* line 162, sass/_product_detail.scss */
+.product-detail .heightAccordian {
+  height: 7rem;
+  overflow: hidden;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
