@@ -15,10 +15,15 @@
 </div>
 <div class="row filter-body text-center">
 	<div class="filter-body-inner">
+		<div class="row">
 		<div style="display:inline-block; vertical-align:top;" ng-repeat="item in selectedCategory">
 			<img ng-click="addFilter(item)" class="category-image" ng-class="{'active': item.active}" ng-src="{{item.img}}"/>
-			<p ng-show="item.active" class="added-filter">{{item.name}} <a class="remove-filter" href="javascript:void(0);" ng-click="removeFilter(item)"><img src="images/plp/x.png"></a></p>
+			<!-- <p ng-show="item.active" class="added-filter">{{item.name}} <a class="remove-filter" href="javascript:void(0);" ng-click="removeFilter(item)"><img src="images/plp/x.png"></a></p> -->
 		</div>
+		</div>
+		<div class="row added-filter-container" ng-show="filtersList.length">
+		<p class="added-filter" ng-repeat="filter in filtersList">{{filter.name}} <a class="remove-filter" href="javascript:void(0);" ng-click="removeFilter(filter)"><img src="images/plp/x.png"></a></p>
+	</div>
 	</div>
 </div>
 

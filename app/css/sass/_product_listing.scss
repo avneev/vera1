@@ -36,18 +36,23 @@
 			border: 2px solid $biege-green;
 		}
 	}
-	.added-filter {
-		text-transform: $text-uppercase;
-		margin-top: 1rem;
-		background-color: $silver;
-		font-size: 0.75rem;
-	    margin: 1rem 0 0;
-	    padding: 2px 5px;
-	    width: 50%;
+	.added-filter-container {
+		min-height: 45px;
 	    display: block !important;
+	    margin-left: 4.5%;
 	}
-	.added-filter.ng-hide {
-	    opacity: 0;
+	.added-filter-container.ng-hide {
+		opacity:0;
+	}
+	.added-filter {
+	 	background-color: $silver;
+	    float: left;
+	    font-size: 0.75rem;
+	    margin: 1rem 0.5rem 0 0;
+	    padding: 2px 5px;
+	    text-transform: $text-uppercase;
+	    width: 8rem;
+	    cursor: pointer;
 	}
 	.remove-filter {
 		display: inline-block;
