@@ -385,24 +385,36 @@ video {
 .main-nav .sub-menu .sub-menu-nav li:first-child {
   font-weight: 600;
 }
+/* line 240, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav-copy {
+  margin-bottom: 1rem;
+}
+/* line 242, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-nav-copy li {
+  color: #555555;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  height: 1.75rem;
+  text-transform: uppercase;
+}
 
-/* line 243, sass/_header.scss */
+/* line 253, sass/_header.scss */
 .fixed-header-icons {
   float: right;
   margin: 0.8rem 2rem 1rem 0;
 }
-/* line 246, sass/_header.scss */
+/* line 256, sass/_header.scss */
 .fixed-header-icons li {
   display: inline;
   padding: 0 3px;
 }
 
-/* line 252, sass/_header.scss */
+/* line 262, sass/_header.scss */
 .fixed-header-icons, .menu-small {
   display: none;
 }
 
-/* line 255, sass/_header.scss */
+/* line 265, sass/_header.scss */
 .search {
   position: relative;
   float: left !important;
@@ -412,13 +424,13 @@ video {
   width: 6%;
 }
 
-/* line 263, sass/_header.scss */
+/* line 273, sass/_header.scss */
 .searchbox {
   position: relative;
   width: 100%;
 }
 
-/* line 267, sass/_header.scss */
+/* line 277, sass/_header.scss */
 .searchbox-input {
   position: absolute;
   top: 0;
@@ -434,12 +446,12 @@ video {
   opacity: 0;
 }
 
-/* line 281, sass/_header.scss */
+/* line 291, sass/_header.scss */
 .searchbox-open .searchbox-input {
   opacity: 1;
 }
 
-/* line 284, sass/_header.scss */
+/* line 294, sass/_header.scss */
 .searchbox-icon,
 .searchbox-submit {
   display: block;
@@ -453,7 +465,7 @@ video {
   cursor: pointer;
 }
 
-/* line 296, sass/_header.scss */
+/* line 306, sass/_header.scss */
 .searchbox {
   position: relative;
   min-width: 50px;
@@ -470,7 +482,7 @@ video {
 /*......*/
 /*......*/
 /*......*/
-/* line 312, sass/_header.scss */
+/* line 322, sass/_header.scss */
 .searchbox-open {
   width: 49%;
   clear: both;
@@ -478,7 +490,7 @@ video {
   transform: translateX(-50%);
 }
 
-/* line 318, sass/_header.scss */
+/* line 328, sass/_header.scss */
 .search-expanded {
   width: 100%;
   text-align: center;
@@ -488,59 +500,60 @@ video {
   margin-top: 1rem;
 }
 
-/* line 326, sass/_header.scss */
+/* line 336, sass/_header.scss */
 .search-logo {
   display: none;
 }
 
-/* line 330, sass/_header.scss */
+/* line 340, sass/_header.scss */
 .fixed-header-search-expanded .sticky-logo {
   display: none !important;
 }
 
-/* line 335, sass/_header.scss */
+/* line 345, sass/_header.scss */
 .outlet .header-wrapper {
   background-color: #FE7F2E;
   color: #FFFFFF;
 }
-/* line 340, sass/_header.scss */
+/* line 350, sass/_header.scss */
 .outlet .header__left-column {
   color: #FFFFFF;
 }
-/* line 344, sass/_header.scss */
+/* line 354, sass/_header.scss */
 .outlet .header__right-column span {
   color: #FFFFFF;
 }
-/* line 349, sass/_header.scss */
+/* line 359, sass/_header.scss */
 .outlet .text-pink {
   color: #F5D666;
 }
-/* line 352, sass/_header.scss */
+/* line 362, sass/_header.scss */
 .outlet .outlet-shown {
   display: inline-block;
 }
-/* line 355, sass/_header.scss */
+/* line 365, sass/_header.scss */
 .outlet .outlet-hidden {
   display: none;
 }
 
-/* line 359, sass/_header.scss */
+/* line 369, sass/_header.scss */
 .outlet-shown {
   display: none;
 }
 
-/* line 363, sass/_header.scss */
+/* line 373, sass/_header.scss */
 a.main-nav-list.active {
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
-/* line 366, sass/_header.scss */
+/* line 377, sass/_header.scss */
 .nav-bread-crumb {
   display: inline-block;
   margin-left: 2rem;
   font-size: 0.9rem;
 }
-/* line 370, sass/_header.scss */
+/* line 381, sass/_header.scss */
 .nav-bread-crumb a {
   color: #3B3B3B;
 }
