@@ -364,16 +364,20 @@ video {
   padding-top: 2rem;
 }
 /* line 222, sass/_header.scss */
+.main-nav .sub-menu .sub-menu-container {
+  padding: 2.5rem 0;
+}
+/* line 225, sass/_header.scss */
 .main-nav .sub-menu.submenu-hidden {
   opacity: 0;
   max-height: 0;
   padding-top: 0;
 }
-/* line 227, sass/_header.scss */
+/* line 230, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav {
   margin-bottom: 1rem;
 }
-/* line 229, sass/_header.scss */
+/* line 232, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li {
   color: #555555;
   font-size: 0.75rem;
@@ -381,15 +385,15 @@ video {
   height: 1.75rem;
   text-transform: uppercase;
 }
-/* line 235, sass/_header.scss */
+/* line 238, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav li:first-child {
   font-weight: 600;
 }
-/* line 240, sass/_header.scss */
+/* line 243, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav-copy {
   margin-bottom: 1rem;
 }
-/* line 242, sass/_header.scss */
+/* line 245, sass/_header.scss */
 .main-nav .sub-menu .sub-menu-nav-copy li {
   color: #555555;
   font-size: 0.75rem;
@@ -398,23 +402,23 @@ video {
   text-transform: uppercase;
 }
 
-/* line 253, sass/_header.scss */
+/* line 256, sass/_header.scss */
 .fixed-header-icons {
   float: right;
   margin: 0.8rem 2rem 1rem 0;
 }
-/* line 256, sass/_header.scss */
+/* line 259, sass/_header.scss */
 .fixed-header-icons li {
   display: inline;
   padding: 0 3px;
 }
 
-/* line 262, sass/_header.scss */
+/* line 265, sass/_header.scss */
 .fixed-header-icons, .menu-small {
   display: none;
 }
 
-/* line 265, sass/_header.scss */
+/* line 268, sass/_header.scss */
 .search {
   position: relative;
   float: left !important;
@@ -424,13 +428,13 @@ video {
   width: 6%;
 }
 
-/* line 273, sass/_header.scss */
+/* line 276, sass/_header.scss */
 .searchbox {
   position: relative;
   width: 100%;
 }
 
-/* line 277, sass/_header.scss */
+/* line 280, sass/_header.scss */
 .searchbox-input {
   position: absolute;
   top: 0;
@@ -446,12 +450,12 @@ video {
   opacity: 0;
 }
 
-/* line 291, sass/_header.scss */
+/* line 294, sass/_header.scss */
 .searchbox-open .searchbox-input {
   opacity: 1;
 }
 
-/* line 294, sass/_header.scss */
+/* line 297, sass/_header.scss */
 .searchbox-icon,
 .searchbox-submit {
   display: block;
@@ -465,7 +469,7 @@ video {
   cursor: pointer;
 }
 
-/* line 306, sass/_header.scss */
+/* line 309, sass/_header.scss */
 .searchbox {
   position: relative;
   min-width: 50px;
@@ -482,7 +486,7 @@ video {
 /*......*/
 /*......*/
 /*......*/
-/* line 322, sass/_header.scss */
+/* line 325, sass/_header.scss */
 .searchbox-open {
   width: 49%;
   clear: both;
@@ -490,7 +494,7 @@ video {
   transform: translateX(-50%);
 }
 
-/* line 328, sass/_header.scss */
+/* line 331, sass/_header.scss */
 .search-expanded {
   width: 100%;
   text-align: center;
@@ -500,60 +504,60 @@ video {
   margin-top: 1rem;
 }
 
-/* line 336, sass/_header.scss */
+/* line 339, sass/_header.scss */
 .search-logo {
   display: none;
 }
 
-/* line 340, sass/_header.scss */
+/* line 343, sass/_header.scss */
 .fixed-header-search-expanded .sticky-logo {
   display: none !important;
 }
 
-/* line 345, sass/_header.scss */
+/* line 348, sass/_header.scss */
 .outlet .header-wrapper {
   background-color: #FE7F2E;
   color: #FFFFFF;
 }
-/* line 350, sass/_header.scss */
+/* line 353, sass/_header.scss */
 .outlet .header__left-column {
   color: #FFFFFF;
 }
-/* line 354, sass/_header.scss */
+/* line 357, sass/_header.scss */
 .outlet .header__right-column span {
   color: #FFFFFF;
 }
-/* line 359, sass/_header.scss */
+/* line 362, sass/_header.scss */
 .outlet .text-pink {
   color: #F5D666;
 }
-/* line 362, sass/_header.scss */
+/* line 365, sass/_header.scss */
 .outlet .outlet-shown {
   display: inline-block;
 }
-/* line 365, sass/_header.scss */
+/* line 368, sass/_header.scss */
 .outlet .outlet-hidden {
   display: none;
 }
 
-/* line 369, sass/_header.scss */
+/* line 372, sass/_header.scss */
 .outlet-shown {
   display: none;
 }
 
-/* line 373, sass/_header.scss */
+/* line 376, sass/_header.scss */
 a.main-nav-list.active {
   font-weight: bold;
   font-size: 0.9rem;
 }
 
-/* line 377, sass/_header.scss */
+/* line 380, sass/_header.scss */
 .nav-bread-crumb {
   display: inline-block;
   margin-left: 2rem;
   font-size: 0.9rem;
 }
-/* line 381, sass/_header.scss */
+/* line 384, sass/_header.scss */
 .nav-bread-crumb a {
   color: #3B3B3B;
 }
@@ -1000,43 +1004,49 @@ section.module.parallax-3 {
   border: 2px solid #69D8C7;
 }
 /* line 39, sass/_product_listing.scss */
-.filter-body .added-filter {
-  text-transform: uppercase;
-  margin-top: 1rem;
-  background-color: #CCCCCC;
-  font-size: 0.75rem;
-  margin: 1rem 0 0;
-  padding: 2px 5px;
-  width: 50%;
+.filter-body .added-filter-container {
+  min-height: 45px;
   display: block !important;
+  margin-left: 4.5%;
 }
-/* line 49, sass/_product_listing.scss */
-.filter-body .added-filter.ng-hide {
+/* line 44, sass/_product_listing.scss */
+.filter-body .added-filter-container.ng-hide {
   opacity: 0;
 }
-/* line 52, sass/_product_listing.scss */
+/* line 47, sass/_product_listing.scss */
+.filter-body .added-filter {
+  background-color: #CCCCCC;
+  float: left;
+  font-size: 0.75rem;
+  margin: 1rem 0.5rem 0 0;
+  padding: 2px 5px;
+  text-transform: uppercase;
+  width: 8rem;
+  cursor: pointer;
+}
+/* line 57, sass/_product_listing.scss */
 .filter-body .remove-filter {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-/* line 59, sass/_product_listing.scss */
+/* line 64, sass/_product_listing.scss */
 .product-listing .center-align {
   text-align: center;
 }
-/* line 64, sass/_product_listing.scss */
+/* line 69, sass/_product_listing.scss */
 .product-listing .breadcrums span a {
   color: #A5A5A5;
 }
-/* line 66, sass/_product_listing.scss */
+/* line 71, sass/_product_listing.scss */
 .product-listing .breadcrums span a:hover {
   color: #A5A5A5;
 }
-/* line 72, sass/_product_listing.scss */
+/* line 77, sass/_product_listing.scss */
 .product-listing .selected1 {
   color: #666666;
 }
-/* line 75, sass/_product_listing.scss */
+/* line 80, sass/_product_listing.scss */
 .product-listing .new-tag {
   position: absolute;
   color: #FFFFFF;
@@ -1046,164 +1056,164 @@ section.module.parallax-3 {
   left: 1.75rem;
   font-weight: bold;
 }
-/* line 84, sass/_product_listing.scss */
+/* line 89, sass/_product_listing.scss */
 .product-listing .left-align {
   text-align: left;
 }
-/* line 87, sass/_product_listing.scss */
+/* line 92, sass/_product_listing.scss */
 .product-listing .padding-bottom-5, .product-listing .product-detail .product-description .product-share, .product-detail .product-description .product-listing .product-share {
   padding-bottom: 0.5rem;
 }
-/* line 90, sass/_product_listing.scss */
+/* line 95, sass/_product_listing.scss */
 .product-listing .padding-bottom-4 {
   padding-bottom: 0.4rem;
 }
-/* line 97, sass/_product_listing.scss */
+/* line 102, sass/_product_listing.scss */
 .product-listing .font-size-65 {
   font-size: 0.65rem;
 }
-/* line 100, sass/_product_listing.scss */
+/* line 105, sass/_product_listing.scss */
 .product-listing .product-detail {
   font-size: 0.7rem;
   font-weight: bold;
 }
-/* line 103, sass/_product_listing.scss */
+/* line 108, sass/_product_listing.scss */
 .product-listing .product-detail a {
   color: #3B3B3B;
 }
-/* line 107, sass/_product_listing.scss */
+/* line 112, sass/_product_listing.scss */
 .product-listing .text-transform-upper {
   text-transform: uppercase;
 }
-/* line 110, sass/_product_listing.scss */
+/* line 115, sass/_product_listing.scss */
 .product-listing .padding-productBlock {
   padding: 2rem 0;
 }
-/* line 112, sass/_product_listing.scss */
+/* line 117, sass/_product_listing.scss */
 .product-listing .padding-productBlock:hover {
   cursor: pointer;
 }
-/* line 114, sass/_product_listing.scss */
+/* line 119, sass/_product_listing.scss */
 .product-listing .padding-productBlock:hover .quick-view-btn {
   opacity: 1;
 }
-/* line 118, sass/_product_listing.scss */
+/* line 123, sass/_product_listing.scss */
 .product-listing .padding-productBlock .image-fixed-dimention {
   height: 235px;
   margin: 0 auto;
   width: 235px;
 }
-/* line 124, sass/_product_listing.scss */
+/* line 129, sass/_product_listing.scss */
 .product-listing .product-rating {
   position: absolute;
   left: 7rem;
   opacity: 0;
 }
 
-/* line 130, sass/_product_listing.scss */
+/* line 135, sass/_product_listing.scss */
 .product-listingHeader {
   padding: 1rem;
   margin: 1rem 0;
   letter-spacing: 0.02rem;
   font-size: 0.7rem;
 }
-/* line 135, sass/_product_listing.scss */
+/* line 140, sass/_product_listing.scss */
 .product-listingHeader .pull-left {
   float: left !important;
 }
-/* line 138, sass/_product_listing.scss */
+/* line 143, sass/_product_listing.scss */
 .product-listingHeader .pull-right {
   float: right !important;
 }
-/* line 141, sass/_product_listing.scss */
+/* line 146, sass/_product_listing.scss */
 .product-listingHeader span {
   vertical-align: middle;
 }
-/* line 144, sass/_product_listing.scss */
+/* line 149, sass/_product_listing.scss */
 .product-listingHeader .selected-filter {
   color: #CCCCCC;
   padding-left: 1rem;
 }
-/* line 150, sass/_product_listing.scss */
+/* line 155, sass/_product_listing.scss */
 .product-listingHeader .filter-sort span {
   color: #CCCCCC;
   padding-left: 1rem;
 }
-/* line 153, sass/_product_listing.scss */
+/* line 158, sass/_product_listing.scss */
 .product-listingHeader .filter-sort span a {
   color: #CCCCCC;
 }
-/* line 157, sass/_product_listing.scss */
+/* line 162, sass/_product_listing.scss */
 .product-listingHeader .filter-sort .selected {
   color: #555555 !important;
 }
 
-/* line 164, sass/_product_listing.scss */
+/* line 169, sass/_product_listing.scss */
 .quick-view-row .product-details-container {
   padding: 0 2rem;
 }
-/* line 167, sass/_product_listing.scss */
+/* line 172, sass/_product_listing.scss */
 .quick-view-row .product-details {
   width: 80%;
 }
-/* line 170, sass/_product_listing.scss */
+/* line 175, sass/_product_listing.scss */
 .quick-view-row .quick-view-btn {
   opacity: 0;
   margin-top: 1rem;
   width: 20%;
 }
 
-/* line 176, sass/_product_listing.scss */
+/* line 181, sass/_product_listing.scss */
 .quick-view-container {
   background-color: #F7F7F9;
   padding: 2rem 4rem;
   margin: 2.5rem 0;
 }
-/* line 180, sass/_product_listing.scss */
+/* line 185, sass/_product_listing.scss */
 .quick-view-container .name {
   font-size: 3.25rem;
   color: #242424;
 }
-/* line 184, sass/_product_listing.scss */
+/* line 189, sass/_product_listing.scss */
 .quick-view-container .sku {
   font-size: .8rem;
   color: #AAAAAA;
   margin-bottom: .5rem;
 }
-/* line 189, sass/_product_listing.scss */
+/* line 194, sass/_product_listing.scss */
 .quick-view-container .price {
   font-size: 3rem;
   font-weight: bold;
   color: #242424;
   margin: 2rem 0 3rem;
 }
-/* line 195, sass/_product_listing.scss */
+/* line 200, sass/_product_listing.scss */
 .quick-view-container .add-to-cart {
   margin: 0 1rem;
 }
-/* line 198, sass/_product_listing.scss */
+/* line 203, sass/_product_listing.scss */
 .quick-view-container .pink-text {
   text-transform: uppercase;
   margin-top: 1rem;
   font-weight: 600;
 }
-/* line 203, sass/_product_listing.scss */
+/* line 208, sass/_product_listing.scss */
 .quick-view-container .thumb-imgs {
   margin-left: 0rem;
 }
-/* line 205, sass/_product_listing.scss */
+/* line 210, sass/_product_listing.scss */
 .quick-view-container .thumb-imgs .thumb-img {
   display: inline-block;
   margin-right: .5rem;
 }
-/* line 208, sass/_product_listing.scss */
+/* line 213, sass/_product_listing.scss */
 .quick-view-container .thumb-imgs .thumb-img p {
   color: #AAAAAA;
   font-size: 0.8rem;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 216, sass/_product_listing.scss */
+/* line 221, sass/_product_listing.scss */
 .quick-view-container .close-quick-view {
   position: absolute;
   right: 2rem;
@@ -1212,23 +1222,23 @@ section.module.parallax-3 {
   color: #AAAAAA;
   cursor: pointer;
 }
-/* line 224, sass/_product_listing.scss */
+/* line 229, sass/_product_listing.scss */
 .quick-view-container .arrow-quick-view {
   position: absolute;
   top: -28px;
   transition: left 0.5s ease;
 }
-/* line 230, sass/_product_listing.scss */
+/* line 235, sass/_product_listing.scss */
 .quick-view-container .orbit-bullets li {
   cursor: pointer;
 }
 
-/* line 236, sass/_product_listing.scss */
+/* line 241, sass/_product_listing.scss */
 .marg-left {
   margin-left: 1.75rem;
 }
 
-/* line 239, sass/_product_listing.scss */
+/* line 244, sass/_product_listing.scss */
 .marg-top {
   margin-top: 1rem;
 }

@@ -219,6 +219,9 @@
  		background-color: $white;
  		/*margin-top: 2.5rem;*/
  		padding-top: 2rem;
+ 		.sub-menu-container {
+ 			padding: 2.5rem 0;
+ 		}
  		&.submenu-hidden {
  			opacity:0;
  			max-height:0;
