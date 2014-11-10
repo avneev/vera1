@@ -126,7 +126,7 @@
 	</div>
 </div>
 
-<div class="row" ng-hide="filtersList.length" style="margin:1rem auto;">
+<div class="row" ng-hide="filtersList.length" style="margin:3rem auto 1rem;">
 	<img src="images/plp/ziggy_image.jpg">
 </div>
 
@@ -150,6 +150,7 @@
 		</div>
 	</div>
 	<div class="large-12 columns product-listing no-padding" ng-show="filtersList.length">
+
 		<div class="large-3 columns center-align"  ng-class="{'padding-productBlock': !products.is_ad, 'padding-ad': products.is_ad}" ng-repeat="products in filterListing">
 			<div ng-if="!products.is_ad">
 				<div class="image-fixed-dimention">
