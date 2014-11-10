@@ -311,7 +311,7 @@
  	min-width:50px;
  	width:0%;
  	height:50px;
- 	overflow:hidden;
+ 	overflow:visible;
  	-webkit-transition: width 1s;
  	-moz-transition: width 1s;
  	-ms-transition: width 1s;
@@ -332,9 +332,15 @@
  	width: 100%;
  	text-align: center;
  	border-bottom: 0;
+ 	margin-bottom: 1.9rem;
  	left: 50%;
  	transform: translateX(-50%);
  	margin-top: 1rem;
+ }
+ #close-search {
+ 	position: absolute;
+ 	right: -25px;
+    top: 7px;
  }
  .search-logo {
  	display: none;
