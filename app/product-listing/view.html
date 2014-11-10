@@ -51,14 +51,14 @@
 					<div class="product-detail padding-bottom-4"><a href="#/product-detail">{{products.product_name}}</a></div>
 					<div class="product-detail">{{products.price}}</div>
 				</div>
-				<div class="right quick-view-btn" ng-click="quickView(products)">
+				<div class="right quick-view-btn" ng-click="quickView(products, 'quick-view-unfiltered')">
 					<img src="images/plp/plus_icon.png">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="large-12 columns quick-view-container" ng-show="showQuickView">
+	<div class="large-12 columns quick-view-container quick-view-unfiltered" ng-show="showQuickView">
 		<div class="arrow-quick-view" style="left: {{productView.arrPos}}rem;"><img src="images/plp/quickview_arrow.png"></div>
 		<div class="close-quick-view" ng-click="closeQuickView()">x</div>
 		<div class="row"> 
@@ -124,6 +124,7 @@
 		</div>
 		</div>
 	</div>
+
 </div>
 
 <div class="row" ng-hide="filtersList.length" style="margin:3rem auto 1rem;">
@@ -149,8 +150,73 @@
 			</div>
 		</div>
 	</div>
-	<div class="large-12 columns product-listing no-padding" ng-show="filtersList.length">
 
+	<div class="large-12 columns product-listing quick-view-row no-padding">
+		<div class="large-3 padding-productBlock columns center-align" ng-repeat="products in quickViewFliterListing" change-on-hover="products">
+			<div class="product-rating">
+			  <div class="padding-bottom-5"><img src="images/plp/stars.png"></div>
+			   <div>"{{products.product_tag}}"</div>
+			</div>
+			<div class="image-fixed-dimention">
+				<a href="#/product-detail"><img  class="productImg" ng-src="{{products.image}}"/></a>
+			</div>
+			<div ng-if="products.is_new" class="new-tag">NEW</div>
+			<div class="row product-details-container">
+				<div class="left left-align text-transform-upper product-details">
+					<div class="padding-bottom-5 font-size-65">{{products.product_color}}<span>&nbsp;| {{products.avalable_color.length}} colors<img src="images/plp/pink_down_arrow.png" style="margin-top: -4px;"></span></div>
+					<div class="product-detail padding-bottom-4"><a href="#/product-detail">{{products.product_name}}</a></div>
+					<div class="product-detail">{{products.price}}</div>
+				</div>
+				<div class="right quick-view-btn" ng-click="quickView(products, 'quick-view-filtered')">
+					<img src="images/plp/plus_icon.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="large-12 columns quick-view-container quick-view-filtered" ng-show="showQuickView">
+		<div class="arrow-quick-view" style="left: {{productView.arrPos}}rem;"><img src="images/plp/quickview_arrow.png"></div>
+		<div class="close-quick-view" ng-click="closeQuickView()">x</div>
+		<div class="row"> 
+			<div class="large-6 columns">
+				<h2 class="name">{{productView.product_name}}</h2>
+			    <p class="sku">#{{productView.sku}}</p>
+			    <p class="price">{{productView.price}}</p>
+			    <div class="row thumb-imgs">
+			    	<div class="thumb-img" ng-repeat="img in productView.imgList">
+			    		<img ng-src="{{img.src}}">	
+			    		<p>{{img.name}}</p>
+			    	</div>
+			    </div>
+			    <div class="row">
+			    	<img class="add-to-cart" src="images/plp/b_add_bag.jpg">
+			    	<img src="images/plp/b_fav_this.jpg">
+			    </div>
+			    <a href="#/product-detail"><p class="pink-text">More Details</p></a>
+			</div>
+			<div class="large-6 columns">
+				<ul class="example-orbit-1" data-orbit> 
+					<li> 
+						<img src="images/plp/quick_view_image.png"/>
+					</li>
+					<li class="active"> 
+						<img src="images/plp/quick_view_image2.png"/>
+					</li> 
+					<li> 
+						<img src="images/plp/quick_view_image3.png"/>
+					</li>
+					<li> 
+						<img src="images/plp/quick_view_image4.png"/>
+					</li>
+					<li> 
+						<img src="images/plp/quick_view_image5.png"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="large-12 columns product-listing no-padding" ng-show="filtersList.length">
 		<div class="large-3 columns center-align"  ng-class="{'padding-productBlock': !products.is_ad, 'padding-ad': products.is_ad}" ng-repeat="products in filterListing">
 			<div ng-if="!products.is_ad">
 				<div class="image-fixed-dimention">
