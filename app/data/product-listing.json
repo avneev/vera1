@@ -2,7 +2,7 @@
     {
         "id": 0,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/trans-prod.png",
+        "image": "images/plp/plp-below/cat_img20.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -32,7 +32,7 @@
     {
         "id": 1,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/p_img2.jpg",
+        "image": "images/plp/plp-below/cat_img21.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -62,7 +62,7 @@
     {
         "id": 2,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/p_img3.jpg",
+        "image": "images/plp/plp-below/cat_img22.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -91,7 +91,7 @@
     {
         "id": 3,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/p_img4.jpg",
+        "image": "images/plp/plp-below/cat_img23.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -120,13 +120,13 @@
     {
         "id": 4,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/p_img5.jpg",
+        "image": "images/plp/plp-below/cat_img24.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
-        "is_new": true,
+        "is_new": false,
         "avalable_color": [
             {
                 "id": 0,
@@ -149,7 +149,7 @@
     {
         "id": 5,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/p_img6.jpg",
+        "image": "images/plp/plp-below/cat_img25.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -391,6 +391,7 @@
         "is_ad": true,
         "is_new": true,
         "ad_spacing":3,
+        "width": "290",
         "avalable_color": [
             {
                 "id": 0,
@@ -413,7 +414,7 @@
     {
         "id": 15,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/p_img11.jpg",
+        "image": "images/plp/p_img15.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,

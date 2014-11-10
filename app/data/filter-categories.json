@@ -160,19 +160,19 @@
             },
             {
                 "id": 1,
-                "img": "images/plp/52.png",
+                "img": "images/plp/54.png",
                 "added": false,
                 "name": "weekending"
             },
             {
                 "id": 2,
-                "img": "images/plp/51.png",
+                "img": "images/plp/52.png",
                 "added": false,
                 "name": "nights out"
             },
             {
                 "id": 3,
-                "img": "images/plp/54.png",
+                "img": "images/plp/51.png",
                 "added": false,
                 "name": "play dates"
             }
