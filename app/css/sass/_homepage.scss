@@ -21,12 +21,46 @@
 }
 .moon-blooms {
 	padding: 4rem 0 3rem;
+	position: relative;
 }
 .threads-of-inspirations {
 	padding: 0 1rem 2rem;
 }
-.moon-blooms-designer {
-
+.backbg {
+	position: absolute;
+	z-index: -1;
+	top: 4rem;
+	left: 0;
+	height: 1356px;
+}
+section.module.parallax {
+  height: 452px;
+  background-position: 50% 50%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	 h1 {
+	  color: rgba(255, 255, 255, 0.8);
+	  font-size: 48px;
+	  line-height: 451px;
+	  font-weight: 700;
+	  text-align: center;
+	  text-transform: uppercase;
+	  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	  margin: 0;
+	}
+	&-1 {
+		 background-image: url("../images/parellax-home/img1-test.png");
+	}
+	&-2 {
+		 background-image: url("../images/parellax-home/img2-test.png");
+	}
+	&-3 {
+		 background-image: url("../images/parellax-home/img3-test.png");
+	}
 }
 .featured-fan {
 	/*background-color: $gray-shade;*/

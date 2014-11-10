@@ -614,75 +614,120 @@ a.main-nav-list.active {
 /* line 22, sass/_homepage.scss */
 .moon-blooms {
   padding: 4rem 0 3rem;
+  position: relative;
 }
 
-/* line 25, sass/_homepage.scss */
+/* line 26, sass/_homepage.scss */
 .threads-of-inspirations {
   padding: 0 1rem 2rem;
 }
 
-/* line 31, sass/_homepage.scss */
+/* line 29, sass/_homepage.scss */
+.backbg {
+  position: absolute;
+  z-index: -1;
+  top: 4rem;
+  left: 0;
+  height: 1356px;
+}
+
+/* line 36, sass/_homepage.scss */
+section.module.parallax {
+  height: 452px;
+  background-position: 50% 50%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 45, sass/_homepage.scss */
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 451px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+/* line 55, sass/_homepage.scss */
+section.module.parallax-1 {
+  background-image: url("../images/parellax-home/img1-test.png");
+}
+/* line 58, sass/_homepage.scss */
+section.module.parallax-2 {
+  background-image: url("../images/parellax-home/img2-test.png");
+}
+/* line 61, sass/_homepage.scss */
+section.module.parallax-3 {
+  background-image: url("../images/parellax-home/img3-test.png");
+}
+
+/* line 65, sass/_homepage.scss */
 .featured-fan {
   /*background-color: $gray-shade;*/
   margin: 3rem 0 0;
   text-align: center;
 }
-/* line 35, sass/_homepage.scss */
+/* line 69, sass/_homepage.scss */
 .featured-fan__profile {
   margin: 6rem 0 0 3rem;
 }
-/* line 37, sass/_homepage.scss */
+/* line 71, sass/_homepage.scss */
 .featured-fan__profile img {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 41, sass/_homepage.scss */
+/* line 75, sass/_homepage.scss */
 .featured-fan__desc {
   margin: 2.5rem 0 0;
 }
-/* line 43, sass/_homepage.scss */
+/* line 77, sass/_homepage.scss */
 .featured-fan__desc h2 {
   text-transform: uppercase;
   font-size: 1rem;
 }
-/* line 47, sass/_homepage.scss */
+/* line 81, sass/_homepage.scss */
 .featured-fan__desc h1 {
   font-size: 3.5rem;
   border-bottom: 1px solid #ccc;
   margin: 0 auto 1rem;
   width: 60%;
 }
-/* line 53, sass/_homepage.scss */
+/* line 87, sass/_homepage.scss */
 .featured-fan__desc p {
   font-size: 1.1rem;
   margin: 0 0.5rem;
 }
 
-/* line 59, sass/_homepage.scss */
+/* line 93, sass/_homepage.scss */
 .top-3-things {
   background-color: #F9F9F7;
   text-align: center;
 }
-/* line 62, sass/_homepage.scss */
+/* line 96, sass/_homepage.scss */
 .top-3-things h1 {
   font-size: 1.3rem;
 }
-/* line 65, sass/_homepage.scss */
+/* line 99, sass/_homepage.scss */
 .top-3-things p {
   font-size: 1.2rem;
   font-style: italic;
   padding: 0 3.5rem;
 }
-/* line 69, sass/_homepage.scss */
+/* line 103, sass/_homepage.scss */
 .top-3-things p:before {
   content: "\2018\2018";
 }
-/* line 72, sass/_homepage.scss */
+/* line 106, sass/_homepage.scss */
 .top-3-things p:after {
   content: "\2019\2019";
 }
-/* line 76, sass/_homepage.scss */
+/* line 110, sass/_homepage.scss */
 .top-3-things__text {
   background-color: #F15759;
   color: #FFFFFF;
@@ -690,31 +735,31 @@ a.main-nav-list.active {
   padding: 6rem 0 0 !important;
   width: 23.8%;
 }
-/* line 82, sass/_homepage.scss */
+/* line 116, sass/_homepage.scss */
 .top-3-things__text span {
   display: block;
   font-size: 3rem;
   padding: 0 2rem;
 }
-/* line 88, sass/_homepage.scss */
+/* line 122, sass/_homepage.scss */
 .top-3-things--second {
   margin-right: 0.9rem;
 }
-/* line 91, sass/_homepage.scss */
+/* line 125, sass/_homepage.scss */
 .top-3-things .large-3 {
   padding-top: 3rem;
 }
 
-/* line 95, sass/_homepage.scss */
+/* line 129, sass/_homepage.scss */
 .vera-girls {
   margin: 4rem 0 0;
 }
-/* line 97, sass/_homepage.scss */
+/* line 131, sass/_homepage.scss */
 .vera-girls .large-3 {
   border-right: 1px dotted #CCCCCC;
   height: 12.7rem;
 }
-/* line 102, sass/_homepage.scss */
+/* line 136, sass/_homepage.scss */
 .vera-girls__text p {
   font-size: 2.5rem;
   line-height: 2.8rem;
@@ -722,11 +767,11 @@ a.main-nav-list.active {
   text-align: right;
   line-height: 2.8rem;
 }
-/* line 111, sass/_homepage.scss */
+/* line 145, sass/_homepage.scss */
 .vera-girls__product p {
   display: inline-block;
 }
-/* line 114, sass/_homepage.scss */
+/* line 148, sass/_homepage.scss */
 .vera-girls__product__profile-img {
   width: 25px;
   height: 25px;
@@ -736,50 +781,50 @@ a.main-nav-list.active {
   margin-right: 1rem;
   vertical-align: top;
 }
-/* line 122, sass/_homepage.scss */
+/* line 156, sass/_homepage.scss */
 .vera-girls__product__info--name {
   display: inline-block;
   vertical-align: middle;
   width: 62%;
 }
-/* line 126, sass/_homepage.scss */
+/* line 160, sass/_homepage.scss */
 .vera-girls__product__info--name h1 {
   font-size: 1.5rem;
 }
-/* line 129, sass/_homepage.scss */
+/* line 163, sass/_homepage.scss */
 .vera-girls__product__info--name span {
   font-size: 1rem;
 }
-/* line 135, sass/_homepage.scss */
+/* line 169, sass/_homepage.scss */
 .vera-girls__product__info h2 {
   font-size: 1.1rem;
 }
-/* line 138, sass/_homepage.scss */
+/* line 172, sass/_homepage.scss */
 .vera-girls__product__info--bottom {
   margin: .7rem 0 0;
 }
-/* line 144, sass/_homepage.scss */
+/* line 178, sass/_homepage.scss */
 .vera-girls__profile-info .pink-text {
   font-size: 1.1rem;
   font-weight: bold;
 }
-/* line 148, sass/_homepage.scss */
+/* line 182, sass/_homepage.scss */
 .vera-girls__profile-info span {
   font-size: 0.9rem;
   display: block;
   line-height: 1rem;
 }
-/* line 154, sass/_homepage.scss */
+/* line 188, sass/_homepage.scss */
 .vera-girls--last {
   border-right: 0;
 }
 
-/* line 158, sass/_homepage.scss */
+/* line 192, sass/_homepage.scss */
 .pink-text {
   color: #DD1264;
 }
 
-/* line 161, sass/_homepage.scss */
+/* line 195, sass/_homepage.scss */
 .roleover {
   border: 0.2rem solid #FFFFFF;
   color: #FFFFFF;
@@ -788,37 +833,37 @@ a.main-nav-list.active {
   position: absolute;
   cursor: pointer;
 }
-/* line 168, sass/_homepage.scss */
+/* line 202, sass/_homepage.scss */
 .roleover:hover {
   background-color: #FFFFFF;
   color: #3a3845;
 }
 
-/* line 174, sass/_homepage.scss */
+/* line 208, sass/_homepage.scss */
 .roleover-Bag .shop-now {
   display: none;
 }
-/* line 177, sass/_homepage.scss */
+/* line 211, sass/_homepage.scss */
 .roleover-Bag .large-bag {
   left: 9.7rem;
   top: 10rem;
   padding: 0.5rem 1.8rem;
 }
-/* line 182, sass/_homepage.scss */
+/* line 216, sass/_homepage.scss */
 .roleover-Bag .side-bag1 {
   font-size: 0.6rem;
   left: 31.2rem;
   padding: 0.2rem 0.8rem;
   top: 5rem;
 }
-/* line 188, sass/_homepage.scss */
+/* line 222, sass/_homepage.scss */
 .roleover-Bag .side-bag2 {
   font-size: 0.6rem;
   left: 31.4rem;
   padding: 0.2rem 0.8rem;
   top: 15rem;
 }
-/* line 195, sass/_homepage.scss */
+/* line 229, sass/_homepage.scss */
 .roleover-Bag:hover .shop-now {
   display: block;
   border: 0.2rem solid #FFFFFF;
@@ -829,13 +874,13 @@ a.main-nav-list.active {
   color: #3a3845;
 }
 
-/* line 206, sass/_homepage.scss */
+/* line 240, sass/_homepage.scss */
 .shopRecoment-Pos {
   left: 6.5rem;
   top: 16rem;
 }
 
-/* line 210, sass/_homepage.scss */
+/* line 244, sass/_homepage.scss */
 .shopTogether-pos {
   left: 10.7rem;
   top: 16rem;
