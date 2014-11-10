@@ -9,7 +9,12 @@
 				</ul>
 			</div>
 			<div class="large-2 columns">
-				<ul class="sub-menu-nav">
+				<ul class="sub-menu-nav" ng-if="item.name !='travel' && item.name !='accessories'">
+					<li ng-repeat="i in item.menuList2">
+						<a href="">{{i.name}}</a>
+					</li>
+				</ul>
+				<ul class="sub-menu-nav-copy" ng-if="item.name =='travel' || item.name =='accessories'">
 					<li ng-repeat="i in item.menuList2">
 						<a href="">{{i.name}}</a>
 					</li>
