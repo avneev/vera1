@@ -244,3 +244,23 @@
 .marg-top {
 	margin-top: 1rem;
 }
+.parallax-plp-container {
+	position: relative;
+	.backbg {
+		height: 1299px;
+		top: 0;
+	}
+	section.module.parallax { 
+		height: 433px;
+		&-4 {
+			 background-image: url("../images/parellax-plp/img1.png");
+		}
+		&-5 {
+			 background-image: url("../images/parellax-plp/img2.png");
+		}
+		&-6 {
+			 background-image: url("../images/parellax-plp/img3.png");
+		}
+	}
+
+}

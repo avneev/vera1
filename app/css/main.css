@@ -1251,6 +1251,32 @@ section.module.parallax-3 {
   margin-top: 1rem;
 }
 
+/* line 247, sass/_product_listing.scss */
+.parallax-plp-container {
+  position: relative;
+}
+/* line 249, sass/_product_listing.scss */
+.parallax-plp-container .backbg {
+  height: 1299px;
+  top: 0;
+}
+/* line 253, sass/_product_listing.scss */
+.parallax-plp-container section.module.parallax {
+  height: 433px;
+}
+/* line 255, sass/_product_listing.scss */
+.parallax-plp-container section.module.parallax-4 {
+  background-image: url("../images/parellax-plp/img1.png");
+}
+/* line 258, sass/_product_listing.scss */
+.parallax-plp-container section.module.parallax-5 {
+  background-image: url("../images/parellax-plp/img2.png");
+}
+/* line 261, sass/_product_listing.scss */
+.parallax-plp-container section.module.parallax-6 {
+  background-image: url("../images/parellax-plp/img3.png");
+}
+
 /* line 1, sass/_outlet.scss */
 .outlet-product-margin {
   margin-top: 1rem;
