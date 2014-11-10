@@ -29,7 +29,7 @@
 
 }
 .featured-fan {
-	background-color: $gray-shade;
+	/*background-color: $gray-shade;*/
 	margin: 3rem 0 0;
 	text-align: center;
 	&__profile {
@@ -172,20 +172,34 @@
 }
 .roleover-Bag{
 	.shop-now{
-		display: none;
+		display:none;
+	}
+	.large-bag{
+		left: 9.7rem;
+    	top: 10rem;
+    	padding: 0.5rem 1.8rem;
+	}
+	.side-bag1{
+		font-size: 0.6rem;
+	    left: 31.2rem;
+	    padding: 0.2rem 0.8rem;
+	    top: 5rem;
+	}
+	.side-bag2{
+		font-size: 0.6rem;
+	    left: 31.4rem;
+	    padding: 0.2rem 0.8rem;
+	    top: 15rem;
 	}
 	&:hover{
 		.shop-now{
 			display:block;
 			border: 0.2rem solid $white;
 			font-weight: $base-font-weight-bold ;
-		    padding: 0.5rem 1.8rem;
 		    position: absolute;
 		    cursor: pointer;
 	    	background-color:$white;
 	    	color: $chromeBlack;
-	    	left: 10rem;
-    		top: 10rem;
 		}
     }
 }
