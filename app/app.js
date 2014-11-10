@@ -39,8 +39,12 @@ directive('changeOnHover', function() {
 						oldX = event.pageX;
 					}
 				}
+        function setOriginalImage(event){
+          ele.find("img.productImg").attr('src', scope.changeOnHover.image);
+        }
 
 				ele.mousemove(getMousePosition);	
+        ele.mouseleave(setOriginalImage)
 			}, 250);
 		}
 	}

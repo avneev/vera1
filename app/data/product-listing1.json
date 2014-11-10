@@ -2,7 +2,7 @@
     {
         "id": 0,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_1.jpg",
+        "image": "images/plp/plp-below/cat_img5.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -32,7 +32,7 @@
     {
         "id": 1,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_2.jpg",
+        "image": "images/plp/plp-below/cat_img6.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -62,7 +62,7 @@
     {
         "id": 2,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_3.jpg",
+        "image": "images/plp/plp-below/cat_img7.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -91,7 +91,7 @@
     {
         "id": 3,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_4.jpg",
+        "image": "images/plp/plp-below/cat_img8.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -120,7 +120,7 @@
     {
         "id": 4,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_5.jpg",
+        "image": "images/plp/plp-below/cat_img9.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -149,7 +149,7 @@
     {
         "id": 5,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_6.jpg",
+        "image": "images/plp/plp-below/cat_img10.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -176,9 +176,40 @@
         ]
     },
     {
+        "id": 6,
+        "product_name": "Triple Zip Hipster",
+        "image": "images/plp/plp-below/cat_img11.jpg",
+        "product_color": "Pink swirals",
+        "price": "$58",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_video": true,
+        "is_new": false,
+        "ad_spacing":6,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
         "id": 7,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_7.jpg",
+        "image": "images/plp/plp-below/cat_img12.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -207,7 +238,7 @@
     {
         "id": 8,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_8.jpg",
+        "image": "images/plp/plp-below/cat_img13.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -236,7 +267,7 @@
     {
         "id": 9,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_9.jpg",
+        "image": "images/plp/plp-below/cat_img14.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -265,36 +296,7 @@
     {
         "id": 10,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/adv_afterfilter.jpg",
-        "product_color": "Pink swirals",
-        "price": "$58",
-        "product_rating":3,
-        "product_tag": "Sturdy and petite",
-        "is_ad": true,
-        "width":290,
-        "is_new": false,
-        "avalable_color": [
-            {
-                "id": 0,
-                "name": "red"
-            },
-            {
-                "id": 1,
-                "name": "blue"
-            },
-            {
-                "id": 2,
-                "name": "green"
-            },
-            {
-                "id": 3,
-                "name": "pink"
-            }
-        ]
-    },{
-        "id": 11,
-        "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_10.jpg",
+        "image": "images/plp/plp-below/cat_img15.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -323,7 +325,7 @@
     {
         "id": 12,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_11.jpg",
+        "image": "images/plp/plp-below/cat_img16.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -352,7 +354,7 @@
     {
         "id": 13,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_12.jpg",
+        "image": "images/plp/plp-below/cat_img17.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -381,13 +383,14 @@
     {
         "id": 14,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_12.jpg",
+        "image": "images/plp/plp-below/cat_img18.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
         "is_new": false,
+        "ad_spacing":3,
         "avalable_color": [
             {
                 "id": 0,
@@ -410,7 +413,7 @@
     {
         "id": 15,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_13.jpg",
+        "image": "images/plp/plp-below/cat_img19.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
@@ -439,7 +442,7 @@
     {
         "id": 16,
         "product_name": "Triple Zip Hipster",
-        "image": "images/plp/filter/filter_14.jpg",
+        "image": "images/plp/plp-below/cat_img26.jpg",
         "product_color": "Pink swirals",
         "price": "$58",
         "product_rating":3,
