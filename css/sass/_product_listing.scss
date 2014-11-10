@@ -26,26 +26,37 @@
 }
 .filter-body {
 	background-color: $light-grey;
-	padding: 1rem 0 3rem;
+	padding: 1.5rem 0;
 	.category-image {
 		margin-right: .5rem;
 		cursor:pointer;
+		border: 2px solid $white;
+		border-radius: 5px;
 		&.active {
 			border: 2px solid $biege-green;
-			border-radius: 4px;
 		}
 	}
+	.added-filter-container {
+		min-height: 45px;
+	    display: block !important;
+	    margin-left: 4.5%;
+	}
+	.added-filter-container.ng-hide {
+		opacity:0;
+	}
 	.added-filter {
-		text-transform: $text-uppercase;
-		margin-top: 1rem;
-		background-color: $silver;
-		font-size: 0.8rem;
-	    margin: 1rem 0 0;
-	    padding: 5px;
-	    width: 50%;
+	 	background-color: $silver;
+	    float: left;
+	    font-size: 0.75rem;
+	    margin: 1rem 0.5rem 0 0;
+	    padding: 2px 5px;
+	    text-transform: $text-uppercase;
+	    width: 8rem;
+	    cursor: pointer;
 	}
 	.remove-filter {
-		color: $black;
+		display: inline-block;
+    	vertical-align: text-bottom;
 	}
 }
 
@@ -72,6 +83,7 @@
 		background-color: #3a3845; 
 		padding: 0.3rem 0.7rem; 
 		top: 1rem;
+		left: 1.75rem;
 		font-weight: bold;
 	}
 	.left-align{
@@ -104,7 +116,9 @@
 		padding: 2rem 0;
     	&:hover{
     		cursor:pointer;
-    		background-color:#F5F5F5;
+    		.quick-view-btn {
+				opacity: 1;
+			}
     	}
     	.image-fixed-dimention{
     		height: 235px;
@@ -119,7 +133,7 @@
 	}
 }
 .product-listingHeader{
-	padding: 1rem 0;
+	padding: 1rem;
 	margin: 1rem 0;
 	letter-spacing: 0.02rem;
 	font-size: 0.7rem;
@@ -159,6 +173,7 @@
 		width: 80%;
 	}
 	.quick-view-btn {
+		opacity: 0;
 		margin-top: 1rem;
 	    width: 20%;
 	}
@@ -223,3 +238,9 @@
 	}
 }
 
+.marg-left {
+	margin-left: 1.75rem;
+}
+.marg-top {
+	margin-top: 1rem;
+}

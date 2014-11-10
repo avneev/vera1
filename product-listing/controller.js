@@ -22,6 +22,24 @@ angular.module('myApp.product-listing', ['ngRoute'])
 		}
 	)
 
+	xhrFactory.getList('quick-view-filter.json').then(
+		function(response) {
+			$scope.quickViewFliterListing = response;	
+		},
+		function(error) {
+			console.log(error);
+		}
+	)
+
+	xhrFactory.getList('product-listing1.json').then(
+		function(response) {
+			$scope.plpListing = response;		
+		},
+		function(error) {
+			console.log(error);
+		}
+	)
+
 	xhrFactory.getList('filter-listing.json').then(
 		function(response) {
 			$scope.filterListing = response;
@@ -63,13 +81,23 @@ angular.module('myApp.product-listing', ['ngRoute'])
 		});
 	};
 
-	$scope.quickView = function(product) {
+	$scope.quickView = function(product, ele) {
 		$scope.showQuickView = true;
 		$scope.productView = product;
+		setTimeout(function(){
+			jQuery('html, body').animate({
+		        scrollTop: jQuery("."+ele).offset().top-200
+		    }, 1500);
+		},100);
 	};
 	$scope.closeQuickView = function() {
 		$scope.showQuickView = false;
 		$scope.productView = [];
+		setTimeout(function(){
+			jQuery('html, body').animate({
+		        scrollTop: jQuery(".quick-view-row").offset().top-200
+		    }, 1500);
+		},100);
 	};
 
 	xhrFactory.getList('product-listing.json').then(

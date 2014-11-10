@@ -1,7 +1,7 @@
 <div class="full-width header-wrapper">
 <div class="row header">
 	<div class="large-7 columns header__left-column">
-		<span class="text-pink bold">Free shipping </span> <span class="verticle-line">|</span>  on orders of $75 or more <span>U.s only</span>
+		<span class="text-pink bold">Free shipping </span> <span class="verticle-line">|</span>  on orders of $75 or more <span class="country-name">U.s only</span>
 	</div>
 	<div class="large-5 columns  header__right-column">
 		<ul class="large-3 columns header__icon-list">
@@ -24,13 +24,13 @@
 				</div>
 			</li>
 		</ul>
-		<div class="menu-small">
+		<!-- <div class="menu-small">
 			<img class="pulse2" src="images/icon_menu.jpg"> 
 			<p class="nav-bread-crumb" ng-bind-html="breadCrumb | to_trusted"></p>
-		</div>
+		</div> -->
 	</div>
 	<div class="large-4 columns no-padding img-margin">
-		<a href="#/"><img class="sticky-specific outlet-hidden" src="images/logo.png"/>
+		<a href="#/"><img class="sticky-specific outlet-hidden" style="padding-top: 0.02rem;" src="images/logo.png"/>
 		<img class="sticky-logo pulse2 vera-mid-logo" src="images/small_logo.png"/><img class="sticky-logo pulse2 outlet-shown" src="images/outlet/orange_logo.png"/></a>
 	</div>
 	<div class="large-3 columns silver-border no-padding right-nav">
@@ -70,6 +70,30 @@
 		 </form>
 	</div>
 </div>
+
+
+<div class="row main-nav sticky-nav stuck">
+	<div class="large-4 columns silver-border no-padding left-nav">
+		
+		<div class="menu-small">
+			<img src="images/icon_menu.jpg" class="pulse2"> 
+			<p class="nav-bread-crumb" ng-bind-html="breadCrumb | to_trusted"></p>
+		</div>
+	</div>
+	<div class="large-4 columns no-padding img-margin">
+		<a href="#/">
+		<img src="images/small_logo.png" class="sticky-logo pulse2 vera-mid-logo"></a>
+	</div>
+	<div class="large-3 columns silver-border no-padding right-nav">
+		<ul class="fixed-header-icons">		
+			<li class="pulse2"><a href="#"><img src="images/menu/icon_menu_search.jpg"></a></li>
+		    <li class="pulse2"><a href="#"><img src="images/icon_profile.png"></a></li>
+			<li class="pulse2"><a href="#"><img src="images/icon_fav.png"></a></li>
+			<li class="pulse2"><a href="#"><img src="images/icon_bag.png"></a></li>
+		</ul>
+	</div>
+	
+</div>
 <script type="text/javascript">
  jQuery(document).ready(function(){
   var submitIcon = $('.searchbox-icon');
@@ -106,10 +130,10 @@ jQuery(window).scroll(function() {
  var currentScrollPos = $(window).scrollTop();
  console.log("position is"+currentScrollPos);
  if (currentScrollPos >=198){
- 	$('.sticky-nav').addClass('stuck');
+ 	$('.stuck').addClass('test');
  }
  else {
- 	$('.sticky-nav').removeClass('stuck');
+ 	$('.stuck').removeClass('test');
  }
 });
  </script>
