@@ -623,7 +623,7 @@ a.main-nav-list.active {
 
 /* line 31, sass/_homepage.scss */
 .featured-fan {
-  background-color: #D5D5D5;
+  /*background-color: $gray-shade;*/
   margin: 3rem 0 0;
   text-align: center;
 }
@@ -798,27 +798,44 @@ a.main-nav-list.active {
 .roleover-Bag .shop-now {
   display: none;
 }
-/* line 178, sass/_homepage.scss */
+/* line 177, sass/_homepage.scss */
+.roleover-Bag .large-bag {
+  left: 9.7rem;
+  top: 10rem;
+  padding: 0.5rem 1.8rem;
+}
+/* line 182, sass/_homepage.scss */
+.roleover-Bag .side-bag1 {
+  font-size: 0.6rem;
+  left: 31.2rem;
+  padding: 0.2rem 0.8rem;
+  top: 5rem;
+}
+/* line 188, sass/_homepage.scss */
+.roleover-Bag .side-bag2 {
+  font-size: 0.6rem;
+  left: 31.4rem;
+  padding: 0.2rem 0.8rem;
+  top: 15rem;
+}
+/* line 195, sass/_homepage.scss */
 .roleover-Bag:hover .shop-now {
   display: block;
   border: 0.2rem solid #FFFFFF;
   font-weight: bold;
-  padding: 0.5rem 1.8rem;
   position: absolute;
   cursor: pointer;
   background-color: #FFFFFF;
   color: #3a3845;
-  left: 10rem;
-  top: 10rem;
 }
 
-/* line 192, sass/_homepage.scss */
+/* line 206, sass/_homepage.scss */
 .shopRecoment-Pos {
   left: 6.5rem;
   top: 16rem;
 }
 
-/* line 196, sass/_homepage.scss */
+/* line 210, sass/_homepage.scss */
 .shopTogether-pos {
   left: 10.7rem;
   top: 16rem;
