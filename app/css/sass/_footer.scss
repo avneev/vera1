@@ -17,14 +17,17 @@
  	}
  	.child-li{
  		li{
+ 			font-family: $base-font-family;
+ 			color: $base-font-color;
  			cursor: pointer;
 		    font-size: 0.65rem;
 		    letter-spacing: 0.05rem;
 		    line-height: 1.7rem;
-    		color:$color-gray-dark;
+    		/*color:$color-gray-dark;*/
  		}
  	}
  	.font-footer-bold{
+ 		font-family: $base-font-family;
  		font-size: 0.68rem;
     	font-weight: bold;
     	padding-bottom: 0.5rem;
@@ -37,7 +40,8 @@
     	padding-top: 3rem;
  	}
  	.footer-terms_condition{
- 		color:$color-gray-dark;
+ 		font-family: $base-font-family;
+ 		color: $base-font-color;
 	    font-size: 0.65rem;
 	    letter-spacing: 0.05rem;
 	    text-align: center;

@@ -7,8 +7,13 @@
 	span {
 		background-color: $white;
 		z-index: 1;
-		font-size: 90%;
+		font-family: $EBGaramondMedium-font-family;
+		font-size: 14pt;
+		color: $base-font-color;
 		padding: 0 4rem;
+	}
+	.txt-color{
+		color: $chromeBlack;
 	}
 	.border-bottom {
 		width: 97%;
@@ -126,6 +131,9 @@ section.module.parallax {
 		padding-top: 3rem;
 	}
 }
+.vera-girls__text{
+	padding-top: 3rem;
+}
 .vera-girls {
 	margin: 4rem 0 0;
 	.large-3 {
@@ -133,10 +141,22 @@ section.module.parallax {
 		height: 12.7rem;
 	}
 	&__text {
-		p {
-			font-size: 2.5rem;
+		p.vra-gl{
+			font-size: 1.3rem;
+			color: $base-font-color;
+			font-family: $BrandonMedium-font-family;
+			text-transform: $text-uppercase;
 			line-height: 2.8rem;
-			padding: 2rem 2rem 0;
+			padding: 0rem 2rem 0;
+			text-align: right;
+			line-height: $base-line-height*2;
+		}
+		p.vra-gettin-txt {
+			font-size: 2.6rem;
+			font-family: $EBGaramondMedium-font-family;
+			text-transform: $text-uppercase;
+			line-height: 2.8rem;
+			padding: 0rem 5rem 0;
 			text-align: right;
 			line-height: $base-line-height*2;
 		}
@@ -154,14 +174,18 @@ section.module.parallax {
 		}
 		&__info {
 			&--name {
+				padding-left: 1rem;
 				display: inline-block;
 				vertical-align: middle;
 				width: 62%;
+				font-family: $EBGaramondMedium-font-family;
+				color: $base-font-color;
 				h1 {
 					font-size: 1.5rem;
 				}
 				span {
 					font-size: 1rem;
+					font-style: italic;
 				}
 			}
 
@@ -171,18 +195,25 @@ section.module.parallax {
 			}
 			&--bottom {
 				margin: .7rem 0 0;
+				font-family: $base-font-family;
+				color: $base-font-color;
+				text-transform: uppercase;
 			}
 		}
 	}
 	&__profile-info {
 		.pink-text {
-			font-size: 1.1rem;
-			font-weight: bold;
+			font-size: 1.3rem;
+			font-family: arial;
+			color: #dc1065;
 		}
 		span {
-			font-size: 0.9rem;
+			font-size: 1rem;
+			font-family: arial;
 			display: block;
 			line-height: 1rem;
+			color: $base-font-color;
+			padding-top: 0.4rem;
 		}
 	}
 	&--last {
