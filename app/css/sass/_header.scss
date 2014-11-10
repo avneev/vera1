@@ -237,6 +237,16 @@
  				}
  			}
  		}
+ 		.sub-menu-nav-copy {
+ 			margin-bottom: 1rem;
+ 			li {
+ 				color: $grey;
+ 				font-size: 0.75rem;
+ 				line-height: 1.75rem;
+ 				height: 1.75rem;
+ 				text-transform: $text-uppercase;
+ 			}
+ 		}
  	}
  }
 
@@ -362,6 +372,7 @@
 
 a.main-nav-list.active {
 	font-weight: bold;
+	font-size: 0.9rem
 }
 .nav-bread-crumb {
 	display: inline-block; 
