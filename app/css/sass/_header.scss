@@ -292,6 +292,22 @@
  	font-size:20px;
  	color:red;
  	opacity: 0;
+ 	font-size: 1.15rem !important;
+ 	&::-webkit-input-placeholder {
+	   font-size: 0.875rem;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+	   font-size: 0.875rem;
+	}
+
+	&::-moz-placeholder {  /* Firefox 19+ */
+	   font-size: 0.875rem;
+	}
+
+	&:-ms-input-placeholder {  
+	   font-size: 0.875rem;
+	}
  }
  .searchbox-open .searchbox-input{
  	opacity: 1;
