@@ -10,5 +10,5 @@ angular.module('myApp.search', [])
 }])
 
 .controller('SearchCtrl',  ['$scope', '$rootScope', 'xhrFactory', function($scope, $rootScope, xhrFactory) {
-
+	
 }]);
