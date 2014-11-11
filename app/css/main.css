@@ -1335,6 +1335,22 @@ section.module.parallax-3 {
   background-image: url("../images/parellax-plp/img3.png");
 }
 
+/* line 269, sass/_product_listing.scss */
+.search-page-css {
+  font-size: 2rem;
+  font-family: "EBGaramond", serif;
+}
+
+/* line 273, sass/_product_listing.scss */
+.search-page-head-padding {
+  padding: 2rem;
+}
+
+/* line 277, sass/_product_listing.scss */
+.search-result:last-child {
+  float: left !important;
+}
+
 /* line 1, sass/_outlet.scss */
 .outlet-product-margin {
   margin-top: 1rem;

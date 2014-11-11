@@ -1,0 +1,549 @@
+[
+    {
+        "id": 0,
+        "product_name": "Weekender",
+        "image": "images/search/search_img1.jpg",
+        "product_color": "CLASSIC BLACK",
+        "price": "$140",
+        "product_rating":5,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "ad_spacing":6,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "product_name": "Weekender",
+        "image": "images/search/search_img2.jpg",
+        "product_color": "MIDNIGHT BLUES",
+        "price": "$140",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "ad_spacing":6,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            },
+            {
+                "id": 4,
+                "name": "grey"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "product_name": "Getaway Duffel",
+        "image": "images/search/search_img3.jpg",
+        "product_color": "CITRON",
+        "price": "$88",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            },
+            {
+                "id": 4,
+                "name": "black"
+            },
+            {
+                "id": 5,
+                "name": "grey"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "product_name": "Grand Tote",
+        "image": "images/search/search_img4.jpg",
+        "product_color": "TUTTI FRUTTI",
+        "price": "$44",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            },
+            {
+                "id": 4,
+                "name": "black"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "product_name": "Trapeze Tote",
+        "image": "images/search/search_img5.jpg",
+        "product_color": "INK BLUE",
+        "price": "$140",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "product_name": "Get Carried Away Tote",
+        "image": "images/search/search_img6.jpg",
+        "product_color": "CHERRY BLOSSOMS",
+        "price": "$92",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "product_name": "Carry All Travel Bag",
+        "image": "images/search/search_img7.jpg",
+        "product_color": "CHERRY BLOSSOMS",
+        "price": "$108",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_video": false,
+        "is_new": false,
+        "ad_spacing":6,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "product_name": "Weekender",
+        "image": "images/search/search_img8.jpg",
+        "product_color": "LEOPARD SPOTS",
+        "price": "$98",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "product_name": "Round Duffel",
+        "image": "images/search/search_img9.jpg",
+        "product_color": "MOON BLOOMS",
+        "price": "$96",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "product_name": "Travel Tote",
+        "image": "images/search/search_img10.jpg",
+        "product_color": "FLOWER SHOWER",
+        "price": "$78",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "product_name": "Triple Zip Hipster",
+        "image": "images/search/adv_inside_stitch.jpg",
+        "product_color": "Pink swirals",
+        "price": "$58",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": true,
+        "is_new": false,
+        "is_video": false,
+        "ad_spacing":6,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "product_name": "Blush and Blush Makeup Case",
+        "image": "images/search/search_img11.jpg",
+        "product_color": "MOON BLOSSOMS",
+        "price": "$42",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "product_name": "Large Puffy Cosmetics",
+        "image": "images/search/search_img12.jpg",
+        "product_color": "FUCHSIA",
+        "price": "$34",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "product_name": "Medium Cosmetic",
+        "image": "images/search/search_img13.jpg",
+        "product_color": "HEATHER",
+        "price": "$26",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": true,
+        "ad_spacing":3,
+        "width": "290",
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "product_name": "All Weapped Up Jewelry Roll",
+        "image": "images/search/search_img14.jpg",
+        "product_color": "CHERRY BLOSSOMS",
+        "price": "$38",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "product_name": "Table Case With Stand",
+        "image": "images/search/search_img15.jpg",
+        "product_color": "FANFARE FANS",
+        "price": "$37-54",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "product_name": "Hanging Organizer",
+        "image": "images/search/search_img16.jpg",
+        "product_color": "CHERRY BLOSSOMS",
+        "price": "$48",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": false,
+        "is_new": false,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "product_name": "Triple Zip Hipster",
+        "image": "images/search/adv_more_results.jpg",
+        "product_color": "Pink swirals",
+        "price": "$58",
+        "product_rating":3,
+        "product_tag": "Sturdy and petite",
+        "is_ad": true,
+        "is_new": false,
+        "ad_spacing":3,
+        "avalable_color": [
+            {
+                "id": 0,
+                "name": "red"
+            },
+            {
+                "id": 1,
+                "name": "blue"
+            },
+            {
+                "id": 2,
+                "name": "green"
+            },
+            {
+                "id": 3,
+                "name": "pink"
+            }
+        ]
+    }
+]
