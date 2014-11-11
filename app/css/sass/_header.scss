@@ -119,6 +119,7 @@
  		position:fixed;
  		top: -5rem;
  		left: 50%;
+ 		opacity: 0;
  		transition-property: all;
 		transition-duration: 600ms;
 		transition-timing-function: cubic-bezier(0, 1,1, 1);
@@ -126,6 +127,7 @@
  		border-bottom: 1px solid $silver;
  		&.test{
  			top:0rem !important;
+ 			opacity: 1;
  		}
  		.fixed-header-icons, .menu-small {
  			display: block;
@@ -211,7 +213,7 @@
  		width: 100%;
  		z-index: -1;
  		overflow: hidden;
-		max-height: 500px; /* approximate max height */		
+		height: 450px; /* approximate max height */		
  		opacity: 1;
 		transition-property: all;
 		transition-duration: 600ms;
@@ -224,7 +226,7 @@
  		}
  		&.submenu-hidden {
  			opacity:0;
- 			max-height:0;
+ 			height:0;
  			padding-top: 0;
  		}
  		.sub-menu-nav {
