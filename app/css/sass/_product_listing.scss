@@ -266,3 +266,15 @@
 	}
 
 }
+.search-page-css{
+	font-size: 2rem;
+	font-family: $EBGaramondMedium-font-family, serif;
+}
+.search-page-head-padding{
+	padding:2rem;
+}
+.search-result{ 
+		&:last-child{
+			float: left !important;
+		}
+}
