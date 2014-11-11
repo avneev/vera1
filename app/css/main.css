@@ -450,14 +450,33 @@ video {
   font-size: 20px;
   color: red;
   opacity: 0;
+  font-size: 1.15rem !important;
+}
+/* line 296, sass/_header.scss */
+.searchbox-input::-webkit-input-placeholder {
+  font-size: 0.875rem;
+}
+/* line 300, sass/_header.scss */
+.searchbox-input:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.875rem;
+}
+/* line 304, sass/_header.scss */
+.searchbox-input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.875rem;
+}
+/* line 308, sass/_header.scss */
+.searchbox-input:-ms-input-placeholder {
+  font-size: 0.875rem;
 }
 
-/* line 296, sass/_header.scss */
+/* line 312, sass/_header.scss */
 .searchbox-open .searchbox-input {
   opacity: 1;
 }
 
-/* line 299, sass/_header.scss */
+/* line 315, sass/_header.scss */
 .searchbox-icon,
 .searchbox-submit {
   display: block;
@@ -471,7 +490,7 @@ video {
   cursor: pointer;
 }
 
-/* line 311, sass/_header.scss */
+/* line 327, sass/_header.scss */
 .searchbox {
   position: relative;
   min-width: 50px;
@@ -488,7 +507,7 @@ video {
 /*......*/
 /*......*/
 /*......*/
-/* line 327, sass/_header.scss */
+/* line 343, sass/_header.scss */
 .searchbox-open {
   width: 49%;
   clear: both;
@@ -496,7 +515,7 @@ video {
   transform: translateX(-50%);
 }
 
-/* line 333, sass/_header.scss */
+/* line 349, sass/_header.scss */
 .search-expanded {
   width: 100%;
   text-align: center;
@@ -507,7 +526,7 @@ video {
   margin-top: 1rem;
 }
 
-/* line 342, sass/_header.scss */
+/* line 358, sass/_header.scss */
 #close-search {
   cursor: pointer;
   position: absolute;
@@ -515,65 +534,65 @@ video {
   top: 10px;
 }
 
-/* line 348, sass/_header.scss */
+/* line 364, sass/_header.scss */
 .search-logo {
   display: none;
 }
 
-/* line 352, sass/_header.scss */
+/* line 368, sass/_header.scss */
 .fixed-header-search-expanded .sticky-logo {
   display: none !important;
 }
 
-/* line 357, sass/_header.scss */
+/* line 373, sass/_header.scss */
 .outlet .header-wrapper {
   background-color: #FE7F2E;
   color: #FFFFFF;
 }
-/* line 362, sass/_header.scss */
+/* line 378, sass/_header.scss */
 .outlet .header__left-column {
   color: #FFFFFF;
 }
-/* line 366, sass/_header.scss */
+/* line 382, sass/_header.scss */
 .outlet .header__right-column span {
   color: #FFFFFF;
 }
-/* line 371, sass/_header.scss */
+/* line 387, sass/_header.scss */
 .outlet .text-pink {
   color: #F5D666;
 }
-/* line 374, sass/_header.scss */
+/* line 390, sass/_header.scss */
 .outlet .outlet-shown {
   display: inline-block;
 }
-/* line 377, sass/_header.scss */
+/* line 393, sass/_header.scss */
 .outlet .outlet-hidden {
   display: none;
 }
 
-/* line 381, sass/_header.scss */
+/* line 397, sass/_header.scss */
 .outlet-shown {
   display: none;
 }
 
-/* line 385, sass/_header.scss */
+/* line 401, sass/_header.scss */
 a.main-nav-list.active {
   font-weight: bold;
   font-size: 0.9rem;
 }
 
-/* line 389, sass/_header.scss */
+/* line 405, sass/_header.scss */
 .nav-bread-crumb {
   display: inline-block;
   margin-left: 2rem;
   font-size: 0.9rem;
 }
-/* line 393, sass/_header.scss */
+/* line 409, sass/_header.scss */
 .nav-bread-crumb a {
   color: #3B3B3B;
 }
 
-/* line 397, sass/_header.scss */
+/* line 413, sass/_header.scss */
 .search-panel {
   background: none repeat scroll 0 0 #ffffff;
   height: 0;
@@ -588,26 +607,26 @@ a.main-nav-list.active {
   transition: height 1s;
   width: 102% !important;
 }
-/* line 410, sass/_header.scss */
+/* line 426, sass/_header.scss */
 .search-panel.show {
   display: block;
   height: auto;
 }
-/* line 416, sass/_header.scss */
+/* line 432, sass/_header.scss */
 .search-panel .search-hint {
   left: 25%;
   position: relative;
   text-align: left;
 }
-/* line 420, sass/_header.scss */
+/* line 436, sass/_header.scss */
 .search-panel .search-hint a {
   color: #000000;
 }
-/* line 424, sass/_header.scss */
+/* line 440, sass/_header.scss */
 .search-panel .search-suggestion {
   padding-bottom: 1rem;
 }
-/* line 426, sass/_header.scss */
+/* line 442, sass/_header.scss */
 .search-panel .search-suggestion h2 {
   font-size: 1.75rem;
   text-transform: uppercase;
@@ -615,14 +634,14 @@ a.main-nav-list.active {
   padding-bottom: 1rem;
   border-bottom: 1px solid #AAAAAA;
 }
-/* line 433, sass/_header.scss */
+/* line 449, sass/_header.scss */
 .search-panel .search-suggestion .name, .search-panel .search-suggestion .price {
   font-size: 0.85rem;
   font-weight: bold;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-/* line 439, sass/_header.scss */
+/* line 455, sass/_header.scss */
 .search-panel .search-suggestion .name {
   font-family: "EBGaramond", serif;
 }
