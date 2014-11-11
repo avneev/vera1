@@ -107,6 +107,7 @@
 	    font-weight: bold; 
 	    a {
 	    	color: $base-font-color;  
+	    	font-family: $EBGaramondMedium-font-family, serif;
 	    } 
 	}
 	.text-transform-upper{
@@ -185,6 +186,7 @@
 	.name {
 		font-size: 3.25rem;
 		color: $fake-black;
+		font-family: $EBGaramondMedium-font-family, serif;
 	}
 	.sku {
 		font-size: .8rem;

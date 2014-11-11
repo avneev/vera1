@@ -1,11 +1,11 @@
 [
     {
         "id": 0,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "EMMA SATCHEL",
         "image": "images/plp/bag_a.jpg",
-        "product_color": "Pink swirals",
+        "product_color": "TAUPE",
         "sku": 14342214,
-        "price": "$58",
+        "price": "$258",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -23,10 +23,6 @@
             {
                 "id": 2,
                 "name": "green"
-            },
-            {
-                "id": 3,
-                "name": "pink"
             }
         ],
         "active":false,
@@ -65,11 +61,11 @@
     },
     {
         "id": 1,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "SLIM & TRIM HIPSTER",
         "image": "images/plp/p_img2.jpg",
-        "product_color": "Pink swirals",
+        "product_color": "LEOPARD SPOTS",
         "sku": 14342214,
-        "price": "$58",
+        "price": "$218",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -87,10 +83,6 @@
             {
                 "id": 2,
                 "name": "green"
-            },
-            {
-                "id": 3,
-                "name": "pink"
             }
         ],
         "active":false,
@@ -129,11 +121,11 @@
     },
     {
         "id": 2,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "DRAWSTRING BACKPACK",
         "image": "images/plp/p_img3.jpg",
-        "product_color": "Pink swirals",
+        "product_color": "GREEN",
         "sku": 14342214,
-        "price": "$58",
+        "price": "$236",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -154,6 +146,14 @@
             {
                 "id": 3,
                 "name": "pink"
+            },
+            {
+                "id": 4,
+                "name": "black"
+            },
+            {
+                "id": 5,
+                "name": "grey"
             }
         ],
         "active":false,
@@ -192,11 +192,11 @@
     },
     {
         "id": 3,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "ALL IN ONE CROSSBODY",
         "image": "images/plp/p_img4.jpg",
-        "product_color": "Pink swirals",
+        "product_color": "ZIGGY ZAGS",
         "sku": 14342214,
-        "price": "$58",
+        "price": "$280",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -205,18 +205,6 @@
             {
                 "id": 0,
                 "name": "red"
-            },
-            {
-                "id": 1,
-                "name": "blue"
-            },
-            {
-                "id": 2,
-                "name": "green"
-            },
-            {
-                "id": 3,
-                "name": "pink"
             }
         ],
         "active":false,
