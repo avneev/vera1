@@ -963,6 +963,35 @@ section.module.parallax-3 {
   top: 16rem;
 }
 
+/* line 279, sass/_homepage.scss */
+.bg {
+  background: url(../images/parellax-home/parellax-flower.png) no-repeat 0 0;
+  height: 864px;
+  width: 1280px;
+  background-size: cover;
+}
+
+/* line 285, sass/_homepage.scss */
+.content-bg {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+/* line 291, sass/_homepage.scss */
+.parellax-row {
+  position: relative;
+  height: 416px;
+  overflow-y: auto;
+  background: url(../images/parellax-home/parellax1.jpg) no-repeat;
+}
+
+/* line 297, sass/_homepage.scss */
+.parellax-row::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 /* line 1, sass/_product_listing.scss */
 .filter-head {
   background-color: #69D8C7;
@@ -1276,6 +1305,36 @@ section.module.parallax-3 {
 /* line 261, sass/_product_listing.scss */
 .parallax-plp-container section.module.parallax-6 {
   background-image: url("../images/parellax-plp/img3.png");
+}
+
+/* line 267, sass/_product_listing.scss */
+.parellax-row-plp {
+  height: 416px;
+  background: url(../images/parellax-plp/img1.png) no-repeat;
+  position: relative;
+  overflow-y: auto;
+}
+/* line 272, sass/_product_listing.scss */
+.parellax-row-plp .bg-plp {
+  background: url(../images/parellax-plp/zinnia-flower-text.png) no-repeat 0 0;
+  height: 800px;
+  width: 1280px;
+  background-size: cover;
+}
+/* line 278, sass/_product_listing.scss */
+.parellax-row-plp .plp-content-bg {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translate(-50%, -20%);
+}
+/* line 283, sass/_product_listing.scss */
+.parellax-row-plp .plp-content-bg img {
+  max-width: initial;
+}
+/* line 287, sass/_product_listing.scss */
+.parellax-row-plp::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 /* line 1, sass/_outlet.scss */
