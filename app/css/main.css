@@ -141,7 +141,7 @@ video {
 }
 /* line 53, sass/_header.scss */
 .header .text-pink.bold {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 /* line 59, sass/_header.scss */
@@ -613,15 +613,16 @@ a.main-nav-list.active {
   text-transform: uppercase;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  border-bottom: 1px solid #AAAAAA;
 }
-/* line 432, sass/_header.scss */
+/* line 433, sass/_header.scss */
 .search-panel .search-suggestion .name, .search-panel .search-suggestion .price {
   font-size: 0.85rem;
   font-weight: bold;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-/* line 438, sass/_header.scss */
+/* line 439, sass/_header.scss */
 .search-panel .search-suggestion .name {
   font-family: "EBGaramond", serif;
 }
@@ -960,7 +961,7 @@ section.module.parallax-3 {
 .roleover {
   border: 0.2rem solid #FFFFFF;
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.7rem 2rem;
   position: absolute;
   cursor: pointer;
@@ -999,7 +1000,7 @@ section.module.parallax-3 {
 .roleover-Bag:hover .shop-now {
   display: block;
   border: 0.2rem solid #FFFFFF;
-  font-weight: bold;
+  font-weight: 800;
   position: absolute;
   cursor: pointer;
   background-color: #FFFFFF;
@@ -1376,7 +1377,7 @@ section.module.parallax-3 {
 /* line 15, sass/_product_detail.scss */
 .product-detail .pdp-headerPath {
   font-size: 0.66rem;
-  font-weight: bold;
+  font-weight: 800;
   padding-left: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -1425,7 +1426,7 @@ section.module.parallax-3 {
 /* line 54, sass/_product_detail.scss */
 .product-detail .product-description .product-number {
   font-size: 0.6rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 58, sass/_product_detail.scss */
 .product-detail .product-description .price {
@@ -1435,7 +1436,7 @@ section.module.parallax-3 {
 /* line 62, sass/_product_detail.scss */
 .product-detail .product-description .desc-list {
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 66, sass/_product_detail.scss */
 .product-detail .product-description .read-review {
@@ -1457,7 +1458,7 @@ section.module.parallax-3 {
 /* line 79, sass/_product_detail.scss */
 .product-detail .product-description .product-color-choose div {
   font-size: 0.66rem;
-  font-weight: bold;
+  font-weight: 800;
   padding-top: 0.5rem;
 }
 /* line 84, sass/_product_detail.scss */
@@ -1490,7 +1491,7 @@ section.module.parallax-3 {
 /* line 109, sass/_product_detail.scss */
 .product-detail .product-description .store-locator span {
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 113, sass/_product_detail.scss */
 .product-detail .product-description .store-locator ul {
@@ -1541,7 +1542,7 @@ section.module.parallax-3 {
 }
 /* line 161, sass/_product_detail.scss */
 .product-detail .footer-color .price {
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 165, sass/_product_detail.scss */
 .product-detail .complete-look {

@@ -428,6 +428,7 @@ a.main-nav-list.active {
 		    text-transform: uppercase;
 		    margin-bottom: 1rem;
 	    	padding-bottom: 1rem;
+	    	border-bottom: 1px solid $base;
 		}
 		.name, .price {
 		    font-size: 0.85rem;
