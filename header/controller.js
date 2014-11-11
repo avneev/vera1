@@ -6,7 +6,6 @@ angular.module('myApp.header', [])
 	xhrFactory.getList('nav-left.json').then(
 		function(response) {
 			$scope.navleft = response;
-			console.log($scope.navleft)
 		},
 		function(error) {
 			console.log(error);
