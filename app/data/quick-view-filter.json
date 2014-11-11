@@ -1,11 +1,11 @@
 [
     {
         "id": 0,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "EMMA MINI CROSSBODY",
         "image": "images/plp/filter/filter_1.jpg",
-        "product_color": "Pink swirals",
+        "product_color": "BLACK",
         "sku": 14342214,
-        "price": "$58",
+        "price": "$228",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -23,10 +23,6 @@
             {
                 "id": 2,
                 "name": "green"
-            },
-            {
-                "id": 3,
-                "name": "pink"
             }
         ],
         "active":false,
@@ -65,11 +61,11 @@
     },
     {
         "id": 1,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "AMY BACKPACK",
         "image": "images/plp/filter/filter_2.jpg",
-        "product_color": "Pink swirals",
+        "product_color": "BLACK",
         "sku": 14342214,
-        "price": "$58",
+        "price": "$236",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -129,11 +125,11 @@
     },
     {
         "id": 2,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "EMMA SATCHEL",
         "image": "images/plp/filter/filter_3.jpg",
-        "product_color": "Pink swirals",
+        "product_color": "TAUPE",
         "sku": 14342214,
-        "price": "$58",
+        "price": "$258",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -150,10 +146,6 @@
             {
                 "id": 2,
                 "name": "green"
-            },
-            {
-                "id": 3,
-                "name": "pink"
             }
         ],
         "active":false,
@@ -192,11 +184,11 @@
     },
     {
         "id": 3,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "EMMA SATCHEL",
         "image": "images/plp/filter/filter_4.jpg",
-        "product_color": "Pink swirals",
+        "product_color": "BLACK",
         "sku": 14342214,
-        "price": "$58",
+        "price": "$158",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -213,10 +205,6 @@
             {
                 "id": 2,
                 "name": "green"
-            },
-            {
-                "id": 3,
-                "name": "pink"
             }
         ],
         "active":false,

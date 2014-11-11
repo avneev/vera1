@@ -1,6 +1,7 @@
 <div class="row">
 	<img src="images/plp/p_hero1.jpg">
 </div>
+<div class="search-page-css search-page-head-padding" style="padding: 2rem; font-size: 2rem;">Search Result for "Weekend Bag"</div>
 <div class="row filter-head">
 	<div class="large-1 push-1 columns text-center no-padding">
 		<p class="filter-hint">Filtered by :</p>
@@ -29,18 +30,18 @@
 
 <div class="row">
 	<div class="large-12 columns product-listingHeader">
-		  <div class="pull-left breadcrums"><span><a href="#">HOME</a></span> / <span class="selected1">BAGS </span></div>
 			<div class="pull-right filter-sort">
 				<span >SORT BY:</span>
 				<span ><a class="selected">NEWEST</a></span>
 				<span><a>PRICE</a></span>
 				<span><a>MOST<img src="images/plp/pink_fav.png" style="margin-top: -3px;"></a></span>
 			</div>
+			<div class="columns search-page-css">Best matches for you :</div>
 	</div>
 </div>
 
 <div class="row" ng-hide="filtersList.length">
-	<div class="large-12 columns product-listing quick-view-row no-padding">
+	<!-- <div class="large-12 columns product-listing quick-view-row no-padding">
 		<div class="large-3 padding-productBlock columns center-align" ng-repeat="products in quickViewListing" change-on-hover="products">
 			<div class="product-rating">
 			  <div class="padding-bottom-5"><img src="images/plp/stars.png"></div>
@@ -61,7 +62,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="large-12 columns quick-view-container quick-view-unfiltered" ng-show="showQuickView">
 		<div class="arrow-quick-view" style="left: {{productView.arrPos}}rem;"><img src="images/plp/quickview_arrow.png"></div>
@@ -106,7 +107,7 @@
 	</div>
 
 	<div class="large-12 columns product-listing no-padding">
-	<div class="columns center-align" ng-class="{'large-3  padding-productBlock': !products.is_ad, 'large-{{products.ad_spacing}} padding-ad': products.is_ad}"  ng-repeat="products in productListing">
+	<div class="columns center-align search-result" ng-class="{'large-3  padding-productBlock': !products.is_ad, 'large-{{products.ad_spacing}} padding-ad': products.is_ad}"  ng-repeat="products in productListing">
 	<div ng-if="!products.is_ad">
 			<div class="image-fixed-dimention">
 			<img  class="productImg" ng-src="{{products.image}}"/>
@@ -132,15 +133,25 @@
 
 </div>
 
-<div class="row parallax-plp-container" ng-hide="filtersList.length" style="margin:3rem auto 1rem;">
-	<div class="parellax-row-plp">
-		<div class="bg-plp"></div>
-		<!-- <div class="plp-content-bg"><img src="images/parellax-plp/ziggy-text.png"></div> -->
-	</div>
-</div>
+<!-- <div class="row parallax-plp-container" ng-hide="filtersList.length" style="margin:3rem auto 1rem;">
+<img src="images/parellax-plp/plp_bkg.png" class="backbg">
+	  <section class="module parallax parallax-plp parallax-4"> <div class="container">
+        </div>
+      </section>
+
+      <section class="module parallax  parallax-plp parallax-5">
+        <div class="container">
+        </div>
+      </section>
+
+      <section class="module parallax parallax-plp parallax-6">
+        <div class="container">
+        </div>
+      </section>
+</div> -->
 
 <div class="row">
-	<div class="large-12 columns product-listing no-padding" ng-hide="filtersList.length">
+	<!-- <div class="large-12 columns product-listing no-padding" ng-hide="filtersList.length">
 		<div class="large-3 columns center-align"  ng-class="{'padding-productBlock': !products.is_ad, 'padding-ad': products.is_ad}" ng-repeat="products in plpListing">
 			<div ng-if="!products.is_ad">
 				<div class="image-fixed-dimention">
@@ -157,9 +168,9 @@
 				<img class="productImg marg-top" ng-src="{{products.image}}"/>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="large-12 columns product-listing quick-view-row no-padding">
+	<!-- <div class="large-12 columns product-listing quick-view-row no-padding">
 		<div class="large-3 padding-productBlock columns center-align" ng-repeat="products in quickViewFliterListing" change-on-hover="products">
 			<div class="product-rating">
 			  <div class="padding-bottom-5"><img src="images/plp/stars.png"></div>
@@ -180,7 +191,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="large-12 columns quick-view-container quick-view-filtered" ng-show="showQuickView">
 		<div class="arrow-quick-view" style="left: {{productView.arrPos}}rem;"><img src="images/plp/quickview_arrow.png"></div>
