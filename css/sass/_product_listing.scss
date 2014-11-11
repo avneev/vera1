@@ -266,3 +266,39 @@
 	}
 
 }
+.parellax-row-plp {
+	height: 416px;
+	background:url(../images/parellax-plp/img1.png) no-repeat;
+	position: relative;
+	overflow-y:auto;
+	.bg-plp {
+	  background:url(../images/parellax-plp/zinnia-flower-text.png) no-repeat 0 0;
+	   height: 800px;
+	  width: 1280px;
+	  background-size: cover;
+	}
+	.plp-content-bg {
+		position: absolute;
+		left: 50%;
+	    top: 150px;
+		transform: translate(-50%, -20%);
+		img {
+			 max-width: initial; 
+		}
+	}
+	&::-webkit-scrollbar { width: 0 !important }
+
+}
+
+.search-page-css{
+	font-size: 2rem;
+	font-family: $EBGaramondMedium-font-family, serif;
+}
+.search-page-head-padding{
+	padding:2rem 0;
+}
+.search-result{ 
+		&:last-child{
+			float: left !important;
+		}
+}

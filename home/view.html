@@ -1,6 +1,6 @@
 <div class="row slider"><!-- 
 	<img src="images/slider_1.jpg"> -->
-	<video autoplay>
+	<video autoplay onclick="this.play()">
       <source src="videos/hero_v6.mp4" type="video/mp4">
     </video>
 </div>
@@ -22,21 +22,12 @@
 	</div> -->
 </div>
 <div class="row moon-blooms">
-<img src="images/parellax-home/bg.jpg" class="backbg">
-	  <section class="module parallax parallax-1"> <div class="container">1
-        </div>
-      </section>
-
-      <section class="module parallax parallax-2">
-        <div class="container">2
-        </div>
-      </section>
-
-      <section class="module parallax parallax-3">
-        <div class="container">3
-        </div>
-      </section>
+<div class="parellax-row">
+	<div class="bg"></div>
+	<div class="content-bg"><img src="images/parellax-home/parellax4.png"></div>
 </div>
+</div>
+
 
 <div class="small-row threads-of-inspirations">
 	<video autoplay onclick="this.play()" onmouseover="this.play()">
@@ -136,3 +127,16 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	
+	jQuery(document).ready(function($) {
+    $('.parellax-row').scroll(function() {
+       $elem = jQuery('.parellax-row .content-bg');
+
+		$(window).scroll(function(){ 
+		    $elem.css('top', $('.parellax-row').scrollTop()+150);
+		}).trigger('scroll');
+    });
+    
+});
+</script>

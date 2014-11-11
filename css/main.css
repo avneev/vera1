@@ -141,7 +141,7 @@ video {
 }
 /* line 53, sass/_header.scss */
 .header .text-pink.bold {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 /* line 59, sass/_header.scss */
@@ -450,14 +450,33 @@ video {
   font-size: 20px;
   color: red;
   opacity: 0;
+  font-size: 1.15rem !important;
+}
+/* line 296, sass/_header.scss */
+.searchbox-input::-webkit-input-placeholder {
+  font-size: 0.875rem;
+}
+/* line 300, sass/_header.scss */
+.searchbox-input:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.875rem;
+}
+/* line 304, sass/_header.scss */
+.searchbox-input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.875rem;
+}
+/* line 308, sass/_header.scss */
+.searchbox-input:-ms-input-placeholder {
+  font-size: 0.875rem;
 }
 
-/* line 296, sass/_header.scss */
+/* line 312, sass/_header.scss */
 .searchbox-open .searchbox-input {
   opacity: 1;
 }
 
-/* line 299, sass/_header.scss */
+/* line 315, sass/_header.scss */
 .searchbox-icon,
 .searchbox-submit {
   display: block;
@@ -471,7 +490,7 @@ video {
   cursor: pointer;
 }
 
-/* line 311, sass/_header.scss */
+/* line 327, sass/_header.scss */
 .searchbox {
   position: relative;
   min-width: 50px;
@@ -488,7 +507,7 @@ video {
 /*......*/
 /*......*/
 /*......*/
-/* line 327, sass/_header.scss */
+/* line 343, sass/_header.scss */
 .searchbox-open {
   width: 49%;
   clear: both;
@@ -496,7 +515,7 @@ video {
   transform: translateX(-50%);
 }
 
-/* line 333, sass/_header.scss */
+/* line 349, sass/_header.scss */
 .search-expanded {
   width: 100%;
   text-align: center;
@@ -507,7 +526,7 @@ video {
   margin-top: 1rem;
 }
 
-/* line 342, sass/_header.scss */
+/* line 358, sass/_header.scss */
 #close-search {
   cursor: pointer;
   position: absolute;
@@ -515,62 +534,116 @@ video {
   top: 10px;
 }
 
-/* line 348, sass/_header.scss */
+/* line 364, sass/_header.scss */
 .search-logo {
   display: none;
 }
 
-/* line 352, sass/_header.scss */
+/* line 368, sass/_header.scss */
 .fixed-header-search-expanded .sticky-logo {
   display: none !important;
 }
 
-/* line 357, sass/_header.scss */
+/* line 373, sass/_header.scss */
 .outlet .header-wrapper {
   background-color: #FE7F2E;
   color: #FFFFFF;
 }
-/* line 362, sass/_header.scss */
+/* line 378, sass/_header.scss */
 .outlet .header__left-column {
   color: #FFFFFF;
 }
-/* line 366, sass/_header.scss */
+/* line 382, sass/_header.scss */
 .outlet .header__right-column span {
   color: #FFFFFF;
 }
-/* line 371, sass/_header.scss */
+/* line 387, sass/_header.scss */
 .outlet .text-pink {
   color: #F5D666;
 }
-/* line 374, sass/_header.scss */
+/* line 390, sass/_header.scss */
 .outlet .outlet-shown {
   display: inline-block;
 }
-/* line 377, sass/_header.scss */
+/* line 393, sass/_header.scss */
 .outlet .outlet-hidden {
   display: none;
 }
 
-/* line 381, sass/_header.scss */
+/* line 397, sass/_header.scss */
 .outlet-shown {
   display: none;
 }
 
-/* line 385, sass/_header.scss */
+/* line 401, sass/_header.scss */
 a.main-nav-list.active {
   font-weight: bold;
   font-size: 0.9rem;
 }
 
-/* line 389, sass/_header.scss */
+/* line 405, sass/_header.scss */
 .nav-bread-crumb {
   display: inline-block;
   margin-left: 2rem;
   font-size: 0.9rem;
 }
-/* line 393, sass/_header.scss */
+/* line 409, sass/_header.scss */
 .nav-bread-crumb a {
   color: #3B3B3B;
+}
+
+/* line 413, sass/_header.scss */
+.search-panel {
+  background: none repeat scroll 0 0 #ffffff;
+  height: 0;
+  display: none;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+  width: 102% !important;
+}
+/* line 426, sass/_header.scss */
+.search-panel.show {
+  display: block;
+  height: auto;
+}
+/* line 432, sass/_header.scss */
+.search-panel .search-hint {
+  left: 25%;
+  position: relative;
+  text-align: left;
+}
+/* line 436, sass/_header.scss */
+.search-panel .search-hint a {
+  color: #000000;
+}
+/* line 440, sass/_header.scss */
+.search-panel .search-suggestion {
+  padding-bottom: 1rem;
+}
+/* line 442, sass/_header.scss */
+.search-panel .search-suggestion h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #AAAAAA;
+}
+/* line 449, sass/_header.scss */
+.search-panel .search-suggestion .name, .search-panel .search-suggestion .price {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+/* line 455, sass/_header.scss */
+.search-panel .search-suggestion .name {
+  font-family: "EBGaramond", serif;
 }
 
 /* line 1, sass/_footer.scss */
@@ -907,7 +980,7 @@ section.module.parallax-3 {
 .roleover {
   border: 0.2rem solid #FFFFFF;
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.7rem 2rem;
   position: absolute;
   cursor: pointer;
@@ -946,7 +1019,7 @@ section.module.parallax-3 {
 .roleover-Bag:hover .shop-now {
   display: block;
   border: 0.2rem solid #FFFFFF;
-  font-weight: bold;
+  font-weight: 800;
   position: absolute;
   cursor: pointer;
   background-color: #FFFFFF;
@@ -963,6 +1036,35 @@ section.module.parallax-3 {
 .shopTogether-pos {
   left: 10.7rem;
   top: 16rem;
+}
+
+/* line 279, sass/_homepage.scss */
+.bg {
+  background: url(../images/parellax-home/parellax-flower.png) no-repeat 0 0;
+  height: 864px;
+  width: 1280px;
+  background-size: cover;
+}
+
+/* line 285, sass/_homepage.scss */
+.content-bg {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+/* line 291, sass/_homepage.scss */
+.parellax-row {
+  position: relative;
+  height: 416px;
+  overflow-y: auto;
+  background: url(../images/parellax-home/parellax1.jpg) no-repeat;
+}
+
+/* line 297, sass/_homepage.scss */
+.parellax-row::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 /* line 1, sass/_product_listing.scss */
@@ -1282,6 +1384,52 @@ section.module.parallax-3 {
   background-image: url("../images/parellax-plp/img3.png");
 }
 
+/* line 269, sass/_product_listing.scss */
+.parellax-row-plp {
+  height: 416px;
+  background: url(../images/parellax-plp/img1.png) no-repeat;
+  position: relative;
+  overflow-y: auto;
+}
+/* line 274, sass/_product_listing.scss */
+.parellax-row-plp .bg-plp {
+  background: url(../images/parellax-plp/zinnia-flower-text.png) no-repeat 0 0;
+  height: 800px;
+  width: 1280px;
+  background-size: cover;
+}
+/* line 280, sass/_product_listing.scss */
+.parellax-row-plp .plp-content-bg {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translate(-50%, -20%);
+}
+/* line 285, sass/_product_listing.scss */
+.parellax-row-plp .plp-content-bg img {
+  max-width: initial;
+}
+/* line 289, sass/_product_listing.scss */
+.parellax-row-plp::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* line 293, sass/_product_listing.scss */
+.search-page-css {
+  font-size: 2rem;
+  font-family: "EBGaramond", serif;
+}
+
+/* line 297, sass/_product_listing.scss */
+.search-page-head-padding {
+  padding: 2rem 0;
+}
+
+/* line 301, sass/_product_listing.scss */
+.search-result:last-child {
+  float: left !important;
+}
+
 /* line 1, sass/_outlet.scss */
 .outlet-product-margin {
   margin-top: 1rem;
@@ -1307,7 +1455,7 @@ section.module.parallax-3 {
 /* line 15, sass/_product_detail.scss */
 .product-detail .pdp-headerPath {
   font-size: 0.66rem;
-  font-weight: bold;
+  font-weight: 800;
   padding-left: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -1356,7 +1504,7 @@ section.module.parallax-3 {
 /* line 54, sass/_product_detail.scss */
 .product-detail .product-description .product-number {
   font-size: 0.6rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 58, sass/_product_detail.scss */
 .product-detail .product-description .price {
@@ -1366,7 +1514,7 @@ section.module.parallax-3 {
 /* line 62, sass/_product_detail.scss */
 .product-detail .product-description .desc-list {
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 66, sass/_product_detail.scss */
 .product-detail .product-description .read-review {
@@ -1388,7 +1536,7 @@ section.module.parallax-3 {
 /* line 79, sass/_product_detail.scss */
 .product-detail .product-description .product-color-choose div {
   font-size: 0.66rem;
-  font-weight: bold;
+  font-weight: 800;
   padding-top: 0.5rem;
 }
 /* line 84, sass/_product_detail.scss */
@@ -1421,7 +1569,7 @@ section.module.parallax-3 {
 /* line 109, sass/_product_detail.scss */
 .product-detail .product-description .store-locator span {
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 113, sass/_product_detail.scss */
 .product-detail .product-description .store-locator ul {
@@ -1472,7 +1620,7 @@ section.module.parallax-3 {
 }
 /* line 161, sass/_product_detail.scss */
 .product-detail .footer-color .price {
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 165, sass/_product_detail.scss */
 .product-detail .complete-look {

@@ -62,15 +62,51 @@
 		</ul>
 	</div>
 	<div class="large-1 columns search silver-border no-padding">
-	     <img class="search-logo" src="images/small_logo.png"/>
+	     <a href="#">
+	     	<img class="search-logo" src="images/small_logo.png"/>
+	     </a>
 		 <form class="searchbox">
-		 <input type="text" placeholder="Search......" name="search" class="searchbox-input" required>
+		 <input type="text" placeholder="ENTER SEARCH TERMS" ng-model="searchBox" ng-change="search(searchBox)" class="searchbox-input" required>
 		 <input type="submit" class="searchbox-submit" value="GO">
 		 <span class="searchbox-icon"><img src="images/menu/icon_menu_search.jpg"></span>
-		 <span id="close-search" onclick="closeSearch()" style="display:none"><img src="images/cancel-cross.png"></span>
+		 <span id="close-search" ng-click="hideSearch()" style="display:none"><img src="images/cancel-cross.png"></span>
 		 </form>
+		 <div class="row search-panel" ng-class="{'show':showSearchPanel}">
+			<div class="large-12 columns search-panel-hint">
+				<ul class="large-2 search-hint">
+					<li><a href="#/search" ng-click="hideSearch(searchBox)"><b>we</b>ekender</a></li>
+					<li><a href="#/search" ng-click="hideSearch(searchBox)"><b>we</b>ekend bags</a></li>
+					<li><a href="#/search" ng-click="hideSearch(searchBox)">bitters<b>we</b>et</a></li>
+					<li><a href="#/search" ng-click="hideSearch(searchBox)">je<b>we</b>lery bags</a></li>
+				</ul>
+			</div>
+			<div class="large-12 columns search-suggestion">
+				<h2>Most loved weekend bags</h2>
+				<div class="row">
+					<div class="large-3 columns">
+						<img src="images/search/search_img2.jpg">
+						<p class="name">Weekender</p>
+						<p class="price">$140</p>
+					</div>
+					<div class="large-3 columns">
+						<img src="images/search/search_img3.jpg">
+						<p class="name">Getaway duffel</p>
+						<p class="price">$88</p>
+					</div>
+					<div class="large-3 columns">
+						<img src="images/search/search_img4.jpg">
+						<p class="name">Grand tote</p>
+						<p class="price">$44</p>
+					</div>
+					<div class="large-3 columns">
+						<img src="images/search/adv_most_loved_bags.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+
 
 
 <div class="row main-nav sticky-nav stuck">
@@ -112,6 +148,7 @@
    	$('.img-margin').addClass('img-expanded');
    	$('.search').addClass('search-expanded');
     searchBox.addClass('searchbox-open');
+    inputBox.val('');
     inputBox.focus();
     // isOpen = true;
    // } else {
@@ -120,21 +157,20 @@
    // }
   }); 
  });
- function closeSearch (argument) {
- 	$('.sticky-nav').removeClass('fixed-header-search-expanded');
-   	$('.right-nav').show();
-   	$('.left-nav').show();
-   	$('.img-margin').show();
-   	$('.search-logo').hide();
-   	$('#close-search').hide();
-    $('.search').removeClass('search-expanded');
-    $('.img-margin').removeClass('img-expanded');
-    searchBox.removeClass('searchbox-open');
-    inputBox.focusout();
- }
+ // function closeSearch () {
+ // 	$('.sticky-nav').removeClass('fixed-header-search-expanded');
+ //   	$('.right-nav').show();
+ //   	$('.left-nav').show();
+ //   	$('.img-margin').show();
+ //   	$('.search-logo').hide();
+ //   	$('#close-search').hide();
+ //    $('.search').removeClass('search-expanded');
+ //    $('.img-margin').removeClass('img-expanded');
+ //    searchBox.removeClass('searchbox-open');
+ //    inputBox.focusout();
+ // }
 jQuery(window).scroll(function() {
  var currentScrollPos = $(window).scrollTop();
- console.log("position is"+currentScrollPos);
  if (currentScrollPos >=198){
  	$('.stuck').addClass('test');
  }
