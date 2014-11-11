@@ -10,6 +10,7 @@ angular.module('myApp', [
   'myApp.product-listing',
   'myApp.product-detail',
   'myApp.outlet',
+  'myApp.search',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
