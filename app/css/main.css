@@ -573,6 +573,59 @@ a.main-nav-list.active {
   color: #3B3B3B;
 }
 
+/* line 397, sass/_header.scss */
+.search-panel {
+  background: none repeat scroll 0 0 #ffffff;
+  height: 0;
+  display: none;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+  width: 102% !important;
+}
+/* line 410, sass/_header.scss */
+.search-panel.show {
+  display: block;
+  height: auto;
+}
+/* line 416, sass/_header.scss */
+.search-panel .search-hint {
+  left: 25%;
+  position: relative;
+  text-align: left;
+}
+/* line 420, sass/_header.scss */
+.search-panel .search-hint a {
+  color: #000000;
+}
+/* line 424, sass/_header.scss */
+.search-panel .search-suggestion {
+  padding-bottom: 1rem;
+}
+/* line 426, sass/_header.scss */
+.search-panel .search-suggestion h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+/* line 432, sass/_header.scss */
+.search-panel .search-suggestion .name, .search-panel .search-suggestion .price {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+/* line 438, sass/_header.scss */
+.search-panel .search-suggestion .name {
+  font-family: "EBGaramond", serif;
+}
+
 /* line 1, sass/_footer.scss */
 .footer {
   background-image: url("../images/bg-footer.jpg");

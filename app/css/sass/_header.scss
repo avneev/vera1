@@ -394,3 +394,49 @@ a.main-nav-list.active {
 		color: $base-font-color;
 	}
 }
+.search-panel {
+    background: none repeat scroll 0 0 #ffffff;
+    height: 0;
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: height 1s;
+ 	-moz-transition: height 1s;
+ 	-ms-transition: height 1s;
+ 	-o-transition: height 1s;
+ 	transition: height 1s;
+ 	width: 102% !important;
+    &.show {
+    	display: block;
+    	height: auto;
+    }
+    .search-panel-hint {
+    }
+    .search-hint {
+	    left: 25%;
+	    position: relative;
+	    text-align: left;
+	    a {
+	    	color: $black;
+	    }
+	}
+	.search-suggestion {
+		padding-bottom: 1rem;
+		h2 {
+			font-size: 1.75rem;
+		    text-transform: uppercase;
+		    margin-bottom: 1rem;
+	    	padding-bottom: 1rem;
+		}
+		.name, .price {
+		    font-size: 0.85rem;
+		    font-weight: bold;
+		    margin-bottom: 0;
+		    text-transform: uppercase;
+		}
+		.name {
+			font-family: $EBGaramondMedium-font-family, serif;
+		}
+	}
+}
