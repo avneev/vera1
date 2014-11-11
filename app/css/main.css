@@ -141,7 +141,7 @@ video {
 }
 /* line 53, sass/_header.scss */
 .header .text-pink.bold {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 /* line 59, sass/_header.scss */
@@ -960,7 +960,7 @@ section.module.parallax-3 {
 .roleover {
   border: 0.2rem solid #FFFFFF;
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.7rem 2rem;
   position: absolute;
   cursor: pointer;
@@ -999,7 +999,7 @@ section.module.parallax-3 {
 .roleover-Bag:hover .shop-now {
   display: block;
   border: 0.2rem solid #FFFFFF;
-  font-weight: bold;
+  font-weight: 800;
   position: absolute;
   cursor: pointer;
   background-color: #FFFFFF;
@@ -1016,6 +1016,35 @@ section.module.parallax-3 {
 .shopTogether-pos {
   left: 10.7rem;
   top: 16rem;
+}
+
+/* line 279, sass/_homepage.scss */
+.bg {
+  background: url(../images/parellax-home/parellax-flower.png) no-repeat 0 0;
+  height: 864px;
+  width: 1280px;
+  background-size: cover;
+}
+
+/* line 285, sass/_homepage.scss */
+.content-bg {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+/* line 291, sass/_homepage.scss */
+.parellax-row {
+  position: relative;
+  height: 416px;
+  overflow-y: auto;
+  background: url(../images/parellax-home/parellax1.jpg) no-repeat;
+}
+
+/* line 297, sass/_homepage.scss */
+.parellax-row::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 /* line 1, sass/_product_listing.scss */
@@ -1336,17 +1365,47 @@ section.module.parallax-3 {
 }
 
 /* line 269, sass/_product_listing.scss */
+.parellax-row-plp {
+  height: 416px;
+  background: url(../images/parellax-plp/img1.png) no-repeat;
+  position: relative;
+  overflow-y: auto;
+}
+/* line 274, sass/_product_listing.scss */
+.parellax-row-plp .bg-plp {
+  background: url(../images/parellax-plp/zinnia-flower-text.png) no-repeat 0 0;
+  height: 800px;
+  width: 1280px;
+  background-size: cover;
+}
+/* line 280, sass/_product_listing.scss */
+.parellax-row-plp .plp-content-bg {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translate(-50%, -20%);
+}
+/* line 285, sass/_product_listing.scss */
+.parellax-row-plp .plp-content-bg img {
+  max-width: initial;
+}
+/* line 289, sass/_product_listing.scss */
+.parellax-row-plp::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* line 293, sass/_product_listing.scss */
 .search-page-css {
   font-size: 2rem;
   font-family: "EBGaramond", serif;
 }
 
-/* line 273, sass/_product_listing.scss */
+/* line 297, sass/_product_listing.scss */
 .search-page-head-padding {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
-/* line 277, sass/_product_listing.scss */
+/* line 301, sass/_product_listing.scss */
 .search-result:last-child {
   float: left !important;
 }
@@ -1376,7 +1435,7 @@ section.module.parallax-3 {
 /* line 15, sass/_product_detail.scss */
 .product-detail .pdp-headerPath {
   font-size: 0.66rem;
-  font-weight: bold;
+  font-weight: 800;
   padding-left: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -1425,7 +1484,7 @@ section.module.parallax-3 {
 /* line 54, sass/_product_detail.scss */
 .product-detail .product-description .product-number {
   font-size: 0.6rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 58, sass/_product_detail.scss */
 .product-detail .product-description .price {
@@ -1435,7 +1494,7 @@ section.module.parallax-3 {
 /* line 62, sass/_product_detail.scss */
 .product-detail .product-description .desc-list {
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 66, sass/_product_detail.scss */
 .product-detail .product-description .read-review {
@@ -1457,7 +1516,7 @@ section.module.parallax-3 {
 /* line 79, sass/_product_detail.scss */
 .product-detail .product-description .product-color-choose div {
   font-size: 0.66rem;
-  font-weight: bold;
+  font-weight: 800;
   padding-top: 0.5rem;
 }
 /* line 84, sass/_product_detail.scss */
@@ -1490,7 +1549,7 @@ section.module.parallax-3 {
 /* line 109, sass/_product_detail.scss */
 .product-detail .product-description .store-locator span {
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 113, sass/_product_detail.scss */
 .product-detail .product-description .store-locator ul {
@@ -1541,7 +1600,7 @@ section.module.parallax-3 {
 }
 /* line 161, sass/_product_detail.scss */
 .product-detail .footer-color .price {
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 165, sass/_product_detail.scss */
 .product-detail .complete-look {
