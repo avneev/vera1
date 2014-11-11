@@ -1,10 +1,10 @@
 [
     {
         "id": 0,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "CHAIN SHOULDER BAG",
         "image": "images/plp/plp-below/cat_img20.jpg",
-        "product_color": "Pink swirals",
-        "price": "$58",
+        "product_color": "BLUE",
+        "price": "$138",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -31,10 +31,10 @@
     },
     {
         "id": 1,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "TURNLOCK CROSSBODY",
         "image": "images/plp/plp-below/cat_img21.jpg",
-        "product_color": "Pink swirals",
-        "price": "$58",
+        "product_color": "AFRICAN VIOLET",
+        "price": "$298",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -56,15 +56,19 @@
             {
                 "id": 3,
                 "name": "pink"
+            },
+            {
+                "id": 4,
+                "name": "grey"
             }
         ]
     },
     {
         "id": 2,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "MINI CROSSBODY",
         "image": "images/plp/plp-below/cat_img22.jpg",
-        "product_color": "Pink swirals",
-        "price": "$58",
+        "product_color": "FLOWER SHOWER",
+        "price": "$138",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -85,15 +89,23 @@
             {
                 "id": 3,
                 "name": "pink"
+            },
+            {
+                "id": 4,
+                "name": "black"
+            },
+            {
+                "id": 5,
+                "name": "grey"
             }
         ]
     },
     {
         "id": 3,
-        "product_name": "Triple Zip Hipster",
+        "product_name": "PUFFY CROSSBODY",
         "image": "images/plp/plp-below/cat_img23.jpg",
-        "product_color": "Pink swirals",
-        "price": "$58",
+        "product_color": "Pink",
+        "price": "$258",
         "product_rating":3,
         "product_tag": "Sturdy and petite",
         "is_ad": false,
@@ -114,6 +126,10 @@
             {
                 "id": 3,
                 "name": "pink"
+            },
+            {
+                "id": 4,
+                "name": "black"
             }
         ]
     },
