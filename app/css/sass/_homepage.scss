@@ -308,3 +308,13 @@ section.module.parallax {
     text-align: center;
     width: 100%
 }
+
+.auth-button {
+    background-color: #000;
+    margin: 10px 135px;
+
+
+    &:hover {
+    	background-color: #000;
+    }
+}

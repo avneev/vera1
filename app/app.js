@@ -84,6 +84,8 @@ run(function($rootScope, $route, $http, $location, xhrFactory, $cookieStore) {
     if(!$cookieStore.get('auth')) {
       $location.path("/");
       $rootScope.auth = false;
+    }else {
+      $rootScope.auth = true;
     }
 
     if($location.path() == "/") {

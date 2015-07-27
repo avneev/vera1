@@ -1082,6 +1082,16 @@ section.module.parallax-3 {
   width: 100%;
 }
 
+/* line 312, sass/_homepage.scss */
+.auth-button {
+  background-color: #000;
+  margin: 10px 135px;
+}
+/* line 317, sass/_homepage.scss */
+.auth-button:hover {
+  background-color: #000;
+}
+
 /* line 1, sass/_product_listing.scss */
 .filter-head {
   background-color: #69D8C7;
