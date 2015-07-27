@@ -295,3 +295,16 @@ section.module.parallax {
 	background:url(../images/parellax-home/parellax1.jpg) no-repeat;
 }
 .parellax-row::-webkit-scrollbar { width: 0 !important }
+
+.auth-box {
+    margin-top: 90px;
+}
+
+.auth-message {
+	color: red;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%
+}

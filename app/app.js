@@ -3,9 +3,11 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
+  'ngCookies',
   'myApp.services',
   'myApp.header',
   'myApp.footer',
+  'myApp.auth',
   'myApp.home',
   'myApp.product-listing',
   'myApp.product-detail',
@@ -50,7 +52,7 @@ directive('changeOnHover', function() {
 		}
 	}
 }).
-run(function($rootScope, $route, $http, $location, xhrFactory) {
+run(function($rootScope, $route, $http, $location, xhrFactory, $cookieStore) {
   $rootScope.$on('$routeChangeSuccess', function() {
     $('html,body').animate({scrollTop: 0}, 100);
     if($location.path() == '/outlet'){
@@ -78,6 +80,16 @@ run(function($rootScope, $route, $http, $location, xhrFactory) {
           }
         )
     }
+
+    if(!$cookieStore.get('auth')) {
+      $location.path("/");
+      $rootScope.auth = false;
+    }
+
+    if($location.path() == "/") {
+      $cookieStore.remove('auth');
+      $rootScope.auth = false;
+    } 
   });
 }).filter('to_trusted', ['$sce', function($sce){
       return function(text) {

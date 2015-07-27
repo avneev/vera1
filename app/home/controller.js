@@ -3,7 +3,7 @@
 angular.module('myApp.home', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {
+  $routeProvider.when('/vera', {
     templateUrl: 'home/view.html',
     controller: 'View1Ctrl'
   });

@@ -1067,6 +1067,21 @@ section.module.parallax-3 {
   width: 0 !important;
 }
 
+/* line 299, sass/_homepage.scss */
+.auth-box {
+  margin-top: 90px;
+}
+
+/* line 303, sass/_homepage.scss */
+.auth-message {
+  color: red;
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
 /* line 1, sass/_product_listing.scss */
 .filter-head {
   background-color: #69D8C7;
